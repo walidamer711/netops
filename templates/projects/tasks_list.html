@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block breadcrumb %}
+    <ol class="breadcrumb my-4">
+    <li class="breadcrumb-item"><a href="{% url 'projects' %}">Projects</a></li>
+</ol>
+{% endblock %}
+
+
+
+
+
+  {% block content %}
+
+ {% if object_list %}
+    <div class="mb-4">
+    <a href="{% url 'new_task' object_list.0.project.id %}" class="btn btn-primary">Add New Task</a>
+</div>
+
+    <h1>{{ object_list.0.project.project_name }}</h1>
+    <table class="table mb-4">
+        <thead class="thead-inverse">
+        <tr>
+            <th>Task</th>
+            <th>Status</th>
+            <th>Assignee</th>
+            <th>Edit</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for task in object_list %}
+            <tr>
+                <td>{{ task.task }}</td>
+                <td style="white-space:pre;">{{ task.status }}</td>
+                <td>{{ task.assignee }}</td>
+                <td><a href="{% url 'task_update' task.project.id task.id %}">Edit</a>
+                <a href="{% url 'task_delete' task.project.id task.id %}">Delete</a></td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% else %}
+     <div class="mb-lg-5"> <h1>{{ project.project_name }}</h1> </div>
+     <div class="mb-lg-5"> <p>There are no tasks in the project.</p> </div>
+ <div class="mb-4">
+    <a href="{% url 'new_task' project.id %}" class="btn btn-primary">Add New Task</a>
+ </div>
+
+{% endif %}
+
+{% endblock %}

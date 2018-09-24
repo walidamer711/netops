@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+<h1>Projects</h1>
+    <div class="mb-4">
+    <a href="{% url 'new_project' %}" class="btn btn-primary">Add New Project</a>
+</div>
+<table class="table mb-4">
+    <thead class="thead-inverse">
+      <tr>
+        <th>Project</th>
+          <th>Tasks</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for project in object_list %}
+        <tr>
+            <td><a href="{% url 'project' project.id %}">{{ project }}</a></td>
+        <td>{{ project.get_tasks_count }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}

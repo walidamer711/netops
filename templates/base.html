@@ -1,0 +1,54 @@
+{% load static %}<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Network Portal</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+            <a class="navbar-brand" href="#">Network Portal</a>
+
+    <div class="collapse navbar-collapse">
+
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="{% url 'projects' %}">Network Projects</a></li>
+             <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+        </ul>
+
+           {% if user.is_authenticated %}
+               <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">{{ user.username }} {{ user.id }}</li>
+               </ul>
+                <ul><a href="{% url 'logout' %}" class="btn btn-outline-secondary">Log out</a>
+                </ul>
+            {% else %}
+                <a href="{% url 'login' %}" class="btn btn-outline-secondary">Log in</a>
+            {% endif %}
+
+    </div>
+
+</nav>
+
+
+<div class="container">
+
+    {% block breadcrumb %}
+
+    {% endblock %}
+
+    {% block content %}
+    {% endblock %}
+</div>
+
+
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DashBoard</title>
+</head>
+<body>
+<b1>Hi</b1>
+
+
+<form method="post">
+    {% csrf_token %}
+    ip: <input type="text" name="ip"><br>
+    user: <input type="text" name="user"><br>
+    password: <input type="text" name="password"><br>
+    <input type="submit" value="Submit">
+</form>
+
+
+</body>
+</html>
