@@ -19,6 +19,7 @@ class ProjectList(ListView):
         context = super().get_context_data(**kwargs)
         return context
 
+@method_decorator(login_required, name='dispatch')
 class ProjectCreate(CreateView):
     model = Projects
     fields = ['project_name']

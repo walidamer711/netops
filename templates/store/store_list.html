@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+<h1>Store Items</h1>
+    <div class="mb-4">
+    <a href="{% url 'new_item' %}" class="btn btn-primary">Add New Item</a>
+</div>
+<table class="table mb-4">
+    <thead class="thead-inverse">
+      <tr>
+        <th>Type</th>
+          <th>Model</th>
+          <th>QTY</th>
+          <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in object_list %}
+        <tr>
+            <td>{{ item.item_type }}</td>
+            <td>{{ item.item_model }}</td>
+            <td>{{ item.item_quantity }}</td>
+            <td>{{ item.item_status }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}

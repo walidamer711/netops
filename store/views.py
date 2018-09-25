@@ -1,0 +1,29 @@
+from django.shortcuts import render, redirect, get_object_or_404
+from django.urls import reverse_lazy
+from .models import Store
+from django.views.generic.list import ListView
+from django.views.generic.edit import UpdateView, DeleteView, CreateView
+from django.utils.decorators import method_decorator
+from django.contrib.auth.decorators import login_required
+
+# Create your views here.
+
+@method_decorator(login_required, name='dispatch')
+class StoreList(ListView):
+    model = Store
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        return context
+
+@method_decorator(login_required, name='dispatch')
+class ItemCreate(CreateView):
+    model = Store
+    fields = ['item_type', 'item_model', 'item_quantity', 'item_status']
+    success_url = reverse_lazy('store')
+
+    def post(self, request, *args, **kwargs):
+        if "cancel" in request.POST:
+            return redirect('store')
+        else:
+            return super(ItemCreate, self).post(request, *args, **kwargs)
