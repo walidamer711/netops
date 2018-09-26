@@ -7,9 +7,9 @@ class Store(models.Model):
     ROUTER = 'RTR'
     SWITCH = 'SW'
     TRANSCEIVER = 'SFP'
-    CABLE = 'CB'
-    PROJECT = 'PJ'
-    STOCK = 'ST'
+    CABLE = 'CABLE'
+    PROJECT = 'PROJECT'
+    STOCK = 'STOCK'
 
     ITEM_TYPE_CHOICES = (
         (ROUTER, 'Router'),

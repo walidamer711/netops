@@ -4,10 +4,14 @@
 
 {% block content %}
 
+
+
 <h1>Store Items</h1>
+
     <div class="mb-4">
-    <a href="{% url 'new_item' %}" class="btn btn-primary">Add New Item</a>
+    <a href="{% url 'stores:new_item' item_type %}" class="btn btn-primary">Add New Item</a>
 </div>
+
 <table class="table mb-4">
     <thead class="thead-inverse">
       <tr>
