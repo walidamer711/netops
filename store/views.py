@@ -25,10 +25,10 @@ class ItemCreate(CreateView):
     fields = ['item_type', 'item_model', 'item_quantity', 'item_status']
 
     def get_success_url(self):
-        return reverse('stores:store', args=[self.kwargs['item_type']])
+        return reverse('store', args=[self.kwargs['item_type']])
 
     def post(self, request, *args, **kwargs):
         if "cancel" in request.POST:
-            return redirect('stores:store', self.kwargs['item_type'])
+            return redirect('store', self.kwargs['item_type'])
         else:
             return super(ItemCreate, self).post(request, *args, **kwargs)
