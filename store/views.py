@@ -32,3 +32,15 @@ class ItemCreate(CreateView):
             return redirect('store', self.kwargs['item_type'])
         else:
             return super(ItemCreate, self).post(request, *args, **kwargs)
+
+@method_decorator(login_required, name='dispatch')
+class ItemUpdate(UpdateView):
+    model = Store
+    fields = ['item_type', 'item_model', 'item_quantity', 'item_status']
+    template_name = 'store/store_update_form.html'
+    pk_url_kwarg = 'item_id'
+    context_object_name = 'item'
+
+    def form_valid(self, form):
+        form.save()
+        return redirect('store', self.kwargs['item_type'])

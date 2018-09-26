@@ -19,6 +19,7 @@
           <th>Model</th>
           <th>QTY</th>
           <th>Status</th>
+          <th>Edit</th>
       </tr>
     </thead>
     <tbody>
@@ -28,6 +29,7 @@
             <td>{{ item.item_model }}</td>
             <td>{{ item.item_quantity }}</td>
             <td>{{ item.item_status }}</td>
+        <td><a href="{% url 'item_update' item.item_type item.id %}">Edit</a></td>
         </tr>
       {% endfor %}
     </tbody>
