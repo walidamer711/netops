@@ -22,7 +22,7 @@
         <div class="collapse navbar-collapse" id="mainMenu">
 
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item"><a class="nav-link" href="{% url 'projects' %}">Network Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'projects' %}">Projects</a></li>
                 <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="storeMenu"
                                                  data-toggle="dropdown" aria-haspopup="true"
                                                  aria-expanded="false">Store</a>
@@ -33,7 +33,7 @@
                         <a class="dropdown-item" href="{% url 'store' "CABLE" %} ">Cables</a>
                     </div>
                 </li>
-
+                <li class="nav-item"><a class="nav-link" href="{% url 'dashboard' %}">Dashboard</a></li>
             </ul>
 
             {% if user.is_authenticated %}

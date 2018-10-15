@@ -1,26 +1,24 @@
 from django.shortcuts import render, HttpResponse
-from napalm import get_network_driver
+from django.contrib.auth.decorators import login_required
 from nornir.core import InitNornir
 from .forms import ShowForm, DCAccessForm
 from .netbox_query import get_device_ip
 from .nornir_exec import show_result
 from .config_generator import dc_access_template, dc_agg_template
 from nornir.plugins.functions.text import print_result
-from netmiko import ConnectHandler
-import requests, os, json
 
 
 # Create your views here.
 
-
+@login_required
 def dashboard(request):
     return render(request, 'dashboard/dashboard.html')
 
-
+@login_required
 def home(request):
     return render(request, 'home.html')
 
-
+@login_required
 def show(request):
     if request.method == 'POST':
         form = ShowForm(request.POST)
@@ -30,13 +28,13 @@ def show(request):
             host_ip = get_device_ip(device)
 
             result = show_result(device, command)
-            return render(request, 'home.html', {'result': result, "device": device, "command": command})
+            return render(request, 'dashboard/show_result.html', {'result': result, "device": device, "command": command})
     else:
         form = ShowForm()
 
-    return render(request, 'show.html', {'form': form})
+    return render(request, 'dashboard/show.html', {'form': form})
 
-
+@login_required
 def services(request):
     if request.method == 'POST':
         nr = InitNornir(num_workers=100,
