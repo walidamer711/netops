@@ -1,6 +1,6 @@
 MV1_N5K_DC_ACC_01:
   asset_tag: null
-  hostname: 172.20.22.33
+  hostname: 1.1.1.1
   model: n5k-c5548up
   platform: nxos
   role: dc-access
@@ -12,7 +12,7 @@ MV1_N5K_DC_ACC_01:
   vendor: Cisco
 MV1_N5K_DC_ACC_02:
   asset_tag: null
-  hostname: 172.20.22.34
+  hostname: 2.2.2.2
   model: n5k-c5548up
   platform: nxos
   role: dc-access
@@ -24,7 +24,7 @@ MV1_N5K_DC_ACC_02:
   vendor: Cisco
 MV1_N7K_AGG_PE_01:
   asset_tag: null
-  hostname: 172.20.22.17
+  hostname: 3.3.3.3
   model: n7k-c7010
   platform: null
   role: dc-aggregation
@@ -35,7 +35,7 @@ MV1_N7K_AGG_PE_01:
   vendor: Cisco
 MV3_N7K_AGG_PE_02:
   asset_tag: null
-  hostname: 172.20.22.18
+  hostname: 4.4.4.4
   model: n7k-c7010
   platform: null
   role: dc-aggregation

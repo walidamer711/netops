@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4df17b7-2258-407e-96dd-f37f5b21fe1c" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/dashboard/dashboard.html" />
-      <change beforePath="$PROJECT_DIR$/.idea/netops.iml" afterPath="$PROJECT_DIR$/.idea/netops.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/dashboard/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dashboard/urls.py" afterPath="$PROJECT_DIR$/dashboard/urls.py" />
-      <change beforePath="$PROJECT_DIR$/dashboard/views.py" afterPath="$PROJECT_DIR$/dashboard/views.py" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
-      <change beforePath="$PROJECT_DIR$/scripts/sandbox.py" afterPath="$PROJECT_DIR$/scripts/sandbox.py" />
-      <change beforePath="$PROJECT_DIR$/templates/home.html" afterPath="$PROJECT_DIR$/templates/home.html" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dashboard/inventory/groups.yaml" afterPath="$PROJECT_DIR$/dashboard/inventory/groups.yaml" />
+      <change beforePath="$PROJECT_DIR$/dashboard/inventory/hosts.yaml" afterPath="$PROJECT_DIR$/dashboard/inventory/hosts.yaml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -135,9 +127,7 @@
         <option value="$PROJECT_DIR$/scripts/hosts_data.yaml" />
         <option value="$PROJECT_DIR$/scripts/groups_data.yaml" />
         <option value="$PROJECT_DIR$/scripts/config_generator.py" />
-        <option value="$PROJECT_DIR$/dashboard/inventory/groups.yaml" />
         <option value="$PROJECT_DIR$/dashboard/config.yaml" />
-        <option value="$PROJECT_DIR$/dashboard/inventory/hosts.yaml" />
         <option value="$PROJECT_DIR$/templates/home.html" />
         <option value="$PROJECT_DIR$/dashboard/nornir_exec.py" />
         <option value="$PROJECT_DIR$/scripts/netbox_api.py" />
@@ -156,6 +146,8 @@
         <option value="$PROJECT_DIR$/templates/dashboard/dashboard.html" />
         <option value="$PROJECT_DIR$/templates/dashboard/services_config_list.html" />
         <option value="$PROJECT_DIR$/scripts/sandbox.py" />
+        <option value="$PROJECT_DIR$/dashboard/inventory/groups.yaml" />
+        <option value="$PROJECT_DIR$/dashboard/inventory/hosts.yaml" />
       </list>
     </option>
   </component>
@@ -197,6 +189,17 @@
             <path>
               <item name="netops" type="b2602c69:ProjectViewProjectNode" />
               <item name="netops" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="netops" type="b2602c69:ProjectViewProjectNode" />
+              <item name="netops" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="netops" type="b2602c69:ProjectViewProjectNode" />
+              <item name="netops" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="inventory" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -552,14 +555,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="16" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/submit.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -595,20 +590,6 @@
         <state relative-caret-position="90">
           <caret line="5" column="26" lean-forward="false" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/inventory/groups.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="20" lean-forward="true" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/inventory/hosts.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="45" column="15" lean-forward="false" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -807,6 +788,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="16" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/inventory/groups.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/inventory/hosts.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="44" column="18" lean-forward="true" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
           <folding />
         </state>
       </provider>
