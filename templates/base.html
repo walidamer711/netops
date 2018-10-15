@@ -38,7 +38,7 @@
 
             {% if user.is_authenticated %}
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">{{ user.username }} {{ user.id }}</li>
+                    <li class="nav-item">{{ user.username }}</li>
                 </ul>
                 <ul><a href="{% url 'logout' %}" class="btn btn-outline-secondary">Log out</a>
                 </ul>

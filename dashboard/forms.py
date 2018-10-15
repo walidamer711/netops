@@ -21,8 +21,9 @@ def get_devices_list(tenant):
 
 def get_tenants():
     headers = form_headers()
+    query_params = {"group": "meeza-customers"}
     r = requests.get(NETBOX_API_ROOT + NETBOX_TENANTS_ENDPOINT,
-                     headers=headers)
+                     params=query_params, headers=headers)
     nb_tenants = r.json()
     tenants = []
     for t in nb_tenants["results"]:

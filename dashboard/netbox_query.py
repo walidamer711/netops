@@ -70,7 +70,7 @@ def get_device_trunks(device, interface_tag):
 
 def get_dc_vlans(tenant, group):
     headers = form_headers()
-    query_params = {"tenant": tenant}
+    query_params = {"tenant": tenant, "status": 2}
 
     vlans_netbox_dict = requests.get(
         NETBOX_API_ROOT + NETBOX_VLANS_ENDPOINT,
