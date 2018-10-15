@@ -153,7 +153,6 @@ def get_device_ip(hostname):
     r = requests.get(NETBOX_API_ROOT + NETBOX_DEVICES_ENDPOINT,
                      params=query_params, headers=headers)
     d = r.json()
-    print(d["results"])
     for d in d["results"]:
         if d.get("primary_ip", {}):
             ip = d["primary_ip"]["address"].split("/")[0]

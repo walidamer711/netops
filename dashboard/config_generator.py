@@ -38,7 +38,6 @@ def dc_access_template(task, inventory, tenant):
     device_trunks = get_device_trunks(f'{task.host.name}', "mza-enc")
     if device_trunks:
         inventory.hosts[f'{task.host.name}'].data.update(device_trunks)
-    print(inventory.hosts[f'{task.host.name}'].data)
     # Transform inventory data to configuration via a template file
     r = task.run(task=text.template_file,
                  name="Base Configuration",
