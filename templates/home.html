@@ -1,1 +1,28 @@
 {% extends 'base.html' %}
+{% block content %}
+
+    {{ result }}
+    <ul>Show Result</ul>
+    <ul>{{ command }}</ul>
+    <ul>{{ device }}</ul>
+    <table class="table mb-4">
+        <thead class="thead-inverse">
+        <tr>
+            {% for r in result.0 %}
+                <th>{{ r }}</th>
+            {% endfor %}
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            {% for r in result %}
+                <tr>
+                    {% for v in r.values %}
+                        <td>{{ v }}</td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+
+        </tbody>
+    </table>
+{% endblock %}

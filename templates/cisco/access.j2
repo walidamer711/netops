@@ -1,0 +1,11 @@
+{% for vlan in vlans %}
+vlan {{ vlan.id }}
+ name {{ vlan.name }}
+ mode fabricpath
+{% endfor %}
+{% set allowed_vlans = vlans|map(attribute='id')|list|join(',') %}
+spanning-tree vlan {{ allowed_vlans }} priority 4096
+{% for t in trunks %}
+interface {{ t }}
+ switchport trunk allowed vlan add {{ allowed_vlans }}
+{% endfor %}

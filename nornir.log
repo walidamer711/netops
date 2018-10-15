@@ -1,0 +1,1591 @@
+2018-10-11 11:46:09,820 - django.request -    ERROR - log_response() - Internal Server Error: /dashboard/show
+Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wamer/netops/dashboard/views.py", line 39, in show
+    result = result = host.run(task=show_result(command))#show_result(host_ip, command)
+TypeError: show_result() missing 1 required positional argument: 'command'
+2018-10-11 11:47:28,253 - django.request -    ERROR - log_response() - Internal Server Error: /dashboard/show
+Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wamer/netops/dashboard/views.py", line 39, in show
+    result = result = host.run(task=show_result(command))#show_result(host_ip, command)
+TypeError: show_result() missing 1 required positional argument: 'task'
+2018-10-11 11:48:49,995 -       nornir -     INFO -        run() - Running task 'show_result' with num_workers: 4
+2018-10-11 11:48:49,995 -       nornir -     INFO -        run() - Running task 'show_result' with num_workers: 4
+2018-10-11 11:48:49,995 -       nornir -    DEBUG -        run() - {'command': 'show version'}
+2018-10-11 11:48:49,995 -       nornir -    DEBUG -        run() - {'command': 'show version'}
+2018-10-11 11:48:49,998 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: show_result: running task
+2018-10-11 11:48:49,998 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: show_result: running task
+2018-10-11 11:48:49,999 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-11 11:48:49,999 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-11 11:50:39,222 -       nornir -     INFO -        run() - Running task 'show_result' with num_workers: 4
+2018-10-11 11:50:39,222 -       nornir -     INFO -        run() - Running task 'show_result' with num_workers: 4
+2018-10-11 11:50:39,222 -       nornir -    DEBUG -        run() - {'command': 'show version'}
+2018-10-11 11:50:39,222 -       nornir -    DEBUG -        run() - {'command': 'show version'}
+2018-10-11 11:50:39,225 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: show_result: running task
+2018-10-11 11:50:39,225 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: show_result: running task
+2018-10-11 11:50:39,225 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-11 11:50:39,225 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-11 11:53:05,322 -       nornir -     INFO -        run() - Running task 'show_result' with num_workers: 4
+2018-10-11 11:53:05,322 -       nornir -     INFO -        run() - Running task 'show_result' with num_workers: 4
+2018-10-11 11:53:05,322 -       nornir -    DEBUG -        run() - {'command': 'show version'}
+2018-10-11 11:53:05,322 -       nornir -    DEBUG -        run() - {'command': 'show version'}
+2018-10-11 11:53:05,326 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: show_result: running task
+2018-10-11 11:53:05,326 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: show_result: running task
+2018-10-11 11:53:05,326 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-11 11:53:05,326 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-11 11:54:12,616 -       nornir -     INFO -        run() - Running task 'show_result' with num_workers: 4
+2018-10-11 11:54:12,616 -       nornir -     INFO -        run() - Running task 'show_result' with num_workers: 4
+2018-10-11 11:54:12,616 -       nornir -    DEBUG -        run() - {'command': 'show version'}
+2018-10-11 11:54:12,616 -       nornir -    DEBUG -        run() - {'command': 'show version'}
+2018-10-11 11:54:12,622 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: show_result: running task
+2018-10-11 11:54:12,622 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: show_result: running task
+2018-10-11 11:54:12,623 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-11 11:54:12,623 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-11 11:54:18,307 - django.request -    ERROR - log_response() - Internal Server Error: /dashboard/show
+Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wamer/netops/dashboard/views.py", line 41, in show
+    return render(request, 'home.html', {'result': result[1], "device": device, "command": command})
+KeyError: 1
+2018-10-11 12:12:29,254 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-11 12:12:29,254 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-11 12:12:29,255 -       nornir -    DEBUG -        run() - {'command_string': 'show version', 'use_textfsm': True}
+2018-10-11 12:12:29,255 -       nornir -    DEBUG -        run() - {'command_string': 'show version', 'use_textfsm': True}
+2018-10-11 12:12:29,257 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-11 12:12:29,257 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-11 12:16:06,741 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-11 12:16:06,741 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-11 12:16:06,741 -       nornir -    DEBUG -        run() - {'command_string': 'show version', 'use_textfsm': True}
+2018-10-11 12:16:06,741 -       nornir -    DEBUG -        run() - {'command_string': 'show version', 'use_textfsm': True}
+2018-10-11 12:16:06,744 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-11 12:16:06,744 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-11 12:17:13,436 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-11 12:17:13,436 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-11 12:17:13,437 -       nornir -    DEBUG -        run() - {'command_string': 'show version', 'use_textfsm': True}
+2018-10-11 12:17:13,437 -       nornir -    DEBUG -        run() - {'command_string': 'show version', 'use_textfsm': True}
+2018-10-11 12:17:13,443 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-11 12:17:13,443 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-11 12:21:49,239 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-11 12:21:49,239 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-11 12:21:49,239 -       nornir -    DEBUG -        run() - {'command_string': 'show version', 'use_textfsm': True}
+2018-10-11 12:21:49,239 -       nornir -    DEBUG -        run() - {'command_string': 'show version', 'use_textfsm': True}
+2018-10-11 12:21:49,244 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-11 12:21:49,244 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-11 12:21:54,781 - django.request -    ERROR - log_response() - Internal Server Error: /dashboard/show
+Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wamer/netops/dashboard/views.py", line 40, in show
+    return render(request, 'home.html', {'result': result, "device": device, "command": command})
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/defaulttags.py", line 165, in render
+    values = list(values)
+TypeError: 'Result' object is not iterable
+2018-10-11 12:22:47,302 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-11 12:22:47,302 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-11 12:22:47,302 -       nornir -    DEBUG -        run() - {'command_string': 'show version', 'use_textfsm': True}
+2018-10-11 12:22:47,302 -       nornir -    DEBUG -        run() - {'command_string': 'show version', 'use_textfsm': True}
+2018-10-11 12:22:47,305 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-11 12:22:47,305 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-11 12:22:52,856 - django.request -    ERROR - log_response() - Internal Server Error: /dashboard/show
+Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wamer/netops/dashboard/views.py", line 40, in show
+    return render(request, 'home.html', {'result': result, "device": device, "command": command})
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/defaulttags.py", line 165, in render
+    values = list(values)
+TypeError: 'Result' object is not iterable
+2018-10-11 12:26:08,579 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-11 12:26:08,579 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-11 12:26:08,580 -       nornir -    DEBUG -        run() - {'command_string': 'show version', 'use_textfsm': True}
+2018-10-11 12:26:08,580 -       nornir -    DEBUG -        run() - {'command_string': 'show version', 'use_textfsm': True}
+2018-10-11 12:26:08,584 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-11 12:26:08,584 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-11 12:26:25,416 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-11 12:26:25,416 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-11 12:26:25,417 -       nornir -    DEBUG -        run() - {'command_string': 'show cdp neighbors detail', 'use_textfsm': True}
+2018-10-11 12:26:25,417 -       nornir -    DEBUG -        run() - {'command_string': 'show cdp neighbors detail', 'use_textfsm': True}
+2018-10-11 12:26:25,421 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-11 12:26:25,421 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-15 04:56:25,315 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-15 04:56:25,315 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-15 04:56:25,315 -       nornir -    DEBUG -        run() - {'command_string': 'show cdp neighbors detail', 'use_textfsm': True}
+2018-10-15 04:56:25,315 -       nornir -    DEBUG -        run() - {'command_string': 'show cdp neighbors detail', 'use_textfsm': True}
+2018-10-15 04:56:25,324 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-15 04:56:25,324 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-15 06:57:10,159 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 06:57:10,159 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 06:57:10,160 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f2ad57086d8>}
+2018-10-15 06:57:10,160 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f2ad57086d8>}
+2018-10-15 07:00:50,911 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 07:00:50,911 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 07:00:50,912 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fa48c5e56d8>}
+2018-10-15 07:00:50,912 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fa48c5e56d8>}
+2018-10-15 07:00:50,992 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 07:00:50,992 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 07:00:50,994 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 07:00:50,994 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 07:00:51,362 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 07:00:51,362 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 07:00:51,373 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 07:00:51,373 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 07:00:51,436 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 10, in render_from_file
+    template = env.get_template(template)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 187, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: access.j2
+
+2018-10-15 07:00:51,437 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 10, in render_from_file
+    template = env.get_template(template)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 187, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: access.j2
+
+2018-10-15 07:00:51,437 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 10, in render_from_file
+    template = env.get_template(template)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 187, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: access.j2
+
+2018-10-15 07:00:51,436 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 10, in render_from_file
+    template = env.get_template(template)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 187, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: access.j2
+
+2018-10-15 07:00:51,438 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/netops/dashboard/config_generator.py", line 46, in dc_access_template
+    path=f"templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-15 07:00:51,438 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/netops/dashboard/config_generator.py", line 46, in dc_access_template
+    path=f"templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-15 07:00:51,438 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/netops/dashboard/config_generator.py", line 46, in dc_access_template
+    path=f"templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-15 07:00:51,438 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/netops/dashboard/config_generator.py", line 46, in dc_access_template
+    path=f"templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-15 07:07:19,139 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 07:07:19,139 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 07:07:19,140 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f00814fcd68>}
+2018-10-15 07:07:19,140 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f00814fcd68>}
+2018-10-15 07:07:19,188 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 07:07:19,188 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 07:07:19,188 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 07:07:19,188 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 07:07:19,538 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 07:07:19,538 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 07:07:19,540 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 10, in render_from_file
+    template = env.get_template(template)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 187, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: access.j2
+
+2018-10-15 07:07:19,540 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 10, in render_from_file
+    template = env.get_template(template)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 187, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: access.j2
+
+2018-10-15 07:07:19,541 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/netops/dashboard/config_generator.py", line 46, in dc_access_template
+    path=f"templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-15 07:07:19,541 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/netops/dashboard/config_generator.py", line 46, in dc_access_template
+    path=f"templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-15 07:07:19,545 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 07:07:19,545 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 07:07:19,546 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 10, in render_from_file
+    template = env.get_template(template)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 187, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: access.j2
+
+2018-10-15 07:07:19,546 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 10, in render_from_file
+    template = env.get_template(template)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 187, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: access.j2
+
+2018-10-15 07:07:19,547 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/netops/dashboard/config_generator.py", line 46, in dc_access_template
+    path=f"templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-15 07:07:19,547 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/netops/dashboard/config_generator.py", line 46, in dc_access_template
+    path=f"templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-15 07:41:52,467 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 07:41:52,467 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 07:41:52,467 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f1e852bdcf8>}
+2018-10-15 07:41:52,467 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f1e852bdcf8>}
+2018-10-15 07:41:52,512 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 07:41:52,512 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 07:41:52,516 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 07:41:52,516 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 07:41:52,860 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 07:41:52,860 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 07:41:52,867 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 07:41:52,867 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 07:41:52,869 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 10, in render_from_file
+    template = env.get_template(template)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 187, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: access.j2
+
+2018-10-15 07:41:52,869 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 10, in render_from_file
+    template = env.get_template(template)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 187, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: access.j2
+
+2018-10-15 07:41:52,870 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/netops/dashboard/config_generator.py", line 46, in dc_access_template
+    path=f"templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-15 07:41:52,870 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/netops/dashboard/config_generator.py", line 46, in dc_access_template
+    path=f"templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-15 07:41:52,870 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 10, in render_from_file
+    template = env.get_template(template)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 187, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: access.j2
+
+2018-10-15 07:41:52,870 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 10, in render_from_file
+    template = env.get_template(template)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 187, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: access.j2
+
+2018-10-15 07:41:52,871 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/netops/dashboard/config_generator.py", line 46, in dc_access_template
+    path=f"templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-15 07:41:52,871 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/netops/dashboard/config_generator.py", line 46, in dc_access_template
+    path=f"templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-15 07:42:57,437 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 07:42:57,437 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 07:42:57,437 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7ff498db4cf8>}
+2018-10-15 07:42:57,437 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7ff498db4cf8>}
+2018-10-15 07:42:57,490 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 07:42:57,490 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 07:42:57,493 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 07:42:57,493 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 07:42:57,873 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 07:42:57,873 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 07:42:57,876 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 10, in render_from_file
+    template = env.get_template(template)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 187, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: access.j2
+
+2018-10-15 07:42:57,876 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 10, in render_from_file
+    template = env.get_template(template)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 187, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: access.j2
+
+2018-10-15 07:42:57,877 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/netops/dashboard/config_generator.py", line 46, in dc_access_template
+    path=f"templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-15 07:42:57,877 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/netops/dashboard/config_generator.py", line 46, in dc_access_template
+    path=f"templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-15 07:42:57,890 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 07:42:57,890 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 07:42:57,890 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 10, in render_from_file
+    template = env.get_template(template)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 187, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: access.j2
+
+2018-10-15 07:42:57,890 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 10, in render_from_file
+    template = env.get_template(template)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 187, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: access.j2
+
+2018-10-15 07:42:57,891 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/netops/dashboard/config_generator.py", line 46, in dc_access_template
+    path=f"templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-15 07:42:57,891 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/netops/dashboard/config_generator.py", line 46, in dc_access_template
+    path=f"templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-15 07:46:50,659 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 07:46:50,659 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 07:46:50,660 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f83b867ca90>}
+2018-10-15 07:46:50,660 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f83b867ca90>}
+2018-10-15 07:46:50,700 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 07:46:50,700 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 07:46:50,701 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 07:46:50,701 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 07:46:51,030 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 07:46:51,030 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 07:46:51,032 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 10, in render_from_file
+    template = env.get_template(template)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 187, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: access.j2
+
+2018-10-15 07:46:51,032 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 10, in render_from_file
+    template = env.get_template(template)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 187, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: access.j2
+
+2018-10-15 07:46:51,033 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/netops/dashboard/config_generator.py", line 46, in dc_access_template
+    path=f"templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-15 07:46:51,033 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/netops/dashboard/config_generator.py", line 46, in dc_access_template
+    path=f"templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-15 07:46:51,057 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 07:46:51,057 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 07:46:51,058 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 10, in render_from_file
+    template = env.get_template(template)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 187, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: access.j2
+
+2018-10-15 07:46:51,058 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 10, in render_from_file
+    template = env.get_template(template)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 187, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: access.j2
+
+2018-10-15 07:46:51,058 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/netops/dashboard/config_generator.py", line 46, in dc_access_template
+    path=f"templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-15 07:46:51,058 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/netops/dashboard/config_generator.py", line 46, in dc_access_template
+    path=f"templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-15 07:48:05,905 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 07:48:05,905 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 07:48:05,906 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f782c3eda58>}
+2018-10-15 07:48:05,906 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f782c3eda58>}
+2018-10-15 07:48:05,955 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 07:48:05,955 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 07:48:05,961 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 07:48:05,961 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 07:48:06,343 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 07:48:06,343 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 07:48:06,346 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 10, in render_from_file
+    template = env.get_template(template)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 187, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: access.j2
+
+2018-10-15 07:48:06,346 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 10, in render_from_file
+    template = env.get_template(template)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 187, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: access.j2
+
+2018-10-15 07:48:06,346 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/netops/dashboard/config_generator.py", line 46, in dc_access_template
+    path=f"templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-15 07:48:06,346 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/netops/dashboard/config_generator.py", line 46, in dc_access_template
+    path=f"templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-15 07:48:06,349 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 07:48:06,349 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 07:48:06,349 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 10, in render_from_file
+    template = env.get_template(template)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 187, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: access.j2
+
+2018-10-15 07:48:06,349 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 10, in render_from_file
+    template = env.get_template(template)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 187, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: access.j2
+
+2018-10-15 07:48:06,350 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/netops/dashboard/config_generator.py", line 46, in dc_access_template
+    path=f"templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-15 07:48:06,350 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/netops/dashboard/config_generator.py", line 46, in dc_access_template
+    path=f"templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-15 07:48:44,301 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 07:48:44,301 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 07:48:44,304 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fd55468c7b8>}
+2018-10-15 07:48:44,304 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fd55468c7b8>}
+2018-10-15 07:48:44,386 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 07:48:44,387 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 07:48:44,387 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 07:48:44,386 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 07:48:44,817 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 07:48:44,817 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 07:48:44,820 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 10, in render_from_file
+    template = env.get_template(template)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 187, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: access.j2
+
+2018-10-15 07:48:44,820 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 10, in render_from_file
+    template = env.get_template(template)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 187, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: access.j2
+
+2018-10-15 07:48:44,821 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/netops/dashboard/config_generator.py", line 46, in dc_access_template
+    path=f"templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-15 07:48:44,821 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/netops/dashboard/config_generator.py", line 46, in dc_access_template
+    path=f"templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-15 07:48:44,828 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 07:48:44,828 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 07:48:44,830 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 10, in render_from_file
+    template = env.get_template(template)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 187, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: access.j2
+
+2018-10-15 07:48:44,830 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 10, in render_from_file
+    template = env.get_template(template)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 187, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: access.j2
+
+2018-10-15 07:48:44,831 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/netops/dashboard/config_generator.py", line 46, in dc_access_template
+    path=f"templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-15 07:48:44,831 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/netops/dashboard/config_generator.py", line 46, in dc_access_template
+    path=f"templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-15 07:49:50,242 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 07:49:50,242 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 07:49:50,243 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f3f40952c88>}
+2018-10-15 07:49:50,243 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f3f40952c88>}
+2018-10-15 07:49:50,332 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 07:49:50,332 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 07:49:50,337 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 07:49:50,337 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 07:49:50,691 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 07:49:50,691 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 07:49:50,694 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 10, in render_from_file
+    template = env.get_template(template)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 187, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: access.j2
+
+2018-10-15 07:49:50,694 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 10, in render_from_file
+    template = env.get_template(template)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 187, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: access.j2
+
+2018-10-15 07:49:50,694 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/netops/dashboard/config_generator.py", line 46, in dc_access_template
+    path=f"templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-15 07:49:50,694 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/netops/dashboard/config_generator.py", line 46, in dc_access_template
+    path=f"templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-15 07:49:50,885 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 07:49:50,885 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 07:49:50,886 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 10, in render_from_file
+    template = env.get_template(template)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 187, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: access.j2
+
+2018-10-15 07:49:50,886 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 10, in render_from_file
+    template = env.get_template(template)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 187, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: access.j2
+
+2018-10-15 07:49:50,886 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/netops/dashboard/config_generator.py", line 46, in dc_access_template
+    path=f"templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-15 07:49:50,886 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/netops/dashboard/config_generator.py", line 46, in dc_access_template
+    path=f"templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-15 07:50:28,381 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 07:50:28,381 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 07:50:28,381 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f1bf95ecc18>}
+2018-10-15 07:50:28,381 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f1bf95ecc18>}
+2018-10-15 07:50:28,416 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 07:50:28,416 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 07:50:28,423 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 07:50:28,423 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 07:50:28,776 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 07:50:28,776 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 07:50:28,778 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 10, in render_from_file
+    template = env.get_template(template)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 187, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: access.j2
+
+2018-10-15 07:50:28,778 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 10, in render_from_file
+    template = env.get_template(template)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 187, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: access.j2
+
+2018-10-15 07:50:28,779 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/netops/dashboard/config_generator.py", line 46, in dc_access_template
+    path=f"templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-15 07:50:28,779 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/netops/dashboard/config_generator.py", line 46, in dc_access_template
+    path=f"templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-15 07:50:28,805 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 07:50:28,805 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 07:50:28,806 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 10, in render_from_file
+    template = env.get_template(template)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 187, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: access.j2
+
+2018-10-15 07:50:28,806 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 10, in render_from_file
+    template = env.get_template(template)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 187, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: access.j2
+
+2018-10-15 07:50:28,806 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/netops/dashboard/config_generator.py", line 46, in dc_access_template
+    path=f"templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-15 07:50:28,806 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/netops/dashboard/config_generator.py", line 46, in dc_access_template
+    path=f"templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-15 07:51:56,457 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 07:51:56,457 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 07:51:56,458 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f1bf9566a20>}
+2018-10-15 07:51:56,458 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f1bf9566a20>}
+2018-10-15 07:51:56,519 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 07:51:56,519 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 07:51:56,520 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 07:51:56,520 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 07:51:56,960 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 07:51:56,960 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 07:51:56,978 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 07:51:56,978 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 08:05:07,275 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 08:05:07,275 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 08:05:07,275 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f1bf830e668>}
+2018-10-15 08:05:07,275 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f1bf830e668>}
+2018-10-15 08:05:07,325 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 08:05:07,325 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 08:05:07,327 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 08:05:07,327 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 08:05:07,677 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 08:05:07,677 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 08:05:07,693 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 08:05:07,693 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 08:05:27,502 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 08:05:27,502 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 08:05:27,503 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f1bf95663c8>}
+2018-10-15 08:05:27,503 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f1bf95663c8>}
+2018-10-15 08:05:27,542 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 08:05:27,542 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 08:05:27,543 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 08:05:27,543 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 08:05:27,875 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 08:05:27,875 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 08:05:27,901 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 08:05:27,901 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 08:06:06,323 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 08:06:06,323 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 08:06:06,324 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f1bf82da080>}
+2018-10-15 08:06:06,324 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f1bf82da080>}
+2018-10-15 08:06:06,369 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 08:06:06,369 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 08:06:06,372 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 08:06:06,372 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 08:06:06,710 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 08:06:06,710 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 08:06:06,728 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 08:06:06,728 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 08:06:30,802 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 08:06:30,802 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 08:06:30,803 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f1bf82e8588>}
+2018-10-15 08:06:30,803 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f1bf82e8588>}
+2018-10-15 08:06:30,834 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 08:06:30,835 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 08:06:30,834 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 08:06:30,835 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 08:06:31,207 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 08:06:31,207 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 08:06:31,228 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 08:06:31,228 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 08:09:12,372 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 08:09:12,372 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 08:09:12,372 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f0e286af080>}
+2018-10-15 08:09:12,372 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f0e286af080>}
+2018-10-15 08:09:12,453 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 08:09:12,453 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 08:09:12,457 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 08:09:12,457 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 08:09:12,820 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 08:09:12,820 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 08:09:12,853 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 08:09:12,853 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 08:14:32,897 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 08:14:32,897 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 08:14:32,899 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fca7c027da0>}
+2018-10-15 08:14:32,899 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fca7c027da0>}
+2018-10-15 08:14:32,937 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 08:14:32,937 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 08:14:32,938 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 08:14:32,938 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 08:14:33,308 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 08:14:33,308 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 08:14:33,321 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 08:14:33,321 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 08:14:49,367 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 08:14:49,367 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 08:14:49,368 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fca77ffb470>}
+2018-10-15 08:14:49,368 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fca77ffb470>}
+2018-10-15 08:14:49,412 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 08:14:49,412 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 08:14:49,412 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 08:14:49,412 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 08:14:49,789 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 08:14:49,789 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 08:14:49,807 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 08:14:49,807 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 08:15:11,598 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 08:15:11,598 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 08:15:11,598 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fca74584438>}
+2018-10-15 08:15:11,598 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fca74584438>}
+2018-10-15 08:15:11,640 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 08:15:11,640 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 08:15:11,644 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 08:15:11,644 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 08:15:11,967 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 08:15:11,967 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 08:15:11,979 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 08:15:11,979 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 08:21:31,576 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 08:21:31,576 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 08:21:31,576 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fca7c05d0b8>}
+2018-10-15 08:21:31,576 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fca7c05d0b8>}
+2018-10-15 08:21:31,625 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 08:21:31,625 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 08:21:31,626 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 08:21:31,626 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 08:21:32,106 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 08:21:32,106 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 08:21:32,124 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 08:21:32,124 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 08:22:25,234 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 08:22:25,234 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 08:22:25,236 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fca77ffba90>}
+2018-10-15 08:22:25,236 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fca77ffba90>}
+2018-10-15 08:22:25,280 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 08:22:25,280 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 08:22:25,284 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 08:22:25,284 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 08:22:25,641 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 08:22:25,641 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 08:22:25,663 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 08:22:25,663 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 08:25:57,575 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 08:25:57,575 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 08:25:57,576 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fca77fe6898>}
+2018-10-15 08:25:57,576 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fca77fe6898>}
+2018-10-15 08:25:57,622 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 08:25:57,622 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 08:25:57,622 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 08:25:57,622 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 08:25:57,949 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 08:25:57,949 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 08:25:57,976 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 08:25:57,976 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 08:27:20,270 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 08:27:20,270 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 08:27:20,270 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fca74576390>}
+2018-10-15 08:27:20,270 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fca74576390>}
+2018-10-15 08:27:20,315 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 08:27:20,317 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 08:27:20,317 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 08:27:20,315 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 08:27:20,673 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 08:27:20,673 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 08:27:20,867 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 08:27:20,867 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 08:28:52,185 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 08:28:52,185 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 08:28:52,185 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fca7c062e10>}
+2018-10-15 08:28:52,185 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fca7c062e10>}
+2018-10-15 08:28:52,223 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 08:28:52,223 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 08:28:52,226 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 08:28:52,226 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 08:28:52,574 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 08:28:52,574 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 08:28:52,609 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 08:28:52,609 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 08:29:16,560 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 08:29:16,560 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 08:29:16,561 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fca7459ecf8>}
+2018-10-15 08:29:16,561 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fca7459ecf8>}
+2018-10-15 08:29:16,612 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 08:29:16,612 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 08:29:16,612 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 08:29:16,612 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 08:29:16,984 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 08:29:16,984 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 08:29:16,994 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 08:29:16,994 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 08:36:35,343 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 08:36:35,343 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 08:36:35,344 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fca7c07c240>}
+2018-10-15 08:36:35,344 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fca7c07c240>}
+2018-10-15 08:36:35,377 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 08:36:35,377 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 08:36:35,377 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 08:36:35,377 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 08:36:35,721 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 08:36:35,721 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 08:36:35,730 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 08:36:35,730 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 08:37:35,817 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 08:37:35,817 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 08:37:35,818 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fca74576978>}
+2018-10-15 08:37:35,818 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fca74576978>}
+2018-10-15 08:37:35,867 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 08:37:35,867 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 08:37:35,867 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 08:37:35,867 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 08:37:36,333 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 08:37:36,333 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 08:37:36,351 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 08:37:36,351 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 08:44:10,173 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 08:44:10,173 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 08:44:10,175 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fca7cadcef0>}
+2018-10-15 08:44:10,175 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fca7cadcef0>}
+2018-10-15 08:44:10,221 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 08:44:10,221 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 08:44:10,221 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 08:44:10,221 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 08:44:10,603 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 08:44:10,603 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 08:44:10,610 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 08:44:10,610 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 08:46:19,622 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 08:46:19,622 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 08:46:19,625 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7effd2cb4780>}
+2018-10-15 08:46:19,625 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7effd2cb4780>}
+2018-10-15 08:46:19,677 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 08:46:19,677 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 08:46:19,680 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 08:46:19,680 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 08:46:20,012 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 08:46:20,012 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 08:46:20,015 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 08:46:20,015 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 08:47:07,449 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 08:47:07,449 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 08:47:07,450 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fd271277cf8>}
+2018-10-15 08:47:07,450 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fd271277cf8>}
+2018-10-15 08:47:07,562 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 08:47:07,562 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 08:47:07,567 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 08:47:07,567 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 08:47:08,053 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 08:47:08,053 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 08:47:08,073 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 08:47:08,073 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 08:47:56,120 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 08:47:56,120 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 08:47:56,121 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fd2712779e8>}
+2018-10-15 08:47:56,121 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fd2712779e8>}
+2018-10-15 08:47:56,223 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 08:47:56,223 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 08:47:56,224 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 08:47:56,224 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 08:47:56,570 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 08:47:56,570 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 08:47:56,581 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 08:47:56,581 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 08:50:41,261 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 08:50:41,261 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 08:50:41,262 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fd2607d8e80>}
+2018-10-15 08:50:41,262 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fd2607d8e80>}
+2018-10-15 08:50:41,292 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 08:50:41,293 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 08:50:41,293 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 08:50:41,292 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 08:50:41,603 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 08:50:41,603 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 08:50:41,617 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 08:50:41,617 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 09:48:51,301 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 09:48:51,301 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 09:48:51,301 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f8844501a58>, 'tenant': 'ipam'}
+2018-10-15 09:48:51,301 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f8844501a58>, 'tenant': 'ipam'}
+2018-10-15 09:48:51,405 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 09:48:51,405 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 09:48:51,410 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 09:48:51,410 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 09:48:51,811 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 09:48:51,811 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 09:48:51,829 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 09:48:51,829 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 09:49:17,426 -       nornir -     INFO -        run() - Running task 'dc_agg_template' with num_workers: 100
+2018-10-15 09:49:17,426 -       nornir -     INFO -        run() - Running task 'dc_agg_template' with num_workers: 100
+2018-10-15 09:49:17,427 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f8844501b00>, 'tenant': 'ipam'}
+2018-10-15 09:49:17,427 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f8844501b00>, 'tenant': 'ipam'}
+2018-10-15 09:49:17,473 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: dc_agg_template: running task
+2018-10-15 09:49:17,473 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: dc_agg_template: running task
+2018-10-15 09:49:17,473 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: dc_agg_template: running task
+2018-10-15 09:49:17,473 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: dc_agg_template: running task
+2018-10-15 09:49:17,812 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: Base Configuration: running task
+2018-10-15 09:49:17,812 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: Base Configuration: running task
+2018-10-15 09:49:17,845 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: Base Configuration: running task
+2018-10-15 09:49:17,845 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: Base Configuration: running task
+2018-10-15 09:52:41,804 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 09:52:41,804 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 09:52:41,805 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f8844501ac8>, 'tenant': 'IAAS-Infra'}
+2018-10-15 09:52:41,805 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f8844501ac8>, 'tenant': 'IAAS-Infra'}
+2018-10-15 09:52:41,871 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 09:52:41,871 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 09:52:41,873 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 09:52:41,873 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 09:52:42,156 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 09:52:42,156 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 09:52:42,164 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 09:52:42,164 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 09:59:17,335 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 09:59:17,335 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 09:59:17,338 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f11adbd22e8>, 'tenant': 'IAAS-Infra'}
+2018-10-15 09:59:17,338 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f11adbd22e8>, 'tenant': 'IAAS-Infra'}
+2018-10-15 09:59:17,524 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 09:59:17,524 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 09:59:17,525 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 09:59:17,525 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 09:59:17,845 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 09:59:17,845 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 09:59:17,853 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 09:59:17,853 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task

@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block breadcrumb %}
+    <ol class="breadcrumb my-4">
+    <li class="breadcrumb-item"><a href="{% url 'services' %}">Services</a></li>
+</ol>
+{% endblock %}
+
+{% block content %}
+
+    {% for d in data %}
+<form>
+<div class="form-group">
+    <label for="exampleFormControlTextarea1">{{ d.host }}</label>
+    <textarea class="form-control" id="config_template" rows="10">{{ d.result }}</textarea>
+  </div>
+</form>
+
+{% endfor %}
+{% endblock %}

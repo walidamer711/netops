@@ -1,1 +1,11 @@
-django_bootstrap_breadcrumbs
+django==2.1.1
+Jinja2==2.10
+PyYAML==3.13
+gunicorn==19.7.1
+napalm==2.3.2
+nornir==1.1.0
+netmiko==2.2.2
+textfsm==0.4.1
+requests==2.19.1
+json2html==1.2.1
+
