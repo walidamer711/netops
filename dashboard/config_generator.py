@@ -18,7 +18,7 @@ def access_config(task):
     r = task.run(task=text.template_file,
                  name="Base Configuration",
                  template="access.j2",
-                 path=f"./templates/cisco")
+                 path=f"/home/wamer/netops/dashboard/templates/cisco")
 
     # Save the compiled configuration into a host variable
     task.host["config"] = r.result
@@ -42,7 +42,7 @@ def dc_access_template(task, inventory, tenant):
     r = task.run(task=text.template_file,
                  name="Base Configuration",
                  template="access.j2",
-                 path=f"./templates/cisco")
+                 path=f"/home/wamer/netops/dashboard/templates/cisco")
 
     ## Save the compiled configuration into a host variable
     task.host["config"] = r.result
@@ -60,7 +60,7 @@ def dc_agg_template(task, inventory, tenant):
     r = task.run(task=text.template_file,
                  name="Base Configuration",
                  template="agg.j2",
-                 path=f"./templates/cisco")
+                 path=f"/home/wamer/netops/dashboard/templates/cisco")
 
     # Save the compiled configuration into a host variable
     task.host["config"] = r.result

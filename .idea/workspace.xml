@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4df17b7-2258-407e-96dd-f37f5b21fe1c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/dashboard/config.yaml" afterPath="$PROJECT_DIR$/dashboard/config.yaml" />
       <change beforePath="$PROJECT_DIR$/dashboard/config_generator.py" afterPath="$PROJECT_DIR$/dashboard/config_generator.py" />
     </list>
@@ -42,8 +41,8 @@
       <file leaf-file-name="config_generator.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dashboard/config_generator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="47" column="34" lean-forward="true" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
+            <state relative-caret-position="252">
+              <caret line="62" column="52" lean-forward="false" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="52" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
               </folding>
@@ -51,7 +50,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.yaml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="config.yaml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dashboard/config.yaml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
@@ -83,7 +82,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nornir_exec.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="nornir_exec.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dashboard/nornir_exec.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="36">
@@ -187,8 +186,8 @@
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/dashboard/forms.py" />
         <option value="$PROJECT_DIR$/dashboard/netbox_query.py" />
-        <option value="$PROJECT_DIR$/dashboard/config.yaml" />
         <option value="$PROJECT_DIR$/dashboard/config_generator.py" />
+        <option value="$PROJECT_DIR$/dashboard/config.yaml" />
       </list>
     </option>
   </component>
@@ -729,24 +728,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/config.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/config_generator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="47" column="34" lean-forward="true" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dashboard/netbox_query.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
@@ -761,6 +742,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/config_generator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="62" column="52" lean-forward="false" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/config.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
