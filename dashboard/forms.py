@@ -62,4 +62,8 @@ class DCAccessForm(forms.Form):
         ("dc-aggregation", "DC Aggregation")
     ]
     domain = forms.CharField(label='Select Domain Config', widget=forms.Select(choices=DOMAIN_LIST))
-    tenant = forms.CharField(label='Select Customer', widget=forms.Select(choices=get_tenants()))
+    tenant = forms.CharField(label='Select Customer')
+    #tenant = forms.ChoiceField(choices=...)
+    def __init__(self, *args, **kwargs):
+        super(DCAccessForm, self).__init__(*args, **kwargs)
+        self.fields['tenant'].widget = forms.Select(choices=get_tenants())
