@@ -1,714 +1,258 @@
-2018-10-11 05:14:04,929 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
-2018-10-11 05:14:04,929 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
-2018-10-11 05:14:04,929 -       nornir -    DEBUG -        run() - {'command_string': 'show version', 'use_textfsm': True}
-2018-10-11 05:14:04,929 -       nornir -    DEBUG -        run() - {'command_string': 'show version', 'use_textfsm': True}
-2018-10-11 05:14:04,934 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
-2018-10-11 05:14:04,934 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
-2018-10-11 05:14:24,540 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
-2018-10-11 05:14:24,540 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
-2018-10-11 05:14:24,541 -       nornir -    DEBUG -        run() - {'command_string': 'show version', 'use_textfsm': True}
-2018-10-11 05:14:24,541 -       nornir -    DEBUG -        run() - {'command_string': 'show version', 'use_textfsm': True}
-2018-10-11 05:14:24,547 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
-2018-10-11 05:14:24,547 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
-2018-10-11 05:14:53,386 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
-2018-10-11 05:14:53,386 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
-2018-10-11 05:14:53,386 -       nornir -    DEBUG -        run() - {'command_string': 'show version', 'use_textfsm': True}
-2018-10-11 05:14:53,386 -       nornir -    DEBUG -        run() - {'command_string': 'show version', 'use_textfsm': True}
-2018-10-11 05:14:53,393 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
-2018-10-11 05:14:53,393 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
-2018-10-11 05:15:47,260 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
-2018-10-11 05:15:47,260 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
-2018-10-11 05:15:47,261 -       nornir -    DEBUG -        run() - {'command_string': 'show version', 'use_textfsm': True}
-2018-10-11 05:15:47,261 -       nornir -    DEBUG -        run() - {'command_string': 'show version', 'use_textfsm': True}
-2018-10-11 05:15:47,265 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
-2018-10-11 05:15:47,265 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
-2018-10-11 05:18:10,527 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
-2018-10-11 05:18:10,527 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
-2018-10-11 05:18:10,527 -       nornir -    DEBUG -        run() - {'command_string': 'show version', 'use_textfsm': True}
-2018-10-11 05:18:10,527 -       nornir -    DEBUG -        run() - {'command_string': 'show version', 'use_textfsm': True}
-2018-10-11 05:18:10,531 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
-2018-10-11 05:18:10,531 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
-2018-10-11 05:20:54,214 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
-2018-10-11 05:20:54,214 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
-2018-10-11 05:20:54,215 -       nornir -    DEBUG -        run() - {'command_string': 'show version', 'use_textfsm': True}
-2018-10-11 05:20:54,215 -       nornir -    DEBUG -        run() - {'command_string': 'show version', 'use_textfsm': True}
-2018-10-11 05:20:54,224 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
-2018-10-11 05:20:54,224 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
-2018-10-11 05:21:07,212 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
-2018-10-11 05:21:07,212 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
-2018-10-11 05:21:07,212 -       nornir -    DEBUG -        run() - {'command_string': 'show version', 'use_textfsm': True}
-2018-10-11 05:21:07,212 -       nornir -    DEBUG -        run() - {'command_string': 'show version', 'use_textfsm': True}
-2018-10-11 05:21:07,218 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
-2018-10-11 05:21:07,218 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
-2018-10-11 05:23:14,612 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
-2018-10-11 05:23:14,612 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
-2018-10-11 05:23:14,612 -       nornir -    DEBUG -        run() - {'command_string': 'show version', 'use_textfsm': True}
-2018-10-11 05:23:14,612 -       nornir -    DEBUG -        run() - {'command_string': 'show version', 'use_textfsm': True}
-2018-10-11 05:23:14,617 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
-2018-10-11 05:23:14,617 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
-2018-10-11 05:24:27,080 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
-2018-10-11 05:24:27,080 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
-2018-10-11 05:24:27,081 -       nornir -    DEBUG -        run() - {'command_string': 'show version', 'use_textfsm': True}
-2018-10-11 05:24:27,081 -       nornir -    DEBUG -        run() - {'command_string': 'show version', 'use_textfsm': True}
-2018-10-11 05:24:27,087 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
-2018-10-11 05:24:27,087 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
-2018-10-11 05:25:17,332 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
-2018-10-11 05:25:17,332 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
-2018-10-11 05:25:17,333 -       nornir -    DEBUG -        run() - {'command_string': 'show version', 'use_textfsm': True}
-2018-10-11 05:25:17,333 -       nornir -    DEBUG -        run() - {'command_string': 'show version', 'use_textfsm': True}
-2018-10-11 05:25:17,339 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
-2018-10-11 05:25:17,339 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
-2018-10-11 05:25:57,371 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
-2018-10-11 05:25:57,371 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
-2018-10-11 05:25:57,372 -       nornir -    DEBUG -        run() - {'command_string': 'show version', 'use_textfsm': True}
-2018-10-11 05:25:57,372 -       nornir -    DEBUG -        run() - {'command_string': 'show version', 'use_textfsm': True}
-2018-10-11 05:25:57,376 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
-2018-10-11 05:25:57,376 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
-2018-10-13 23:47:59,399 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 100
-2018-10-13 23:47:59,399 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 100
-2018-10-13 23:47:59,401 -       nornir -    DEBUG -        run() - {'command_string': 'show version'}
-2018-10-13 23:47:59,401 -       nornir -    DEBUG -        run() - {'command_string': 'show version'}
-2018-10-13 23:47:59,494 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
-2018-10-13 23:47:59,494 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
-2018-10-13 23:47:59,497 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
-  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
-    r = self.task(self, **self.params)
-  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 21, in netmiko_send_command
-    net_connect = task.host.get_connection("netmiko")
-  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 292, in get_connection
-    configuration=config,
-  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 346, in open_connection
-    else self.nornir.config,
-  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/connections/netmiko.py", line 50, in open
-    self.connection = ConnectHandler(**parameters)
-  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/ssh_dispatcher.py", line 188, in ConnectHandler
-    'currently supported platforms are: {}'.format(platforms_str))
-ValueError: Unsupported device_type: currently supported platforms are: 
-a10
-accedian
-alcatel_aos
-alcatel_sros
-apresia_aeos
-arista_eos
-aruba_os
-avaya_ers
-avaya_vsp
-brocade_fastiron
-brocade_netiron
-brocade_nos
-brocade_vdx
-brocade_vyos
-calix_b6
-checkpoint_gaia
-ciena_saos
-cisco_asa
-cisco_ios
-cisco_nxos
-cisco_s300
-cisco_tp
-cisco_wlc
-cisco_xe
-cisco_xr
-coriant
-dell_force10
-dell_isilon
-dell_os10
-dell_powerconnect
-eltex
-enterasys
-extreme
-extreme_wing
-f5_ltm
-fortinet
-generic_termserver
-hp_comware
-hp_procurve
-huawei
-huawei_vrpv8
-juniper
-juniper_junos
-linux
-mellanox
-mrv_optiswitch
-netapp_cdot
-netscaler
-ovs_linux
-paloalto_panos
-pluribus
-quanta_mesh
-ruckus_fastiron
-ubiquiti_edge
-ubiquiti_edgeswitch
-vyatta_vyos
-vyos
-
-2018-10-13 23:47:59,497 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
-  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
-    r = self.task(self, **self.params)
-  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 21, in netmiko_send_command
-    net_connect = task.host.get_connection("netmiko")
-  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 292, in get_connection
-    configuration=config,
-  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 346, in open_connection
-    else self.nornir.config,
-  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/connections/netmiko.py", line 50, in open
-    self.connection = ConnectHandler(**parameters)
-  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/ssh_dispatcher.py", line 188, in ConnectHandler
-    'currently supported platforms are: {}'.format(platforms_str))
-ValueError: Unsupported device_type: currently supported platforms are: 
-a10
-accedian
-alcatel_aos
-alcatel_sros
-apresia_aeos
-arista_eos
-aruba_os
-avaya_ers
-avaya_vsp
-brocade_fastiron
-brocade_netiron
-brocade_nos
-brocade_vdx
-brocade_vyos
-calix_b6
-checkpoint_gaia
-ciena_saos
-cisco_asa
-cisco_ios
-cisco_nxos
-cisco_s300
-cisco_tp
-cisco_wlc
-cisco_xe
-cisco_xr
-coriant
-dell_force10
-dell_isilon
-dell_os10
-dell_powerconnect
-eltex
-enterasys
-extreme
-extreme_wing
-f5_ltm
-fortinet
-generic_termserver
-hp_comware
-hp_procurve
-huawei
-huawei_vrpv8
-juniper
-juniper_junos
-linux
-mellanox
-mrv_optiswitch
-netapp_cdot
-netscaler
-ovs_linux
-paloalto_panos
-pluribus
-quanta_mesh
-ruckus_fastiron
-ubiquiti_edge
-ubiquiti_edgeswitch
-vyatta_vyos
-vyos
-
-2018-10-13 23:58:57,769 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 100
-2018-10-13 23:58:57,769 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 100
-2018-10-13 23:58:57,770 -       nornir -    DEBUG -        run() - {'command_string': 'show version'}
-2018-10-13 23:58:57,770 -       nornir -    DEBUG -        run() - {'command_string': 'show version'}
-2018-10-13 23:58:57,854 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
-2018-10-13 23:58:57,854 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
-2018-10-14 00:05:39,854 -       nornir -     INFO -        run() - Running task 'napalm_get' with num_workers: 100
-2018-10-14 00:05:39,854 -       nornir -     INFO -        run() - Running task 'napalm_get' with num_workers: 100
-2018-10-14 00:05:39,854 -       nornir -    DEBUG -        run() - {'getters': ['facts']}
-2018-10-14 00:05:39,854 -       nornir -    DEBUG -        run() - {'getters': ['facts']}
-2018-10-14 00:05:39,910 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: napalm_get: running task
-2018-10-14 00:05:39,910 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: napalm_get: running task
-2018-10-14 00:06:40,241 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
-  File "/home/wamer/.local/lib/python3.6/site-packages/urllib3/connection.py", line 171, in _new_conn
-    (self._dns_host, self.port), self.timeout, **extra_kw)
-  File "/home/wamer/.local/lib/python3.6/site-packages/urllib3/util/connection.py", line 79, in create_connection
-    raise err
-  File "/home/wamer/.local/lib/python3.6/site-packages/urllib3/util/connection.py", line 69, in create_connection
-    sock.connect(sa)
+2018-10-15 15:35:32,224 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-15 15:35:32,224 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-15 15:35:32,225 -       nornir -    DEBUG -        run() - {'command_string': 'show version', 'use_textfsm': True}
+2018-10-15 15:35:32,225 -       nornir -    DEBUG -        run() - {'command_string': 'show version', 'use_textfsm': True}
+2018-10-15 15:35:32,233 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-15 15:35:32,233 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-15 15:37:12,330 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/netmiko/base_connection.py", line 782, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/usr/local/lib/python3.6/dist-packages/paramiko/client.py", line 338, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/usr/local/lib/python3.6/dist-packages/paramiko/util.py", line 279, in retry_on_signal
+    return function()
+  File "/usr/local/lib/python3.6/dist-packages/paramiko/client.py", line 338, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
 socket.timeout: timed out
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/home/wamer/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 600, in urlopen
-    chunked=chunked)
-  File "/home/wamer/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 343, in _make_request
-    self._validate_conn(conn)
-  File "/home/wamer/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 849, in _validate_conn
-    conn.connect()
-  File "/home/wamer/.local/lib/python3.6/site-packages/urllib3/connection.py", line 314, in connect
-    conn = self._new_conn()
-  File "/home/wamer/.local/lib/python3.6/site-packages/urllib3/connection.py", line 176, in _new_conn
-    (self.host, self.timeout))
-urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.VerifiedHTTPSConnection object at 0x7f4dbc3f7b70>, 'Connection to 172.20.22.33 timed out. (connect timeout=60)')
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/wamer/.local/lib/python3.6/site-packages/requests/adapters.py", line 445, in send
-    timeout=timeout
-  File "/home/wamer/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 638, in urlopen
-    _stacktrace=sys.exc_info()[2])
-  File "/home/wamer/.local/lib/python3.6/site-packages/urllib3/util/retry.py", line 398, in increment
-    raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='172.20.22.33', port=443): Max retries exceeded with url: /ins (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7f4dbc3f7b70>, 'Connection to 172.20.22.33 timed out. (connect timeout=60)'))
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/task.py", line 63, in start
     r = self.task(self, **self.params)
-  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/napalm_get.py", line 49, in napalm_get
-    device = task.host.get_connection("napalm")
-  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 292, in get_connection
+  File "/usr/local/lib/python3.6/dist-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 21, in netmiko_send_command
+    net_connect = task.host.get_connection("netmiko")
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/inventory.py", line 292, in get_connection
     configuration=config,
-  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 346, in open_connection
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/inventory.py", line 346, in open_connection
     else self.nornir.config,
-  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/connections/napalm.py", line 43, in open
-    connection.open()
-  File "/home/wamer/.local/lib/python3.6/site-packages/napalm/nxos/nxos.py", line 210, in open
-    self.device.show('show hostname')
-  File "/home/wamer/.local/lib/python3.6/site-packages/pynxos/device.py", line 49, in show
-    list_result = self.show_list(commands, raw_text)
-  File "/home/wamer/.local/lib/python3.6/site-packages/pynxos/device.py", line 63, in show_list
-    response_list = self._cli_command(commands)
-  File "/home/wamer/.local/lib/python3.6/site-packages/pynxos/device.py", line 38, in _cli_command
-    rpc_response = self.rpc.send_request(commands, method=method, timeout=self.timeout)
-  File "/home/wamer/.local/lib/python3.6/site-packages/pynxos/lib/rpc_client.py", line 49, in send_request
-    verify=False)
-  File "/home/wamer/.local/lib/python3.6/site-packages/requests/api.py", line 112, in post
-    return request('post', url, data=data, json=json, **kwargs)
-  File "/home/wamer/.local/lib/python3.6/site-packages/requests/api.py", line 58, in request
-    return session.request(method=method, url=url, **kwargs)
-  File "/home/wamer/.local/lib/python3.6/site-packages/requests/sessions.py", line 512, in request
-    resp = self.send(prep, **send_kwargs)
-  File "/home/wamer/.local/lib/python3.6/site-packages/requests/sessions.py", line 622, in send
-    r = adapter.send(request, **kwargs)
-  File "/home/wamer/.local/lib/python3.6/site-packages/requests/adapters.py", line 501, in send
-    raise ConnectTimeout(e, request=request)
-requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='172.20.22.33', port=443): Max retries exceeded with url: /ins (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7f4dbc3f7b70>, 'Connection to 172.20.22.33 timed out. (connect timeout=60)'))
+  File "/usr/local/lib/python3.6/dist-packages/nornir/plugins/connections/netmiko.py", line 50, in open
+    self.connection = ConnectHandler(**parameters)
+  File "/usr/local/lib/python3.6/dist-packages/netmiko/ssh_dispatcher.py", line 218, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/netmiko/base_connection.py", line 270, in __init__
+    self.establish_connection()
+  File "/usr/local/lib/python3.6/dist-packages/netmiko/base_connection.py", line 787, in establish_connection
+    raise NetMikoTimeoutException(msg)
+netmiko.ssh_exception.NetMikoTimeoutException: Connection to device timed-out: cisco_nxos 1.1.1.1:22
 
-2018-10-14 00:06:40,241 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
-  File "/home/wamer/.local/lib/python3.6/site-packages/urllib3/connection.py", line 171, in _new_conn
-    (self._dns_host, self.port), self.timeout, **extra_kw)
-  File "/home/wamer/.local/lib/python3.6/site-packages/urllib3/util/connection.py", line 79, in create_connection
-    raise err
-  File "/home/wamer/.local/lib/python3.6/site-packages/urllib3/util/connection.py", line 69, in create_connection
-    sock.connect(sa)
+2018-10-15 15:37:12,330 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/netmiko/base_connection.py", line 782, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/usr/local/lib/python3.6/dist-packages/paramiko/client.py", line 338, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/usr/local/lib/python3.6/dist-packages/paramiko/util.py", line 279, in retry_on_signal
+    return function()
+  File "/usr/local/lib/python3.6/dist-packages/paramiko/client.py", line 338, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
 socket.timeout: timed out
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/home/wamer/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 600, in urlopen
-    chunked=chunked)
-  File "/home/wamer/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 343, in _make_request
-    self._validate_conn(conn)
-  File "/home/wamer/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 849, in _validate_conn
-    conn.connect()
-  File "/home/wamer/.local/lib/python3.6/site-packages/urllib3/connection.py", line 314, in connect
-    conn = self._new_conn()
-  File "/home/wamer/.local/lib/python3.6/site-packages/urllib3/connection.py", line 176, in _new_conn
-    (self.host, self.timeout))
-urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.VerifiedHTTPSConnection object at 0x7f4dbc3f7b70>, 'Connection to 172.20.22.33 timed out. (connect timeout=60)')
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/wamer/.local/lib/python3.6/site-packages/requests/adapters.py", line 445, in send
-    timeout=timeout
-  File "/home/wamer/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 638, in urlopen
-    _stacktrace=sys.exc_info()[2])
-  File "/home/wamer/.local/lib/python3.6/site-packages/urllib3/util/retry.py", line 398, in increment
-    raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='172.20.22.33', port=443): Max retries exceeded with url: /ins (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7f4dbc3f7b70>, 'Connection to 172.20.22.33 timed out. (connect timeout=60)'))
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/task.py", line 63, in start
     r = self.task(self, **self.params)
-  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/napalm_get.py", line 49, in napalm_get
-    device = task.host.get_connection("napalm")
-  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 292, in get_connection
+  File "/usr/local/lib/python3.6/dist-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 21, in netmiko_send_command
+    net_connect = task.host.get_connection("netmiko")
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/inventory.py", line 292, in get_connection
     configuration=config,
-  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 346, in open_connection
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/inventory.py", line 346, in open_connection
     else self.nornir.config,
-  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/connections/napalm.py", line 43, in open
-    connection.open()
-  File "/home/wamer/.local/lib/python3.6/site-packages/napalm/nxos/nxos.py", line 210, in open
-    self.device.show('show hostname')
-  File "/home/wamer/.local/lib/python3.6/site-packages/pynxos/device.py", line 49, in show
-    list_result = self.show_list(commands, raw_text)
-  File "/home/wamer/.local/lib/python3.6/site-packages/pynxos/device.py", line 63, in show_list
-    response_list = self._cli_command(commands)
-  File "/home/wamer/.local/lib/python3.6/site-packages/pynxos/device.py", line 38, in _cli_command
-    rpc_response = self.rpc.send_request(commands, method=method, timeout=self.timeout)
-  File "/home/wamer/.local/lib/python3.6/site-packages/pynxos/lib/rpc_client.py", line 49, in send_request
-    verify=False)
-  File "/home/wamer/.local/lib/python3.6/site-packages/requests/api.py", line 112, in post
-    return request('post', url, data=data, json=json, **kwargs)
-  File "/home/wamer/.local/lib/python3.6/site-packages/requests/api.py", line 58, in request
-    return session.request(method=method, url=url, **kwargs)
-  File "/home/wamer/.local/lib/python3.6/site-packages/requests/sessions.py", line 512, in request
-    resp = self.send(prep, **send_kwargs)
-  File "/home/wamer/.local/lib/python3.6/site-packages/requests/sessions.py", line 622, in send
-    r = adapter.send(request, **kwargs)
-  File "/home/wamer/.local/lib/python3.6/site-packages/requests/adapters.py", line 501, in send
-    raise ConnectTimeout(e, request=request)
-requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='172.20.22.33', port=443): Max retries exceeded with url: /ins (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7f4dbc3f7b70>, 'Connection to 172.20.22.33 timed out. (connect timeout=60)'))
+  File "/usr/local/lib/python3.6/dist-packages/nornir/plugins/connections/netmiko.py", line 50, in open
+    self.connection = ConnectHandler(**parameters)
+  File "/usr/local/lib/python3.6/dist-packages/netmiko/ssh_dispatcher.py", line 218, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/netmiko/base_connection.py", line 270, in __init__
+    self.establish_connection()
+  File "/usr/local/lib/python3.6/dist-packages/netmiko/base_connection.py", line 787, in establish_connection
+    raise NetMikoTimeoutException(msg)
+netmiko.ssh_exception.NetMikoTimeoutException: Connection to device timed-out: cisco_nxos 1.1.1.1:22
 
-2018-10-14 00:08:40,832 -       nornir -     INFO -        run() - Running task 'napalm_get' with num_workers: 100
-2018-10-14 00:08:40,832 -       nornir -     INFO -        run() - Running task 'napalm_get' with num_workers: 100
-2018-10-14 00:08:40,833 -       nornir -    DEBUG -        run() - {'getters': ['facts']}
-2018-10-14 00:08:40,833 -       nornir -    DEBUG -        run() - {'getters': ['facts']}
-2018-10-14 00:10:27,833 -       nornir -     INFO -        run() - Running task 'napalm_get' with num_workers: 100
-2018-10-14 00:10:27,833 -       nornir -     INFO -        run() - Running task 'napalm_get' with num_workers: 100
-2018-10-14 00:10:27,835 -       nornir -    DEBUG -        run() - {'getters': ['get_facts']}
-2018-10-14 00:10:27,835 -       nornir -    DEBUG -        run() - {'getters': ['get_facts']}
-2018-10-14 00:14:02,276 -       nornir -     INFO -        run() - Running task 'napalm_get' with num_workers: 100
-2018-10-14 00:14:02,276 -       nornir -     INFO -        run() - Running task 'napalm_get' with num_workers: 100
-2018-10-14 00:14:02,277 -       nornir -    DEBUG -        run() - {'getters': ['facts']}
-2018-10-14 00:14:02,277 -       nornir -    DEBUG -        run() - {'getters': ['facts']}
-2018-10-14 00:16:35,835 -       nornir -     INFO -        run() - Running task 'napalm_get' with num_workers: 100
-2018-10-14 00:16:35,835 -       nornir -     INFO -        run() - Running task 'napalm_get' with num_workers: 100
-2018-10-14 00:16:35,836 -       nornir -    DEBUG -        run() - {'getters': ['interfaces']}
-2018-10-14 00:16:35,836 -       nornir -    DEBUG -        run() - {'getters': ['interfaces']}
-2018-10-14 00:20:47,744 -       nornir -     INFO -        run() - Running task 'napalm_get' with num_workers: 100
-2018-10-14 00:20:47,744 -       nornir -     INFO -        run() - Running task 'napalm_get' with num_workers: 100
-2018-10-14 00:20:47,746 -       nornir -    DEBUG -        run() - {'getters': ['facts']}
-2018-10-14 00:20:47,746 -       nornir -    DEBUG -        run() - {'getters': ['facts']}
-2018-10-14 00:20:47,813 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: napalm_get: running task
-2018-10-14 00:20:47,813 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: napalm_get: running task
-2018-10-14 06:17:45,233 -       nornir -     INFO -        run() - Running task 'access_template' with num_workers: 100
-2018-10-14 06:17:45,233 -       nornir -     INFO -        run() - Running task 'access_template' with num_workers: 100
-2018-10-14 06:17:45,233 -       nornir -    DEBUG -        run() - {}
-2018-10-14 06:17:45,233 -       nornir -    DEBUG -        run() - {}
-2018-10-14 06:17:45,282 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: access_template: running task
-2018-10-14 06:17:45,282 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: access_template: running task
-2018-10-14 06:17:45,283 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: access_template: running task
-2018-10-14 06:17:45,283 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: access_template: running task
-2018-10-14 06:17:45,476 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
-  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+2018-10-15 15:38:22,910 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 15:38:22,910 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 15:38:22,910 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f9986018ba8>}
+2018-10-15 15:38:22,910 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f9986018ba8>}
+2018-10-15 15:38:22,931 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 15:38:22,931 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 15:38:22,932 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/task.py", line 63, in start
     r = self.task(self, **self.params)
-  File "/home/wamer/netops/dashboard/config_generator.py", line 45, in access_template
-    task.inventory.hosts[f'task.host.name'].data.update(vlans_group)
-AttributeError: 'Task' object has no attribute 'inventory'
+TypeError: dc_access_template() missing 1 required positional argument: 'tenant'
 
-2018-10-14 06:17:45,476 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
-  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+2018-10-15 15:38:22,932 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/task.py", line 63, in start
     r = self.task(self, **self.params)
-  File "/home/wamer/netops/dashboard/config_generator.py", line 45, in access_template
-    task.inventory.hosts[f'task.host.name'].data.update(vlans_group)
-AttributeError: 'Task' object has no attribute 'inventory'
+TypeError: dc_access_template() missing 1 required positional argument: 'tenant'
 
-2018-10-14 06:17:45,493 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
-  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+2018-10-15 15:38:22,932 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 15:38:22,932 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 15:38:22,932 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/task.py", line 63, in start
     r = self.task(self, **self.params)
-  File "/home/wamer/netops/dashboard/config_generator.py", line 45, in access_template
-    task.inventory.hosts[f'task.host.name'].data.update(vlans_group)
-AttributeError: 'Task' object has no attribute 'inventory'
+TypeError: dc_access_template() missing 1 required positional argument: 'tenant'
 
-2018-10-14 06:17:45,493 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
-  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+2018-10-15 15:38:22,932 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/task.py", line 63, in start
     r = self.task(self, **self.params)
-  File "/home/wamer/netops/dashboard/config_generator.py", line 45, in access_template
-    task.inventory.hosts[f'task.host.name'].data.update(vlans_group)
-AttributeError: 'Task' object has no attribute 'inventory'
+TypeError: dc_access_template() missing 1 required positional argument: 'tenant'
 
-2018-10-14 06:19:44,661 -       nornir -     INFO -        run() - Running task 'access_template' with num_workers: 100
-2018-10-14 06:19:44,661 -       nornir -     INFO -        run() - Running task 'access_template' with num_workers: 100
-2018-10-14 06:19:44,661 -       nornir -    DEBUG -        run() - {}
-2018-10-14 06:19:44,661 -       nornir -    DEBUG -        run() - {}
-2018-10-14 06:19:44,712 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: access_template: running task
-2018-10-14 06:19:44,712 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: access_template: running task
-2018-10-14 06:19:44,712 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: access_template: running task
-2018-10-14 06:19:44,712 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: access_template: running task
-2018-10-14 06:19:44,885 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
-  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+2018-10-15 15:39:31,918 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 15:39:31,918 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 15:39:31,919 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f07aa155b70>}
+2018-10-15 15:39:31,919 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f07aa155b70>}
+2018-10-15 15:39:31,942 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 15:39:31,942 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 15:39:31,943 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/task.py", line 63, in start
     r = self.task(self, **self.params)
-  File "/home/wamer/netops/dashboard/config_generator.py", line 36, in access_template
-    task.inventory.hosts[f'task.host.name'].data.update(vlans_group)
-AttributeError: 'Task' object has no attribute 'inventory'
+TypeError: dc_access_template() missing 1 required positional argument: 'tenant'
 
-2018-10-14 06:19:44,885 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
-  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+2018-10-15 15:39:31,943 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/task.py", line 63, in start
     r = self.task(self, **self.params)
-  File "/home/wamer/netops/dashboard/config_generator.py", line 36, in access_template
-    task.inventory.hosts[f'task.host.name'].data.update(vlans_group)
-AttributeError: 'Task' object has no attribute 'inventory'
+TypeError: dc_access_template() missing 1 required positional argument: 'tenant'
 
-2018-10-14 06:19:44,894 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
-  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+2018-10-15 15:39:31,943 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 15:39:31,943 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 15:39:31,944 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/task.py", line 63, in start
     r = self.task(self, **self.params)
-  File "/home/wamer/netops/dashboard/config_generator.py", line 36, in access_template
-    task.inventory.hosts[f'task.host.name'].data.update(vlans_group)
-AttributeError: 'Task' object has no attribute 'inventory'
+TypeError: dc_access_template() missing 1 required positional argument: 'tenant'
 
-2018-10-14 06:19:44,894 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
-  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+2018-10-15 15:39:31,944 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/task.py", line 63, in start
     r = self.task(self, **self.params)
-  File "/home/wamer/netops/dashboard/config_generator.py", line 36, in access_template
-    task.inventory.hosts[f'task.host.name'].data.update(vlans_group)
-AttributeError: 'Task' object has no attribute 'inventory'
+TypeError: dc_access_template() missing 1 required positional argument: 'tenant'
 
-2018-10-14 06:22:20,834 -       nornir -     INFO -        run() - Running task 'access_template' with num_workers: 100
-2018-10-14 06:22:20,834 -       nornir -     INFO -        run() - Running task 'access_template' with num_workers: 100
-2018-10-14 06:22:20,835 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f9c7f4d9ba8>}
-2018-10-14 06:22:20,835 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f9c7f4d9ba8>}
-2018-10-14 06:22:20,886 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: access_template: running task
-2018-10-14 06:22:20,886 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: access_template: running task
-2018-10-14 06:22:20,887 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: access_template: running task
-2018-10-14 06:22:20,887 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: access_template: running task
-2018-10-14 06:22:21,122 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
-  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+2018-10-15 15:41:07,150 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 15:41:07,150 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 15:41:07,151 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fbd719c0c18>, 'tenant': 'ipam'}
+2018-10-15 15:41:07,151 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fbd719c0c18>, 'tenant': 'ipam'}
+2018-10-15 15:41:07,172 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 15:41:07,172 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 15:41:07,174 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 15:41:07,174 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 15:41:07,644 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 15:41:07,644 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 15:41:07,651 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/task.py", line 63, in start
     r = self.task(self, **self.params)
-  File "/home/wamer/netops/dashboard/config_generator.py", line 36, in access_template
-    inventory.hosts[f'task.host.name'].data.update(vlans_group)
-KeyError: 'task.host.name'
+  File "/usr/local/lib/python3.6/dist-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/helpers/jinja_helper.py", line 10, in render_from_file
+    template = env.get_template(template)
+  File "/usr/local/lib/python3.6/dist-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python3.6/dist-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python3.6/dist-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python3.6/dist-packages/jinja2/loaders.py", line 187, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: access.j2
 
-2018-10-14 06:22:21,122 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
-  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+2018-10-15 15:41:07,651 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/task.py", line 63, in start
     r = self.task(self, **self.params)
-  File "/home/wamer/netops/dashboard/config_generator.py", line 36, in access_template
-    inventory.hosts[f'task.host.name'].data.update(vlans_group)
-KeyError: 'task.host.name'
+  File "/usr/local/lib/python3.6/dist-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/helpers/jinja_helper.py", line 10, in render_from_file
+    template = env.get_template(template)
+  File "/usr/local/lib/python3.6/dist-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python3.6/dist-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python3.6/dist-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python3.6/dist-packages/jinja2/loaders.py", line 187, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: access.j2
 
-2018-10-14 06:22:21,126 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
-  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+2018-10-15 15:41:07,652 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/task.py", line 63, in start
     r = self.task(self, **self.params)
-  File "/home/wamer/netops/dashboard/config_generator.py", line 36, in access_template
-    inventory.hosts[f'task.host.name'].data.update(vlans_group)
-KeyError: 'task.host.name'
+  File "config_generator.py", line 45, in dc_access_template
+    path=f"templates/cisco")
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
 
-2018-10-14 06:22:21,126 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
-  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+
+2018-10-15 15:41:07,652 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/task.py", line 63, in start
     r = self.task(self, **self.params)
-  File "/home/wamer/netops/dashboard/config_generator.py", line 36, in access_template
-    inventory.hosts[f'task.host.name'].data.update(vlans_group)
-KeyError: 'task.host.name'
+  File "config_generator.py", line 45, in dc_access_template
+    path=f"templates/cisco")
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
 
-2018-10-14 06:23:06,063 -       nornir -     INFO -        run() - Running task 'access_template' with num_workers: 100
-2018-10-14 06:23:06,063 -       nornir -     INFO -        run() - Running task 'access_template' with num_workers: 100
-2018-10-14 06:23:06,063 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fcc226aeba8>}
-2018-10-14 06:23:06,063 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fcc226aeba8>}
-2018-10-14 06:23:06,163 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: access_template: running task
-2018-10-14 06:23:06,163 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: access_template: running task
-2018-10-14 06:23:06,163 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: access_template: running task
-2018-10-14 06:23:06,163 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: access_template: running task
-2018-10-14 06:23:45,782 -       nornir -     INFO -        run() - Running task 'access_template' with num_workers: 100
-2018-10-14 06:23:45,782 -       nornir -     INFO -        run() - Running task 'access_template' with num_workers: 100
-2018-10-14 06:23:45,782 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f9691e88ba8>}
-2018-10-14 06:23:45,782 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f9691e88ba8>}
-2018-10-14 06:23:45,830 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: access_template: running task
-2018-10-14 06:23:45,830 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: access_template: running task
-2018-10-14 06:23:45,830 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: access_template: running task
-2018-10-14 06:23:45,830 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: access_template: running task
-2018-10-14 06:24:31,716 -       nornir -     INFO -        run() - Running task 'access_template' with num_workers: 100
-2018-10-14 06:24:31,716 -       nornir -     INFO -        run() - Running task 'access_template' with num_workers: 100
-2018-10-14 06:24:31,717 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fcaeea9bba8>}
-2018-10-14 06:24:31,717 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fcaeea9bba8>}
-2018-10-14 06:24:31,763 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: access_template: running task
-2018-10-14 06:24:31,763 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: access_template: running task
-2018-10-14 06:24:31,763 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: access_template: running task
-2018-10-14 06:24:31,763 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: access_template: running task
-2018-10-14 06:24:32,080 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
-2018-10-14 06:24:32,080 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
-2018-10-14 06:24:32,092 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
-2018-10-14 06:24:32,092 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
-2018-10-14 23:27:58,042 -       nornir -     INFO -        run() - Running task 'dc_agg_template' with num_workers: 100
-2018-10-14 23:27:58,042 -       nornir -     INFO -        run() - Running task 'dc_agg_template' with num_workers: 100
-2018-10-14 23:27:58,042 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f431c1a8be0>}
-2018-10-14 23:27:58,042 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f431c1a8be0>}
-2018-10-14 23:28:59,679 -       nornir -     INFO -        run() - Running task 'dc_agg_template' with num_workers: 100
-2018-10-14 23:28:59,679 -       nornir -     INFO -        run() - Running task 'dc_agg_template' with num_workers: 100
-2018-10-14 23:28:59,680 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fb0b2cc9c18>}
-2018-10-14 23:28:59,680 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fb0b2cc9c18>}
-2018-10-14 23:31:20,322 -       nornir -     INFO -        run() - Running task 'dc_agg_template' with num_workers: 100
-2018-10-14 23:31:20,322 -       nornir -     INFO -        run() - Running task 'dc_agg_template' with num_workers: 100
-2018-10-14 23:31:20,323 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fe1f4408c18>}
-2018-10-14 23:31:20,323 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fe1f4408c18>}
-2018-10-14 23:31:20,354 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: dc_agg_template: running task
-2018-10-14 23:31:20,354 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: dc_agg_template: running task
-2018-10-14 23:31:20,355 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: dc_agg_template: running task
-2018-10-14 23:31:20,355 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: dc_agg_template: running task
-2018-10-14 23:31:20,671 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: Base Configuration: running task
-2018-10-14 23:31:20,671 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: Base Configuration: running task
-2018-10-14 23:31:20,689 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: Base Configuration: running task
-2018-10-14 23:31:20,689 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: Base Configuration: running task
-2018-10-15 00:26:53,539 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
-2018-10-15 00:26:53,539 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
-2018-10-15 00:26:53,539 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fc0d9158be0>}
-2018-10-15 00:26:53,539 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fc0d9158be0>}
-2018-10-15 00:26:53,570 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
-2018-10-15 00:26:53,570 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
-2018-10-15 00:26:53,570 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
-2018-10-15 00:26:53,570 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
-2018-10-15 00:26:53,871 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
-2018-10-15 00:26:53,871 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
-2018-10-15 00:26:53,880 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
-2018-10-15 00:26:53,880 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
-2018-10-15 00:28:19,499 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
-2018-10-15 00:28:19,499 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
-2018-10-15 00:28:19,500 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f44bbbaabe0>}
-2018-10-15 00:28:19,500 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f44bbbaabe0>}
-2018-10-15 00:28:19,541 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
-2018-10-15 00:28:19,541 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
-2018-10-15 00:28:19,544 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
-2018-10-15 00:28:19,544 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
-2018-10-15 00:28:19,850 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
-2018-10-15 00:28:19,850 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
-2018-10-15 00:28:19,866 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
-2018-10-15 00:28:19,866 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
-2018-10-15 00:29:14,535 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
-2018-10-15 00:29:14,535 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
-2018-10-15 00:29:14,536 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f6d56ff5c18>}
-2018-10-15 00:29:14,536 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f6d56ff5c18>}
-2018-10-15 00:29:14,585 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
-2018-10-15 00:29:14,585 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
-2018-10-15 00:29:14,585 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
-2018-10-15 00:29:14,585 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
-2018-10-15 00:29:14,925 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
-2018-10-15 00:29:14,925 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
-2018-10-15 00:29:15,084 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
-2018-10-15 00:29:15,084 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
-2018-10-15 00:30:04,148 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
-2018-10-15 00:30:04,148 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
-2018-10-15 00:30:04,149 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f582b25ec18>}
-2018-10-15 00:30:04,149 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f582b25ec18>}
-2018-10-15 00:30:04,179 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
-2018-10-15 00:30:04,179 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
-2018-10-15 00:30:04,179 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
-2018-10-15 00:30:04,179 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
-2018-10-15 00:30:04,614 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
-2018-10-15 00:30:04,614 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
-2018-10-15 00:30:04,630 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
-2018-10-15 00:30:04,630 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
-2018-10-15 00:30:29,324 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
-2018-10-15 00:30:29,324 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
-2018-10-15 00:30:29,324 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f53d8e69c18>}
-2018-10-15 00:30:29,324 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f53d8e69c18>}
-2018-10-15 00:30:29,353 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
-2018-10-15 00:30:29,353 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
-2018-10-15 00:30:29,354 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
-2018-10-15 00:30:29,354 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
-2018-10-15 00:30:29,633 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
-2018-10-15 00:30:29,633 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
-2018-10-15 00:30:29,651 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
-2018-10-15 00:30:29,651 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
-2018-10-15 00:30:38,645 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
-2018-10-15 00:30:38,645 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
-2018-10-15 00:30:38,646 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fead5478c18>}
-2018-10-15 00:30:38,646 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fead5478c18>}
-2018-10-15 00:30:38,688 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
-2018-10-15 00:30:38,688 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
-2018-10-15 00:30:38,688 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
-2018-10-15 00:30:38,688 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
-2018-10-15 00:30:39,033 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
-2018-10-15 00:30:39,033 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
-2018-10-15 00:30:39,056 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
-2018-10-15 00:30:39,056 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
-2018-10-15 00:31:12,547 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
-2018-10-15 00:31:12,547 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
-2018-10-15 00:31:12,548 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f69eb4b2c18>}
-2018-10-15 00:31:12,548 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f69eb4b2c18>}
-2018-10-15 00:31:12,583 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
-2018-10-15 00:31:12,583 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
-2018-10-15 00:31:12,583 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
-2018-10-15 00:31:12,583 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
-2018-10-15 00:31:12,836 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
-2018-10-15 00:31:12,836 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
-2018-10-15 00:31:13,023 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
-2018-10-15 00:31:13,023 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
-2018-10-15 00:34:17,733 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
-2018-10-15 00:34:17,733 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
-2018-10-15 00:34:17,734 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f3156157c18>}
-2018-10-15 00:34:17,734 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f3156157c18>}
-2018-10-15 00:34:17,786 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
-2018-10-15 00:34:17,786 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
-2018-10-15 00:34:17,786 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
-2018-10-15 00:34:17,786 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
-2018-10-15 00:34:18,054 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
-2018-10-15 00:34:18,054 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
-2018-10-15 00:34:18,068 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
-2018-10-15 00:34:18,068 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
-2018-10-15 00:36:46,417 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
-2018-10-15 00:36:46,417 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
-2018-10-15 00:36:46,418 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fe8289a7be0>}
-2018-10-15 00:36:46,418 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fe8289a7be0>}
-2018-10-15 00:36:46,495 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
-2018-10-15 00:36:46,495 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
-2018-10-15 00:36:46,496 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
-2018-10-15 00:36:46,496 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
-2018-10-15 00:36:46,880 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
-2018-10-15 00:36:46,880 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
-2018-10-15 00:36:46,893 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
-2018-10-15 00:36:46,893 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
-2018-10-15 00:44:09,504 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
-2018-10-15 00:44:09,504 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
-2018-10-15 00:44:09,505 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f2a47a20c18>}
-2018-10-15 00:44:09,505 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f2a47a20c18>}
-2018-10-15 00:44:09,567 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
-2018-10-15 00:44:09,567 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
-2018-10-15 00:44:09,575 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
-2018-10-15 00:44:09,575 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
-2018-10-15 00:44:09,888 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
-2018-10-15 00:44:09,888 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
-2018-10-15 00:44:09,905 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
-2018-10-15 00:44:09,905 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
-2018-10-15 01:07:39,765 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
-2018-10-15 01:07:39,765 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
-2018-10-15 01:07:39,765 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f06ad32cb70>}
-2018-10-15 01:07:39,765 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f06ad32cb70>}
-2018-10-15 01:07:39,825 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
-2018-10-15 01:07:39,825 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
-2018-10-15 01:07:39,826 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
-2018-10-15 01:07:39,826 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
-2018-10-15 01:07:40,209 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
-2018-10-15 01:07:40,209 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
-2018-10-15 01:07:40,223 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
-2018-10-15 01:07:40,223 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
-2018-10-15 01:08:11,453 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
-2018-10-15 01:08:11,453 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
-2018-10-15 01:08:11,454 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f831e446be0>}
-2018-10-15 01:08:11,454 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f831e446be0>}
-2018-10-15 01:08:11,506 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
-2018-10-15 01:08:11,506 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
-2018-10-15 01:08:11,506 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
-2018-10-15 01:08:11,506 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
-2018-10-15 01:08:11,803 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
-2018-10-15 01:08:11,803 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
-2018-10-15 01:08:11,835 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
-2018-10-15 01:08:11,835 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
-2018-10-15 01:08:35,673 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
-2018-10-15 01:08:35,673 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
-2018-10-15 01:08:35,673 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fecfb7b3be0>}
-2018-10-15 01:08:35,673 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fecfb7b3be0>}
-2018-10-15 01:08:35,744 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
-2018-10-15 01:08:35,744 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
-2018-10-15 01:08:35,745 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
-2018-10-15 01:08:35,745 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
-2018-10-15 01:08:36,068 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
-2018-10-15 01:08:36,068 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
-2018-10-15 01:08:36,083 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
-2018-10-15 01:08:36,083 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
-2018-10-15 01:11:14,957 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
-2018-10-15 01:11:14,957 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
-2018-10-15 01:11:14,957 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fafb786abe0>}
-2018-10-15 01:11:14,957 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fafb786abe0>}
-2018-10-15 01:11:14,994 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
-2018-10-15 01:11:14,994 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
-2018-10-15 01:11:14,995 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
-2018-10-15 01:11:14,995 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
-2018-10-15 01:11:15,309 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
-2018-10-15 01:11:15,309 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
-2018-10-15 01:11:15,341 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
-2018-10-15 01:11:15,341 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+
+2018-10-15 15:41:07,656 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 15:41:07,656 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 15:41:07,657 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.6/dist-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/helpers/jinja_helper.py", line 10, in render_from_file
+    template = env.get_template(template)
+  File "/usr/local/lib/python3.6/dist-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python3.6/dist-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python3.6/dist-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python3.6/dist-packages/jinja2/loaders.py", line 187, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: access.j2
+
+2018-10-15 15:41:07,657 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.6/dist-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/helpers/jinja_helper.py", line 10, in render_from_file
+    template = env.get_template(template)
+  File "/usr/local/lib/python3.6/dist-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python3.6/dist-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python3.6/dist-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python3.6/dist-packages/jinja2/loaders.py", line 187, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: access.j2
+
+2018-10-15 15:41:07,657 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "config_generator.py", line 45, in dc_access_template
+    path=f"templates/cisco")
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-15 15:41:07,657 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "config_generator.py", line 45, in dc_access_template
+    path=f"templates/cisco")
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-15 15:50:57,487 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 15:50:57,487 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-15 15:50:57,487 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f97795efba8>, 'tenant': 'ipam'}
+2018-10-15 15:50:57,487 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f97795efba8>, 'tenant': 'ipam'}
+2018-10-15 15:50:57,508 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 15:50:57,508 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-15 15:50:57,510 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 15:50:57,510 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-15 15:50:57,755 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 15:50:57,755 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-15 15:50:57,788 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-15 15:50:57,788 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task

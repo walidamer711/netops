@@ -37,10 +37,7 @@ def show(request):
 @login_required
 def services(request):
     if request.method == 'POST':
-        nr = InitNornir(num_workers=100,
-                        inventory="nornir.plugins.inventory.netbox.NBInventory",
-                        NBInventory={"nb_url": "http://172.20.22.99",
-                                     "nb_token": "49d66235f10e0d388f18e179e756d1d276b898bb"})
+        nr = InitNornir(config_file="/home/wamer/netops/dashboard/config.yaml")
         form = DCAccessForm(request.POST)
         if form.is_valid():
             group = request.POST.get('domain')
