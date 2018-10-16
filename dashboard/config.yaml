@@ -1,6 +1,6 @@
 ---
 num_workers: 4
-logging_file: "/home/wamer/test_nornir.log"
+logging_file: "./nornir.log"
 inventory: nornir.plugins.inventory.netbox.NBInventory
 NBInventory:
     nb_url: "http://172.20.22.99"

@@ -1649,3 +1649,27 @@ nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
 2018-10-15 11:17:48,412 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: Base Configuration: running task
 2018-10-15 11:17:48,427 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: Base Configuration: running task
 2018-10-15 11:17:48,427 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: Base Configuration: running task
+2018-10-16 06:22:41,020 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 4
+2018-10-16 06:22:41,020 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 4
+2018-10-16 06:22:41,021 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f738c30bac8>, 'tenant': 'ipam'}
+2018-10-16 06:22:41,021 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f738c30bac8>, 'tenant': 'ipam'}
+2018-10-16 06:22:41,038 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-16 06:22:41,038 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-16 06:22:41,044 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-16 06:22:41,044 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-16 06:22:41,336 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-16 06:22:41,336 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-16 06:22:41,366 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-16 06:22:41,366 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-16 06:22:47,571 -       nornir -     INFO -        run() - Running task 'dc_agg_template' with num_workers: 4
+2018-10-16 06:22:47,571 -       nornir -     INFO -        run() - Running task 'dc_agg_template' with num_workers: 4
+2018-10-16 06:22:47,572 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f738c30ba90>, 'tenant': 'ipam'}
+2018-10-16 06:22:47,572 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f738c30ba90>, 'tenant': 'ipam'}
+2018-10-16 06:22:47,597 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: dc_agg_template: running task
+2018-10-16 06:22:47,597 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: dc_agg_template: running task
+2018-10-16 06:22:47,601 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: dc_agg_template: running task
+2018-10-16 06:22:47,601 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: dc_agg_template: running task
+2018-10-16 06:22:47,965 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: Base Configuration: running task
+2018-10-16 06:22:47,965 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: Base Configuration: running task
+2018-10-16 06:22:47,996 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: Base Configuration: running task
+2018-10-16 06:22:47,996 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: Base Configuration: running task
