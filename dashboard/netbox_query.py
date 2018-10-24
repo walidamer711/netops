@@ -1,4 +1,4 @@
-import requests, os, json
+import requests, os, json, ipaddress
 
 NETBOX_API_ROOT = "http://172.20.22.99/api"
 NETBOX_DEVICES_ENDPOINT = "/dcim/devices/"
@@ -7,6 +7,7 @@ NETBOX_SITES_ENDPOINT = "/dcim/sites/"
 NETBOX_IP_ADDRESSES_ENDPOINT = "/ipam/ip-addresses/"
 NETBOX_VLANS_ENDPOINT = "/ipam/vlans/"
 NETBOX_PREFIXES_ENDPOINT = "/ipam/prefixes/"
+NETBOX_VRFS_ENDPOINT = "/ipam/vrfs/"
 
 
 class NetboxAPITokenNotFound(Exception):
@@ -108,7 +109,7 @@ def get_dc_vlans(tenant, group):
     # return json.dumps(vlans_netbox_dict, indent=4)
 
 
-def get_prefixes(tenant):
+def get_prefixes(tenant, tag):
     headers = form_headers()
     query_params = {"tenant": tenant}
 
@@ -116,23 +117,91 @@ def get_prefixes(tenant):
         NETBOX_API_ROOT + NETBOX_PREFIXES_ENDPOINT,
         params=query_params, headers=headers
     ).json()
-
-    result = []
+    vrfs_dict = {}
+    vrfs = []
+    private = []
+    public = []
+    interfaces = []
     for prefix in prefixes_netbox_dict["results"]:
-        # if prefix["status"]["label"] == "Reserved":
-        info = {}
-        if prefix["vlan"]:
-            info["vlan_name"] = prefix["vlan"]["name"]
-            # info["status"] = prefix["status"]["label"]
-            info["vlan_id"] = prefix["vlan"]["vid"]
-            info["prefix"] = prefix["prefix"]
-            info["role"] = prefix["role"]["slug"]
-            result.append(info)
+        r = {}
+        if prefix["role"]["slug"] == "inside" or prefix["role"]["slug"] == "dmz":
+            r["prefix"] = prefix["prefix"]
+            private.append(r)
+        elif prefix["role"]["slug"] == "public":
+            r["prefix"] = prefix["prefix"]
+            public.append(r)
+    for prefix in prefixes_netbox_dict["results"]:
+        v = {}
+        int = {}
+        if prefix["vlan"] and prefix["vrf"]:
+            int["descr"] = "{} {}".format(tenant, prefix["role"]["slug"])
+            int["vlan_id"] = prefix["vlan"]["vid"]
+            int["vrf"] = prefix["vrf"]["name"]
+            if tag == "agg1":
+                int["ip"] = "{}/{}".format(str(ipaddress.ip_network(prefix["prefix"])[2]),
+                                           ipaddress.ip_network(prefix["prefix"]).prefixlen)
+            elif tag == "agg2":
+                int["ip"] = "{}/{}".format(str(ipaddress.ip_network(prefix["prefix"])[3]),
+                                           ipaddress.ip_network(prefix["prefix"]).prefixlen)
+            int["vip"] = str(ipaddress.ip_network(prefix["prefix"])[1])
+            interfaces.append(int)
+            #start capture VRFs info
+            v["name"] = prefix["vrf"]["name"]
+            v["rt"] = prefix["vrf"]["rd"]
+            v["role"] = prefix["role"]["slug"]
+            if tag == "agg1":
+                v["rd"] = prefix["vrf"]["rd"].replace("000", "009")
+            elif tag == "agg2":
+                v["rd"] = prefix["vrf"]["rd"].replace("000", "010")
+            v["descr"] = get_vrf(prefix["vrf"]["name"])["descr"]
+            nexthop = str(ipaddress.ip_network(prefix["prefix"])[4])
+            v["nexthop"] = nexthop
+            if prefix["role"]["slug"] == "outside":
+                v["private"] = private
+                v["public"] = public
+                routes = private + public
+                v["routes"] = routes
+            else:
+                v["routes"] = private
 
-    return result
+            vrfs.append(v)
+    vrfs_dict["vrfs"] = vrfs
+    vrfs_dict["interfaces"] = interfaces
+    return vrfs_dict
     # return prefixes_netbox_dict["results"]
     # return json.dumps(vlans_netbox_dict, indent=4)
 
+def get_vrf(name):
+    headers = form_headers()
+    query_params = {"name": name}
+
+    VRFs_netbox_dict = requests.get(
+        NETBOX_API_ROOT + NETBOX_VRFS_ENDPOINT,
+        params=query_params, headers=headers
+    ).json()
+
+    result = {}
+    for vrf in VRFs_netbox_dict["results"]:
+        result["name"] = vrf["name"]
+        result["descr"] = vrf["description"]
+
+    return result
+
+
+def get_vrfs(tenant):
+    headers = form_headers()
+    query_params = {"tenant": tenant}
+
+    VRFs_netbox_dict = requests.get(
+        NETBOX_API_ROOT + NETBOX_VRFS_ENDPOINT,
+        params=query_params, headers=headers
+    ).json()
+
+    result = []
+    for vrf in VRFs_netbox_dict["results"]:
+        info = {}
+        info["name"] = vrf["name"]
+        info["rt"] = vrf["rd"]
 
 def get_devices_list(tenant):
     headers = form_headers()
@@ -171,7 +240,8 @@ def form_headers():
 
 
 def main():
-    print(get_device_ip("MV1_N5K_DC_ACC_01"))
+    #print(get_vrf("VR253000"))
+    print(get_prefixes("ipam", "agg1"))
 
 
 if __name__ == '__main__':

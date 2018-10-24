@@ -8,3 +8,57 @@ vlan {{ vlan.id }}
 interface {{ t }}
  switchport trunk allowed vlan add {{ allowed_vlans }}
 {% endfor %}
+{% for vrf in vrfs %}
+{% if vrf.role == "outside" %}
+{% for prefix in vrf.public %}
+ip prefix-list {{ cust }}-TO-INTERNET permit {{ prefix.prefix }}
+route-map {{ cust }}-EXPMAP permit 10
+ match ip add prefix-list {{ cust }}-TO-INTERNET
+ set extcommunity rt 47901:1000
+route-map {{ cust }}-IMPMAP permit 10
+ match ip add prefix-list defprefix
+{% endfor %}
+{% endif %}
+{% endfor %}
+{% for vrf in vrfs %}
+{% for route in vrf.routes %}
+ip prefix-list {{ vrf.name }}-STATIC-LIST permit {{ route.prefix }}
+{% endfor %}
+route-map {{ vrf.name }}-STATIC-MAP permit 10
+ match ip address prefix-list {{ vrf.name }}-STATIC-LIST
+{% endfor %}
+router bgp 47901
+ {% for vrf in vrfs %}
+ vrf {{ vrf.name }}
+  address-family ipv4 unicast
+   redistribute static route-map {{ vrf.name }}-STATIC-MAP
+ {% endfor %}
+{% for vrf in vrfs %}
+vrf context {{ vrf.name }}
+ description {{ vrf.descr }}
+ {% for route in vrf.routes %}
+ ip route {{ route.prefix }} {{ vrf.nexthop }}
+ {% endfor %}
+ rd {{ vrf.rd }}
+  address-family ipv4 unicast
+  route-target import {{ vrf.rt }}
+  route-target export {{ vrf.rt }}
+  route-target import 47901:1000
+  export map {{ cust }}-EXPMAP
+  import map {{ cust }}-IMPMAP
+{% endfor %}
+{% for int in interfaces %}
+interface Vlan{{ int.vlan_id }}
+ description {{ int.descr }}
+ no shutdown
+ vrf member {{ int.vrf }}
+ no ip redirects
+ ip address {{ int.ip }}
+ hsrp version 2
+ hsrp {{ int.vlan_id }}
+  {% if asset_tag == "agg1" %}
+  preempt
+  priority 110
+  {% endif %}
+  ip {{ int.vip }}
+{% endfor %}

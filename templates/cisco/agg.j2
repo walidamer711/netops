@@ -1,10 +1,12 @@
-{% for vlan in vlans %}
-vlan {{ vlan.id }}
- name {{ vlan.name }}
- mode fabricpath
-{% endfor %}
-{% set allowed_vlans = vlans|map(attribute='id')|list|join(',') %}
-{% for t in trunks %}
-interface {{ t }}
- switchport trunk allowed vlan add {{ allowed_vlans }}
+
+{% for vrf in vrfs %}
+vrf context {{ vrf.name }}
+ description {{ vrf.desc }}
+ {% for route in vrf.routes %}
+ ip route {{ route.prefix }} {{ route.nexthop }}
+ {% endfor %}
+ rd {{ vrf.rd }}
+  address-family ipv4 unicast
+  route-target import {{ vrf.rt }}
+  route-target export {{ vrf.rt }}
 {% endfor %}

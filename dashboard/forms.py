@@ -27,7 +27,7 @@ def get_tenants():
     nb_tenants = r.json()
     tenants = []
     for t in nb_tenants["results"]:
-        tenant = (t["name"], t["name"])
+        tenant = (t["slug"], t["name"])
         tenants.append(tenant)
     return tenants
 
@@ -47,6 +47,7 @@ class ShowForm(forms.Form):
     DEVICES = get_devices_list("mza-infra")
     SHOW_COMMANDS = [
         ("show version", "show version"),
+        ("show vlan", "show vlan"),
         ("show cdp neighbors detail", "show cdp neighbors detail"),
         ("show interface status", "show interface status"),
     ]

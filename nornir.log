@@ -1673,3 +1673,999 @@ nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
 2018-10-16 06:22:47,965 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: Base Configuration: running task
 2018-10-16 06:22:47,996 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: Base Configuration: running task
 2018-10-16 06:22:47,996 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: Base Configuration: running task
+2018-10-16 09:44:32,822 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 10
+2018-10-16 09:44:32,822 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 10
+2018-10-16 09:44:32,823 -       nornir -    DEBUG -        run() - {'command_string': 'show vlan', 'use_textfsm': True}
+2018-10-16 09:44:32,823 -       nornir -    DEBUG -        run() - {'command_string': 'show vlan', 'use_textfsm': True}
+2018-10-16 09:44:32,831 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: netmiko_send_command: running task
+2018-10-16 09:44:32,831 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: netmiko_send_command: running task
+2018-10-16 04:22:32,629 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 10
+2018-10-16 04:22:32,629 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 10
+2018-10-16 04:22:32,629 -       nornir -    DEBUG -        run() - {'command_string': 'show vlan', 'use_textfsm': True}
+2018-10-16 04:22:32,629 -       nornir -    DEBUG -        run() - {'command_string': 'show vlan', 'use_textfsm': True}
+2018-10-16 04:22:32,641 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: netmiko_send_command: running task
+2018-10-16 04:22:32,641 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: netmiko_send_command: running task
+2018-10-16 04:37:08,227 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 10
+2018-10-16 04:37:08,227 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 10
+2018-10-16 04:37:08,228 -       nornir -    DEBUG -        run() - {'command_string': 'show vlan', 'use_textfsm': True}
+2018-10-16 04:37:08,228 -       nornir -    DEBUG -        run() - {'command_string': 'show vlan', 'use_textfsm': True}
+2018-10-16 04:38:33,493 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 10
+2018-10-16 04:38:33,493 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 10
+2018-10-16 04:38:33,494 -       nornir -    DEBUG -        run() - {'command_string': 'show vlan', 'use_textfsm': True}
+2018-10-16 04:38:33,494 -       nornir -    DEBUG -        run() - {'command_string': 'show vlan', 'use_textfsm': True}
+2018-10-16 04:39:23,206 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 10
+2018-10-16 04:39:23,206 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 10
+2018-10-16 04:39:23,207 -       nornir -    DEBUG -        run() - {'command_string': 'show vlan', 'use_textfsm': True}
+2018-10-16 04:39:23,207 -       nornir -    DEBUG -        run() - {'command_string': 'show vlan', 'use_textfsm': True}
+2018-10-16 04:39:23,212 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: netmiko_send_command: running task
+2018-10-16 04:39:23,212 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: netmiko_send_command: running task
+2018-10-16 05:50:48,776 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 10
+2018-10-16 05:50:48,776 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 10
+2018-10-16 05:50:48,777 -       nornir -    DEBUG -        run() - {'command_string': 'show vlan', 'use_textfsm': True}
+2018-10-16 05:50:48,777 -       nornir -    DEBUG -        run() - {'command_string': 'show vlan', 'use_textfsm': True}
+2018-10-16 05:50:59,387 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 10
+2018-10-16 05:50:59,387 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 10
+2018-10-16 05:50:59,387 -       nornir -    DEBUG -        run() - {'command_string': 'show vlan', 'use_textfsm': True}
+2018-10-16 05:50:59,387 -       nornir -    DEBUG -        run() - {'command_string': 'show vlan', 'use_textfsm': True}
+2018-10-16 05:52:08,843 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 10
+2018-10-16 05:52:08,843 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 10
+2018-10-16 05:52:08,843 -       nornir -    DEBUG -        run() - {'command_string': 'show vlan', 'use_textfsm': True}
+2018-10-16 05:52:08,843 -       nornir -    DEBUG -        run() - {'command_string': 'show vlan', 'use_textfsm': True}
+2018-10-16 05:52:08,853 -       nornir -     INFO -      start() - MV1_N7K_SVC_PE_01: netmiko_send_command: running task
+2018-10-16 05:52:08,853 -       nornir -     INFO -      start() - MV1_N7K_SVC_PE_01: netmiko_send_command: running task
+2018-10-16 05:55:28,828 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 10
+2018-10-16 05:55:28,828 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 10
+2018-10-16 05:55:28,829 -       nornir -    DEBUG -        run() - {'command_string': 'show vlan', 'use_textfsm': True}
+2018-10-16 05:55:28,829 -       nornir -    DEBUG -        run() - {'command_string': 'show vlan', 'use_textfsm': True}
+2018-10-16 05:55:28,837 -       nornir -     INFO -      start() - MV3_N7K_SVC_PE_02: netmiko_send_command: running task
+2018-10-16 05:55:28,837 -       nornir -     INFO -      start() - MV3_N7K_SVC_PE_02: netmiko_send_command: running task
+2018-10-18 03:20:06,767 -       nornir -     INFO -        run() - Running task 'dc_agg_template' with num_workers: 100
+2018-10-18 03:20:06,767 -       nornir -     INFO -        run() - Running task 'dc_agg_template' with num_workers: 100
+2018-10-18 03:20:06,768 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fa9b528feb8>, 'tenant': 'ipam'}
+2018-10-18 03:20:06,768 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fa9b528feb8>, 'tenant': 'ipam'}
+2018-10-18 03:20:06,814 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: dc_agg_template: running task
+2018-10-18 03:20:06,814 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: dc_agg_template: running task
+2018-10-18 03:20:06,815 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: dc_agg_template: running task
+2018-10-18 03:20:06,815 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: dc_agg_template: running task
+2018-10-18 03:20:07,533 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: Base Configuration: running task
+2018-10-18 03:20:07,533 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: Base Configuration: running task
+2018-10-18 03:20:07,551 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: Base Configuration: running task
+2018-10-18 03:20:07,551 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: Base Configuration: running task
+2018-10-18 04:12:50,940 -       nornir -     INFO -        run() - Running task 'dc_agg_template' with num_workers: 100
+2018-10-18 04:12:50,940 -       nornir -     INFO -        run() - Running task 'dc_agg_template' with num_workers: 100
+2018-10-18 04:12:50,940 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f7d19921d30>, 'tenant': 'ipam'}
+2018-10-18 04:12:50,940 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f7d19921d30>, 'tenant': 'ipam'}
+2018-10-18 04:12:50,972 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: dc_agg_template: running task
+2018-10-18 04:12:50,972 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: dc_agg_template: running task
+2018-10-18 04:12:50,972 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: dc_agg_template: running task
+2018-10-18 04:12:50,972 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: dc_agg_template: running task
+2018-10-18 04:12:52,037 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: Base Configuration: running task
+2018-10-18 04:12:52,037 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: Base Configuration: running task
+2018-10-18 04:12:52,068 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: Base Configuration: running task
+2018-10-18 04:12:52,068 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: Base Configuration: running task
+2018-10-18 05:10:29,690 -       nornir -     INFO -        run() - Running task 'dc_agg_template' with num_workers: 100
+2018-10-18 05:10:29,690 -       nornir -     INFO -        run() - Running task 'dc_agg_template' with num_workers: 100
+2018-10-18 05:10:29,690 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f933003bdd8>, 'tenant': 'ipam'}
+2018-10-18 05:10:29,690 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f933003bdd8>, 'tenant': 'ipam'}
+2018-10-18 05:10:29,773 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: dc_agg_template: running task
+2018-10-18 05:10:29,773 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: dc_agg_template: running task
+2018-10-18 05:10:29,773 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: dc_agg_template: running task
+2018-10-18 05:10:29,773 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: dc_agg_template: running task
+2018-10-18 05:10:30,445 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: Base Configuration: running task
+2018-10-18 05:10:30,445 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: Base Configuration: running task
+2018-10-18 05:10:30,469 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: Base Configuration: running task
+2018-10-18 05:10:30,469 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: Base Configuration: running task
+2018-10-18 05:10:30,542 -       nornir -    ERROR -      start() - MV3_N7K_AGG_PE_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 11, in render_from_file
+    return template.render(**kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/wamer/netops/dashboard/templates/cisco/agg.j2", line 11, in top-level template code
+    {% if public %}
+jinja2.exceptions.UndefinedError: 'public' is undefined
+
+2018-10-18 05:10:30,542 -       nornir -    ERROR -      start() - MV3_N7K_AGG_PE_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 11, in render_from_file
+    return template.render(**kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/wamer/netops/dashboard/templates/cisco/agg.j2", line 11, in top-level template code
+    {% if public %}
+jinja2.exceptions.UndefinedError: 'public' is undefined
+
+2018-10-18 05:10:30,544 -       nornir -    ERROR -      start() - MV1_N7K_AGG_PE_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 11, in render_from_file
+    return template.render(**kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/wamer/netops/dashboard/templates/cisco/agg.j2", line 11, in top-level template code
+    {% if public %}
+jinja2.exceptions.UndefinedError: 'public' is undefined
+
+2018-10-18 05:10:30,544 -       nornir -    ERROR -      start() - MV1_N7K_AGG_PE_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 11, in render_from_file
+    return template.render(**kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/wamer/netops/dashboard/templates/cisco/agg.j2", line 11, in top-level template code
+    {% if public %}
+jinja2.exceptions.UndefinedError: 'public' is undefined
+
+2018-10-18 05:10:30,544 -       nornir -    ERROR -      start() - MV3_N7K_AGG_PE_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "dashboard/config_generator.py", line 68, in dc_agg_template
+    path=f"/home/wamer/netops/dashboard/templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-18 05:10:30,544 -       nornir -    ERROR -      start() - MV3_N7K_AGG_PE_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "dashboard/config_generator.py", line 68, in dc_agg_template
+    path=f"/home/wamer/netops/dashboard/templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-18 05:10:30,545 -       nornir -    ERROR -      start() - MV1_N7K_AGG_PE_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "dashboard/config_generator.py", line 68, in dc_agg_template
+    path=f"/home/wamer/netops/dashboard/templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-18 05:10:30,545 -       nornir -    ERROR -      start() - MV1_N7K_AGG_PE_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "dashboard/config_generator.py", line 68, in dc_agg_template
+    path=f"/home/wamer/netops/dashboard/templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-18 05:11:07,831 -       nornir -     INFO -        run() - Running task 'dc_agg_template' with num_workers: 100
+2018-10-18 05:11:07,831 -       nornir -     INFO -        run() - Running task 'dc_agg_template' with num_workers: 100
+2018-10-18 05:11:07,832 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7efe7d38fdd8>, 'tenant': 'ipam'}
+2018-10-18 05:11:07,832 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7efe7d38fdd8>, 'tenant': 'ipam'}
+2018-10-18 05:11:07,871 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: dc_agg_template: running task
+2018-10-18 05:11:07,871 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: dc_agg_template: running task
+2018-10-18 05:11:07,872 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: dc_agg_template: running task
+2018-10-18 05:11:07,872 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: dc_agg_template: running task
+2018-10-18 05:11:08,674 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: Base Configuration: running task
+2018-10-18 05:11:08,674 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: Base Configuration: running task
+2018-10-18 05:11:08,698 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: Base Configuration: running task
+2018-10-18 05:11:08,698 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: Base Configuration: running task
+2018-10-18 05:11:08,788 -       nornir -    ERROR -      start() - MV1_N7K_AGG_PE_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 11, in render_from_file
+    return template.render(**kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/wamer/netops/dashboard/templates/cisco/agg.j2", line 11, in top-level template code
+    {% if vrfs.public %}
+jinja2.exceptions.UndefinedError: 'list object' has no attribute 'public'
+
+2018-10-18 05:11:08,788 -       nornir -    ERROR -      start() - MV1_N7K_AGG_PE_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 11, in render_from_file
+    return template.render(**kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/wamer/netops/dashboard/templates/cisco/agg.j2", line 11, in top-level template code
+    {% if vrfs.public %}
+jinja2.exceptions.UndefinedError: 'list object' has no attribute 'public'
+
+2018-10-18 05:11:08,788 -       nornir -    ERROR -      start() - MV3_N7K_AGG_PE_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 11, in render_from_file
+    return template.render(**kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/wamer/netops/dashboard/templates/cisco/agg.j2", line 11, in top-level template code
+    {% if vrfs.public %}
+jinja2.exceptions.UndefinedError: 'list object' has no attribute 'public'
+
+2018-10-18 05:11:08,788 -       nornir -    ERROR -      start() - MV3_N7K_AGG_PE_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 11, in render_from_file
+    return template.render(**kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/wamer/netops/dashboard/templates/cisco/agg.j2", line 11, in top-level template code
+    {% if vrfs.public %}
+jinja2.exceptions.UndefinedError: 'list object' has no attribute 'public'
+
+2018-10-18 05:11:08,790 -       nornir -    ERROR -      start() - MV1_N7K_AGG_PE_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "dashboard/config_generator.py", line 68, in dc_agg_template
+    path=f"/home/wamer/netops/dashboard/templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-18 05:11:08,790 -       nornir -    ERROR -      start() - MV3_N7K_AGG_PE_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "dashboard/config_generator.py", line 68, in dc_agg_template
+    path=f"/home/wamer/netops/dashboard/templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-18 05:11:08,790 -       nornir -    ERROR -      start() - MV3_N7K_AGG_PE_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "dashboard/config_generator.py", line 68, in dc_agg_template
+    path=f"/home/wamer/netops/dashboard/templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-18 05:11:08,790 -       nornir -    ERROR -      start() - MV1_N7K_AGG_PE_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "dashboard/config_generator.py", line 68, in dc_agg_template
+    path=f"/home/wamer/netops/dashboard/templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-18 05:15:47,525 -       nornir -     INFO -        run() - Running task 'dc_agg_template' with num_workers: 100
+2018-10-18 05:15:47,525 -       nornir -     INFO -        run() - Running task 'dc_agg_template' with num_workers: 100
+2018-10-18 05:15:47,526 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f66c8485d68>, 'tenant': 'ipam'}
+2018-10-18 05:15:47,526 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f66c8485d68>, 'tenant': 'ipam'}
+2018-10-18 05:15:47,633 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: dc_agg_template: running task
+2018-10-18 05:15:47,633 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: dc_agg_template: running task
+2018-10-18 05:15:47,634 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: dc_agg_template: running task
+2018-10-18 05:15:47,634 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: dc_agg_template: running task
+2018-10-18 05:15:48,369 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: Base Configuration: running task
+2018-10-18 05:15:48,369 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: Base Configuration: running task
+2018-10-18 05:15:48,410 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: Base Configuration: running task
+2018-10-18 05:15:48,410 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: Base Configuration: running task
+2018-10-18 05:15:48,555 -       nornir -    ERROR -      start() - MV3_N7K_AGG_PE_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 11, in render_from_file
+    return template.render(**kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/wamer/netops/dashboard/templates/cisco/agg.j2", line 17, in top-level template code
+    route-map {{ cust }}-IMPMAP permit 10
+jinja2.exceptions.UndefinedError: 'prefix' is undefined
+
+2018-10-18 05:15:48,555 -       nornir -    ERROR -      start() - MV3_N7K_AGG_PE_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 11, in render_from_file
+    return template.render(**kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/wamer/netops/dashboard/templates/cisco/agg.j2", line 17, in top-level template code
+    route-map {{ cust }}-IMPMAP permit 10
+jinja2.exceptions.UndefinedError: 'prefix' is undefined
+
+2018-10-18 05:15:48,556 -       nornir -    ERROR -      start() - MV1_N7K_AGG_PE_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 11, in render_from_file
+    return template.render(**kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/wamer/netops/dashboard/templates/cisco/agg.j2", line 17, in top-level template code
+    route-map {{ cust }}-IMPMAP permit 10
+jinja2.exceptions.UndefinedError: 'prefix' is undefined
+
+2018-10-18 05:15:48,556 -       nornir -    ERROR -      start() - MV1_N7K_AGG_PE_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 11, in render_from_file
+    return template.render(**kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/wamer/netops/dashboard/templates/cisco/agg.j2", line 17, in top-level template code
+    route-map {{ cust }}-IMPMAP permit 10
+jinja2.exceptions.UndefinedError: 'prefix' is undefined
+
+2018-10-18 05:15:48,558 -       nornir -    ERROR -      start() - MV3_N7K_AGG_PE_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "dashboard/config_generator.py", line 68, in dc_agg_template
+    path=f"/home/wamer/netops/dashboard/templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-18 05:15:48,558 -       nornir -    ERROR -      start() - MV3_N7K_AGG_PE_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "dashboard/config_generator.py", line 68, in dc_agg_template
+    path=f"/home/wamer/netops/dashboard/templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-18 05:15:48,559 -       nornir -    ERROR -      start() - MV1_N7K_AGG_PE_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "dashboard/config_generator.py", line 68, in dc_agg_template
+    path=f"/home/wamer/netops/dashboard/templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-18 05:15:48,559 -       nornir -    ERROR -      start() - MV1_N7K_AGG_PE_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "dashboard/config_generator.py", line 68, in dc_agg_template
+    path=f"/home/wamer/netops/dashboard/templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-18 05:16:38,843 -       nornir -     INFO -        run() - Running task 'dc_agg_template' with num_workers: 100
+2018-10-18 05:16:38,843 -       nornir -     INFO -        run() - Running task 'dc_agg_template' with num_workers: 100
+2018-10-18 05:16:38,844 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fabcc509dd8>, 'tenant': 'ipam'}
+2018-10-18 05:16:38,844 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fabcc509dd8>, 'tenant': 'ipam'}
+2018-10-18 05:16:38,900 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: dc_agg_template: running task
+2018-10-18 05:16:38,900 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: dc_agg_template: running task
+2018-10-18 05:16:38,900 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: dc_agg_template: running task
+2018-10-18 05:16:38,900 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: dc_agg_template: running task
+2018-10-18 05:16:39,723 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: Base Configuration: running task
+2018-10-18 05:16:39,723 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: Base Configuration: running task
+2018-10-18 05:16:39,735 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: Base Configuration: running task
+2018-10-18 05:16:39,735 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: Base Configuration: running task
+2018-10-18 05:16:39,826 -       nornir -    ERROR -      start() - MV3_N7K_AGG_PE_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 11, in render_from_file
+    return template.render(**kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/wamer/netops/dashboard/templates/cisco/agg.j2", line 17, in top-level template code
+    route-map {{ cust }}-IMPMAP permit 10
+jinja2.exceptions.UndefinedError: 'list object' has no attribute 'prefix'
+
+2018-10-18 05:16:39,826 -       nornir -    ERROR -      start() - MV3_N7K_AGG_PE_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 11, in render_from_file
+    return template.render(**kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/wamer/netops/dashboard/templates/cisco/agg.j2", line 17, in top-level template code
+    route-map {{ cust }}-IMPMAP permit 10
+jinja2.exceptions.UndefinedError: 'list object' has no attribute 'prefix'
+
+2018-10-18 05:16:39,827 -       nornir -    ERROR -      start() - MV1_N7K_AGG_PE_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 11, in render_from_file
+    return template.render(**kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/wamer/netops/dashboard/templates/cisco/agg.j2", line 17, in top-level template code
+    route-map {{ cust }}-IMPMAP permit 10
+jinja2.exceptions.UndefinedError: 'list object' has no attribute 'prefix'
+
+2018-10-18 05:16:39,827 -       nornir -    ERROR -      start() - MV1_N7K_AGG_PE_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 11, in render_from_file
+    return template.render(**kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/wamer/netops/dashboard/templates/cisco/agg.j2", line 17, in top-level template code
+    route-map {{ cust }}-IMPMAP permit 10
+jinja2.exceptions.UndefinedError: 'list object' has no attribute 'prefix'
+
+2018-10-18 05:16:39,828 -       nornir -    ERROR -      start() - MV3_N7K_AGG_PE_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "dashboard/config_generator.py", line 68, in dc_agg_template
+    path=f"/home/wamer/netops/dashboard/templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-18 05:16:39,828 -       nornir -    ERROR -      start() - MV3_N7K_AGG_PE_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "dashboard/config_generator.py", line 68, in dc_agg_template
+    path=f"/home/wamer/netops/dashboard/templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-18 05:16:39,828 -       nornir -    ERROR -      start() - MV1_N7K_AGG_PE_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "dashboard/config_generator.py", line 68, in dc_agg_template
+    path=f"/home/wamer/netops/dashboard/templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-18 05:16:39,828 -       nornir -    ERROR -      start() - MV1_N7K_AGG_PE_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "dashboard/config_generator.py", line 68, in dc_agg_template
+    path=f"/home/wamer/netops/dashboard/templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-18 05:18:40,302 -       nornir -     INFO -        run() - Running task 'dc_agg_template' with num_workers: 100
+2018-10-18 05:18:40,302 -       nornir -     INFO -        run() - Running task 'dc_agg_template' with num_workers: 100
+2018-10-18 05:18:40,302 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f6f35201dd8>, 'tenant': 'ipam'}
+2018-10-18 05:18:40,302 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f6f35201dd8>, 'tenant': 'ipam'}
+2018-10-18 05:18:40,342 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: dc_agg_template: running task
+2018-10-18 05:18:40,342 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: dc_agg_template: running task
+2018-10-18 05:18:40,343 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: dc_agg_template: running task
+2018-10-18 05:18:40,343 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: dc_agg_template: running task
+2018-10-18 05:18:41,041 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: Base Configuration: running task
+2018-10-18 05:18:41,041 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: Base Configuration: running task
+2018-10-18 05:18:41,098 -       nornir -    ERROR -      start() - MV1_N7K_AGG_PE_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 11, in render_from_file
+    return template.render(**kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/wamer/netops/dashboard/templates/cisco/agg.j2", line 12, in top-level template code
+    {% if vrf.public %}
+jinja2.exceptions.UndefinedError: 'dict object' has no attribute 'public'
+
+2018-10-18 05:18:41,098 -       nornir -    ERROR -      start() - MV1_N7K_AGG_PE_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 11, in render_from_file
+    return template.render(**kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/wamer/netops/dashboard/templates/cisco/agg.j2", line 12, in top-level template code
+    {% if vrf.public %}
+jinja2.exceptions.UndefinedError: 'dict object' has no attribute 'public'
+
+2018-10-18 05:18:41,099 -       nornir -    ERROR -      start() - MV1_N7K_AGG_PE_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "dashboard/config_generator.py", line 68, in dc_agg_template
+    path=f"/home/wamer/netops/dashboard/templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-18 05:18:41,099 -       nornir -    ERROR -      start() - MV1_N7K_AGG_PE_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "dashboard/config_generator.py", line 68, in dc_agg_template
+    path=f"/home/wamer/netops/dashboard/templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-18 05:18:41,179 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: Base Configuration: running task
+2018-10-18 05:18:41,179 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: Base Configuration: running task
+2018-10-18 05:18:41,244 -       nornir -    ERROR -      start() - MV3_N7K_AGG_PE_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 11, in render_from_file
+    return template.render(**kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/wamer/netops/dashboard/templates/cisco/agg.j2", line 12, in top-level template code
+    {% if vrf.public %}
+jinja2.exceptions.UndefinedError: 'dict object' has no attribute 'public'
+
+2018-10-18 05:18:41,244 -       nornir -    ERROR -      start() - MV3_N7K_AGG_PE_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 11, in render_from_file
+    return template.render(**kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/wamer/netops/dashboard/templates/cisco/agg.j2", line 12, in top-level template code
+    {% if vrf.public %}
+jinja2.exceptions.UndefinedError: 'dict object' has no attribute 'public'
+
+2018-10-18 05:18:41,245 -       nornir -    ERROR -      start() - MV3_N7K_AGG_PE_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "dashboard/config_generator.py", line 68, in dc_agg_template
+    path=f"/home/wamer/netops/dashboard/templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-18 05:18:41,245 -       nornir -    ERROR -      start() - MV3_N7K_AGG_PE_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "dashboard/config_generator.py", line 68, in dc_agg_template
+    path=f"/home/wamer/netops/dashboard/templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-18 05:19:39,065 -       nornir -     INFO -        run() - Running task 'dc_agg_template' with num_workers: 100
+2018-10-18 05:19:39,065 -       nornir -     INFO -        run() - Running task 'dc_agg_template' with num_workers: 100
+2018-10-18 05:19:39,066 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f70c4446dd8>, 'tenant': 'ipam'}
+2018-10-18 05:19:39,066 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f70c4446dd8>, 'tenant': 'ipam'}
+2018-10-18 05:19:39,117 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: dc_agg_template: running task
+2018-10-18 05:19:39,117 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: dc_agg_template: running task
+2018-10-18 05:19:39,122 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: dc_agg_template: running task
+2018-10-18 05:19:39,122 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: dc_agg_template: running task
+2018-10-18 05:19:39,974 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: Base Configuration: running task
+2018-10-18 05:19:39,974 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: Base Configuration: running task
+2018-10-18 05:19:39,987 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: Base Configuration: running task
+2018-10-18 05:19:39,987 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: Base Configuration: running task
+2018-10-18 05:19:40,076 -       nornir -    ERROR -      start() - MV3_N7K_AGG_PE_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 11, in render_from_file
+    return template.render(**kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/wamer/netops/dashboard/templates/cisco/agg.j2", line 12, in top-level template code
+    {% if vrf.public != null %}
+jinja2.exceptions.UndefinedError: 'null' is undefined
+
+2018-10-18 05:19:40,076 -       nornir -    ERROR -      start() - MV3_N7K_AGG_PE_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 11, in render_from_file
+    return template.render(**kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/wamer/netops/dashboard/templates/cisco/agg.j2", line 12, in top-level template code
+    {% if vrf.public != null %}
+jinja2.exceptions.UndefinedError: 'null' is undefined
+
+2018-10-18 05:19:40,077 -       nornir -    ERROR -      start() - MV1_N7K_AGG_PE_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 11, in render_from_file
+    return template.render(**kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/wamer/netops/dashboard/templates/cisco/agg.j2", line 12, in top-level template code
+    {% if vrf.public != null %}
+jinja2.exceptions.UndefinedError: 'null' is undefined
+
+2018-10-18 05:19:40,077 -       nornir -    ERROR -      start() - MV1_N7K_AGG_PE_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 11, in render_from_file
+    return template.render(**kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/wamer/netops/dashboard/templates/cisco/agg.j2", line 12, in top-level template code
+    {% if vrf.public != null %}
+jinja2.exceptions.UndefinedError: 'null' is undefined
+
+2018-10-18 05:19:40,078 -       nornir -    ERROR -      start() - MV3_N7K_AGG_PE_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "dashboard/config_generator.py", line 68, in dc_agg_template
+    path=f"/home/wamer/netops/dashboard/templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-18 05:19:40,078 -       nornir -    ERROR -      start() - MV3_N7K_AGG_PE_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "dashboard/config_generator.py", line 68, in dc_agg_template
+    path=f"/home/wamer/netops/dashboard/templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-18 05:19:40,079 -       nornir -    ERROR -      start() - MV1_N7K_AGG_PE_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "dashboard/config_generator.py", line 68, in dc_agg_template
+    path=f"/home/wamer/netops/dashboard/templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-18 05:19:40,079 -       nornir -    ERROR -      start() - MV1_N7K_AGG_PE_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "dashboard/config_generator.py", line 68, in dc_agg_template
+    path=f"/home/wamer/netops/dashboard/templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-18 05:20:04,896 -       nornir -     INFO -        run() - Running task 'dc_agg_template' with num_workers: 100
+2018-10-18 05:20:04,896 -       nornir -     INFO -        run() - Running task 'dc_agg_template' with num_workers: 100
+2018-10-18 05:20:04,897 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fe4d8b76dd8>, 'tenant': 'ipam'}
+2018-10-18 05:20:04,897 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7fe4d8b76dd8>, 'tenant': 'ipam'}
+2018-10-18 05:20:04,952 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: dc_agg_template: running task
+2018-10-18 05:20:04,952 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: dc_agg_template: running task
+2018-10-18 05:20:04,952 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: dc_agg_template: running task
+2018-10-18 05:20:04,952 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: dc_agg_template: running task
+2018-10-18 05:20:05,703 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: Base Configuration: running task
+2018-10-18 05:20:05,703 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: Base Configuration: running task
+2018-10-18 05:20:05,729 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: Base Configuration: running task
+2018-10-18 05:20:05,729 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: Base Configuration: running task
+2018-10-18 05:20:05,865 -       nornir -    ERROR -      start() - MV3_N7K_AGG_PE_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 11, in render_from_file
+    return template.render(**kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/wamer/netops/dashboard/templates/cisco/agg.j2", line 13, in top-level template code
+    {% for prefix in vrf.public %}
+jinja2.exceptions.UndefinedError: 'dict object' has no attribute 'public'
+
+2018-10-18 05:20:05,865 -       nornir -    ERROR -      start() - MV1_N7K_AGG_PE_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 11, in render_from_file
+    return template.render(**kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/wamer/netops/dashboard/templates/cisco/agg.j2", line 13, in top-level template code
+    {% for prefix in vrf.public %}
+jinja2.exceptions.UndefinedError: 'dict object' has no attribute 'public'
+
+2018-10-18 05:20:05,865 -       nornir -    ERROR -      start() - MV1_N7K_AGG_PE_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 11, in render_from_file
+    return template.render(**kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/wamer/netops/dashboard/templates/cisco/agg.j2", line 13, in top-level template code
+    {% for prefix in vrf.public %}
+jinja2.exceptions.UndefinedError: 'dict object' has no attribute 'public'
+
+2018-10-18 05:20:05,865 -       nornir -    ERROR -      start() - MV3_N7K_AGG_PE_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/text/template_file.py", line 36, in template_file
+    **merged
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/helpers/jinja_helper.py", line 11, in render_from_file
+    return template.render(**kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/wamer/.local/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/wamer/netops/dashboard/templates/cisco/agg.j2", line 13, in top-level template code
+    {% for prefix in vrf.public %}
+jinja2.exceptions.UndefinedError: 'dict object' has no attribute 'public'
+
+2018-10-18 05:20:05,867 -       nornir -    ERROR -      start() - MV1_N7K_AGG_PE_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "dashboard/config_generator.py", line 68, in dc_agg_template
+    path=f"/home/wamer/netops/dashboard/templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-18 05:20:05,867 -       nornir -    ERROR -      start() - MV1_N7K_AGG_PE_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "dashboard/config_generator.py", line 68, in dc_agg_template
+    path=f"/home/wamer/netops/dashboard/templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-18 05:20:05,868 -       nornir -    ERROR -      start() - MV3_N7K_AGG_PE_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "dashboard/config_generator.py", line 68, in dc_agg_template
+    path=f"/home/wamer/netops/dashboard/templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-18 05:20:05,868 -       nornir -    ERROR -      start() - MV3_N7K_AGG_PE_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "dashboard/config_generator.py", line 68, in dc_agg_template
+    path=f"/home/wamer/netops/dashboard/templates/cisco")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 110, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2018-10-18 05:21:57,285 -       nornir -     INFO -        run() - Running task 'dc_agg_template' with num_workers: 100
+2018-10-18 05:21:57,285 -       nornir -     INFO -        run() - Running task 'dc_agg_template' with num_workers: 100
+2018-10-18 05:21:57,286 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f12e6f0add8>, 'tenant': 'ipam'}
+2018-10-18 05:21:57,286 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f12e6f0add8>, 'tenant': 'ipam'}
+2018-10-18 05:21:57,344 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: dc_agg_template: running task
+2018-10-18 05:21:57,344 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: dc_agg_template: running task
+2018-10-18 05:21:57,344 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: dc_agg_template: running task
+2018-10-18 05:21:57,344 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: dc_agg_template: running task
+2018-10-18 05:21:58,119 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: Base Configuration: running task
+2018-10-18 05:21:58,119 -       nornir -     INFO -      start() - MV3_N7K_AGG_PE_02: Base Configuration: running task
+2018-10-18 05:21:58,132 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: Base Configuration: running task
+2018-10-18 05:21:58,132 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: Base Configuration: running task
+2018-10-23 06:09:10,420 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 10
+2018-10-23 06:09:10,420 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 10
+2018-10-23 06:09:10,421 -       nornir -    DEBUG -        run() - {'command_string': 'show vlan', 'use_textfsm': True}
+2018-10-23 06:09:10,421 -       nornir -    DEBUG -        run() - {'command_string': 'show vlan', 'use_textfsm': True}
+2018-10-23 06:09:10,517 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: netmiko_send_command: running task
+2018-10-23 06:09:10,517 -       nornir -     INFO -      start() - MV1_N7K_AGG_PE_01: netmiko_send_command: running task
+2018-10-24 06:33:02,279 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-24 06:33:02,279 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-24 06:33:02,283 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7ff07dbe0438>, 'tenant': 'GBI'}
+2018-10-24 06:33:02,283 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7ff07dbe0438>, 'tenant': 'GBI'}
+2018-10-24 06:33:02,372 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-24 06:33:02,372 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-24 06:33:02,374 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-24 06:33:02,374 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-24 06:33:02,682 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-24 06:33:02,682 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-24 06:33:02,709 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-24 06:33:02,709 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task

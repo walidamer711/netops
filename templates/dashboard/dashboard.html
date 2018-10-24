@@ -1,13 +1,23 @@
 {% extends 'base.html' %}
 
 
-
 {% block content %}
 
+<div class="mb-lg-5 mt-4">
+<h2>Provisioning Services</h2>
 <b1>Please select the required provisioning service form the below list</b1>
 
 <ul>
     <li class=""><a href="{% url 'services' %}">Data Center Services</a></li>
 </ul>
+</div>
 
+    <div class="mb-4">
+    <h2>Network Views</h2>
+    <b1>Please select the view form the below list</b1>
+
+<ul>
+    <li class=""><a href="{% url 'net_view' 'fex' %}">FEX View</a></li>
+</ul>
+    </div>
 {% endblock %}

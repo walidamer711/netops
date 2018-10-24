@@ -34,6 +34,14 @@ def show(request):
 
     return render(request, 'dashboard/show.html', {'form': form})
 
+
+@login_required
+def network_views(request, name):
+    #view_name = request.GET.get('name')
+    result = {"name": name, "id": 2}
+    return render(request, 'dashboard/show_result.html', {'result': result })
+
+
 @login_required
 def services(request):
     if request.method == 'POST':
