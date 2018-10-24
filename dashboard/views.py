@@ -1,9 +1,10 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 from nornir.core import InitNornir
+from nornir.plugins.tasks import networking, text
 from .forms import ShowForm, DCAccessForm
 from .netbox_query import get_device_ip
-from .nornir_exec import show_result
+from .nornir_exec import show_result, net_view_result
 from .config_generator import dc_access_template, dc_agg_template
 from nornir.plugins.functions.text import print_result
 
@@ -36,10 +37,14 @@ def show(request):
 
 
 @login_required
-def network_views(request, name):
-    #view_name = request.GET.get('name')
-    result = {"name": name, "id": 2}
-    return render(request, 'dashboard/show_result.html', {'result': result })
+def network_views(request, view):
+    data_list = []
+    if view == 'fex':
+        command = "show fex"
+        result = net_view_result(command)
+        for r in result:
+            data_list.append(result[r][0])
+    return render(request, 'dashboard/show_result.html', {'data': data_list})
 
 
 @login_required

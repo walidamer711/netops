@@ -86,7 +86,7 @@ def main():
     print(dc_access_hosts.inventory.hosts["MV1_N5K_DC_ACC_02"].data)
     for r in result:
         print(r)
-        print(result[r][1])
+        print(result[r])
 
 def test_netmike(task):
     task.run(task=networking.netmiko_send_command, command_string="show version", use_textfsm=True)

@@ -14,6 +14,29 @@ class NetboxAPITokenNotFound(Exception):
     pass
 
 
+def form_headers():
+    api_token = '49d66235f10e0d388f18e179e756d1d276b898bb'
+    # api_token = os.environ.get("NETBOX_API_TOKEN")
+    headers = {
+        "Authorization": "Token {}".format(api_token),
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+    }
+    return headers
+
+
+def get_fex_parents():
+    headers = form_headers()
+    query_params = {"tenant": "mza-infra", "tag": "fex"}
+    r = requests.get(NETBOX_API_ROOT + NETBOX_DEVICES_ENDPOINT,
+                     params=query_params, headers=headers)
+    nb_devices = r.json()
+    parent_switches = []
+    for d in nb_devices["results"]:
+        parent_switches.append(d["name"])
+    return parent_switches
+
+
 def get_hosts(tenant):
     headers = form_headers()
     query_params = {"tenant": tenant}
@@ -171,6 +194,7 @@ def get_prefixes(tenant, tag):
     # return prefixes_netbox_dict["results"]
     # return json.dumps(vlans_netbox_dict, indent=4)
 
+
 def get_vrf(name):
     headers = form_headers()
     query_params = {"name": name}
@@ -203,6 +227,7 @@ def get_vrfs(tenant):
         info["name"] = vrf["name"]
         info["rt"] = vrf["rd"]
 
+
 def get_devices_list(tenant):
     headers = form_headers()
     query_params = {"tenant": tenant}
@@ -226,17 +251,6 @@ def get_device_ip(hostname):
         if d.get("primary_ip", {}):
             ip = d["primary_ip"]["address"].split("/")[0]
             return ip
-
-
-def form_headers():
-    api_token = '49d66235f10e0d388f18e179e756d1d276b898bb'
-    # api_token = os.environ.get("NETBOX_API_TOKEN")
-    headers = {
-        "Authorization": "Token {}".format(api_token),
-        "Content-Type": "application/json",
-        "Accept": "application/json",
-    }
-    return headers
 
 
 def main():

@@ -1,20 +1,24 @@
 {% extends 'base.html' %}
 {% block content %}
 
+{% for d in data %}
+<div class="mb-4">
+<h2>{{ d.host }}</h2>
+</div>
 
     <table class="table mb-4">
         <thead class="thead-inverse">
         <tr>
-            {% for r in result.0 %}
-                <th>{{ r }}</th>
+            {% for k in d.result.0.keys %}
+                <th>{{ k }}</th>
             {% endfor %}
         </tr>
         </thead>
         <tbody>
         <tr>
-            {% for r in result %}
+            {% for i in d.result %}
                 <tr>
-                    {% for v in r.values %}
+                    {% for v in i.values %}
                         <td>{{ v }}</td>
                     {% endfor %}
                 </tr>
@@ -22,4 +26,6 @@
 
         </tbody>
     </table>
+
+{% endfor %}
 {% endblock %}

@@ -2,7 +2,34 @@ from nornir.core import InitNornir
 from nornir.plugins.functions.text import print_result, print_title
 from nornir.plugins.tasks import networking, text
 import json, csv
+import requests
+from decouple import config
 
+NETBOX_API_ROOT = "http://172.20.22.99/api"
+NETBOX_DEVICES_ENDPOINT = "/dcim/devices/"
+
+ACCOUNT = {"username": config('username'), "password": config('password')}
+
+def form_headers():
+    api_token = '49d66235f10e0d388f18e179e756d1d276b898bb'
+    # api_token = os.environ.get("NETBOX_API_TOKEN")
+    headers = {
+        "Authorization": "Token {}".format(api_token),
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+    }
+    return headers
+
+def get_fex_parents(host):
+    headers = form_headers()
+    query_params = {"tenant": "mza-infra", "tag": "fex"}
+    r = requests.get(NETBOX_API_ROOT + NETBOX_DEVICES_ENDPOINT,
+                     params=query_params, headers=headers)
+    nb_devices = r.json()
+    parent_switches = []
+    for d in nb_devices["results"]:
+        parent_switches.append(d["name"])
+    return host.name in parent_switches
 
 def show_result(device, command):
     nr = InitNornir(config_file="/home/wamer/netops/dashboard/simple.yaml", dry_run=True)
@@ -10,6 +37,18 @@ def show_result(device, command):
     result = host.run(task=networking.netmiko_send_command, command_string=command, use_textfsm=True)
     return result[device][0].result
 
+def add_account(inventory):
+    for h in inventory.hosts:
+        inventory.hosts[h].data.update(ACCOUNT)
+
+def net_view_result(command):
+    nr = InitNornir(config_file="/home/wamer/netops/dashboard/config.yaml")
+    hosts = nr.filter(filter_func=get_fex_parents)
+    inventory = nr.inventory.filter(filter_func=get_fex_parents)
+    add_account(inventory)
+    result = hosts.run(task=networking.netmiko_send_command, command_string=command, use_textfsm=True)
+
+    return result
 
 def dc_vlan_list(h1,h2):
     r1 = show_result(h1, "show vlan")
@@ -69,12 +108,13 @@ def vlan_diff(h1, h2):
 
 
 def main():
-    print(vlan_diff("MV1_N7K_AGG_PE_01", "MV3_N7K_AGG_PE_02"))
+    #print(vlan_diff("MV1_N7K_AGG_PE_01", "MV3_N7K_AGG_PE_02"))
     # nr = InitNornir(config_file="config.yaml", dry_run=True)
     # host = nr.filter(role="dc-access", site="mv1")
     # print_title("Playbook to configure the network")
     # result = host.run(task=test_netmike)
     # print_result(result)
+    print(net_view_result("show fex"))
 
 
 def test_netmike(task):

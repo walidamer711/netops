@@ -1038,3 +1038,2129 @@ ValueError: dictionary update sequence element #0 has length 5; 2 is required
 2018-10-24 06:39:15,182 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
 2018-10-24 06:39:15,208 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
 2018-10-24 06:39:15,208 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-24 08:21:28,991 - django.request -    ERROR - log_response() - Internal Server Error: /dashboard/net_view/fex
+Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/wamer/netops/dashboard/views.py", line 44, in network_views
+    hosts = nr.filter(filter_func=get_fex_parents)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/__init__.py", line 138, in filter
+    b.inventory = self.inventory.filter(*args, **kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 476, in filter
+    filtered = {n: h for n, h in self.hosts.items() if filter_func(h, **kwargs)}
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 476, in <dictcomp>
+    filtered = {n: h for n, h in self.hosts.items() if filter_func(h, **kwargs)}
+TypeError: get_fex_parents() takes 0 positional arguments but 1 was given
+2018-10-24 01:44:19,235 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 01:44:19,235 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 01:44:19,235 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 01:44:19,235 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 01:44:19,239 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 01:44:19,239 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 01:44:19,239 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 01:44:19,239 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 01:44:19,245 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 21, in netmiko_send_command
+    net_connect = task.host.get_connection("netmiko")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 292, in get_connection
+    configuration=config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 346, in open_connection
+    else self.nornir.config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/connections/netmiko.py", line 50, in open
+    self.connection = ConnectHandler(**parameters)
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/ssh_dispatcher.py", line 188, in ConnectHandler
+    'currently supported platforms are: {}'.format(platforms_str))
+ValueError: Unsupported device_type: currently supported platforms are: 
+a10
+accedian
+alcatel_aos
+alcatel_sros
+apresia_aeos
+arista_eos
+aruba_os
+avaya_ers
+avaya_vsp
+brocade_fastiron
+brocade_netiron
+brocade_nos
+brocade_vdx
+brocade_vyos
+calix_b6
+checkpoint_gaia
+ciena_saos
+cisco_asa
+cisco_ios
+cisco_nxos
+cisco_s300
+cisco_tp
+cisco_wlc
+cisco_xe
+cisco_xr
+coriant
+dell_force10
+dell_isilon
+dell_os10
+dell_powerconnect
+eltex
+enterasys
+extreme
+extreme_wing
+f5_ltm
+fortinet
+generic_termserver
+hp_comware
+hp_procurve
+huawei
+huawei_vrpv8
+juniper
+juniper_junos
+linux
+mellanox
+mrv_optiswitch
+netapp_cdot
+netscaler
+ovs_linux
+paloalto_panos
+pluribus
+quanta_mesh
+ruckus_fastiron
+ubiquiti_edge
+ubiquiti_edgeswitch
+vyatta_vyos
+vyos
+
+2018-10-24 01:44:19,245 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 21, in netmiko_send_command
+    net_connect = task.host.get_connection("netmiko")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 292, in get_connection
+    configuration=config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 346, in open_connection
+    else self.nornir.config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/connections/netmiko.py", line 50, in open
+    self.connection = ConnectHandler(**parameters)
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/ssh_dispatcher.py", line 188, in ConnectHandler
+    'currently supported platforms are: {}'.format(platforms_str))
+ValueError: Unsupported device_type: currently supported platforms are: 
+a10
+accedian
+alcatel_aos
+alcatel_sros
+apresia_aeos
+arista_eos
+aruba_os
+avaya_ers
+avaya_vsp
+brocade_fastiron
+brocade_netiron
+brocade_nos
+brocade_vdx
+brocade_vyos
+calix_b6
+checkpoint_gaia
+ciena_saos
+cisco_asa
+cisco_ios
+cisco_nxos
+cisco_s300
+cisco_tp
+cisco_wlc
+cisco_xe
+cisco_xr
+coriant
+dell_force10
+dell_isilon
+dell_os10
+dell_powerconnect
+eltex
+enterasys
+extreme
+extreme_wing
+f5_ltm
+fortinet
+generic_termserver
+hp_comware
+hp_procurve
+huawei
+huawei_vrpv8
+juniper
+juniper_junos
+linux
+mellanox
+mrv_optiswitch
+netapp_cdot
+netscaler
+ovs_linux
+paloalto_panos
+pluribus
+quanta_mesh
+ruckus_fastiron
+ubiquiti_edge
+ubiquiti_edgeswitch
+vyatta_vyos
+vyos
+
+2018-10-24 01:44:19,627 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 738, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 437, in connect
+    passphrase,
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 749, in _auth
+    raise saved_exception
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 736, in _auth
+    self._transport.auth_password(username, password)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/transport.py", line 1436, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/auth_handler.py", line 250, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 21, in netmiko_send_command
+    net_connect = task.host.get_connection("netmiko")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 292, in get_connection
+    configuration=config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 346, in open_connection
+    else self.nornir.config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/connections/netmiko.py", line 50, in open
+    self.connection = ConnectHandler(**parameters)
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/ssh_dispatcher.py", line 190, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 245, in __init__
+    self.establish_connection()
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 749, in establish_connection
+    raise NetMikoAuthenticationException(msg)
+netmiko.ssh_exception.NetMikoAuthenticationException: Authentication failure: unable to connect cisco_nxos 172.20.22.33:22
+Authentication failed.
+
+2018-10-24 01:44:19,627 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 738, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 437, in connect
+    passphrase,
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 749, in _auth
+    raise saved_exception
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 736, in _auth
+    self._transport.auth_password(username, password)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/transport.py", line 1436, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/auth_handler.py", line 250, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 21, in netmiko_send_command
+    net_connect = task.host.get_connection("netmiko")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 292, in get_connection
+    configuration=config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 346, in open_connection
+    else self.nornir.config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/connections/netmiko.py", line 50, in open
+    self.connection = ConnectHandler(**parameters)
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/ssh_dispatcher.py", line 190, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 245, in __init__
+    self.establish_connection()
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 749, in establish_connection
+    raise NetMikoAuthenticationException(msg)
+netmiko.ssh_exception.NetMikoAuthenticationException: Authentication failure: unable to connect cisco_nxos 172.20.22.33:22
+Authentication failed.
+
+2018-10-24 01:46:45,260 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 01:46:45,260 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 01:46:45,261 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 01:46:45,261 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 01:46:45,265 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 01:46:45,265 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 01:46:45,265 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 01:46:45,265 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 01:46:45,270 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 21, in netmiko_send_command
+    net_connect = task.host.get_connection("netmiko")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 292, in get_connection
+    configuration=config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 346, in open_connection
+    else self.nornir.config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/connections/netmiko.py", line 50, in open
+    self.connection = ConnectHandler(**parameters)
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/ssh_dispatcher.py", line 188, in ConnectHandler
+    'currently supported platforms are: {}'.format(platforms_str))
+ValueError: Unsupported device_type: currently supported platforms are: 
+a10
+accedian
+alcatel_aos
+alcatel_sros
+apresia_aeos
+arista_eos
+aruba_os
+avaya_ers
+avaya_vsp
+brocade_fastiron
+brocade_netiron
+brocade_nos
+brocade_vdx
+brocade_vyos
+calix_b6
+checkpoint_gaia
+ciena_saos
+cisco_asa
+cisco_ios
+cisco_nxos
+cisco_s300
+cisco_tp
+cisco_wlc
+cisco_xe
+cisco_xr
+coriant
+dell_force10
+dell_isilon
+dell_os10
+dell_powerconnect
+eltex
+enterasys
+extreme
+extreme_wing
+f5_ltm
+fortinet
+generic_termserver
+hp_comware
+hp_procurve
+huawei
+huawei_vrpv8
+juniper
+juniper_junos
+linux
+mellanox
+mrv_optiswitch
+netapp_cdot
+netscaler
+ovs_linux
+paloalto_panos
+pluribus
+quanta_mesh
+ruckus_fastiron
+ubiquiti_edge
+ubiquiti_edgeswitch
+vyatta_vyos
+vyos
+
+2018-10-24 01:46:45,270 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 21, in netmiko_send_command
+    net_connect = task.host.get_connection("netmiko")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 292, in get_connection
+    configuration=config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 346, in open_connection
+    else self.nornir.config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/connections/netmiko.py", line 50, in open
+    self.connection = ConnectHandler(**parameters)
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/ssh_dispatcher.py", line 188, in ConnectHandler
+    'currently supported platforms are: {}'.format(platforms_str))
+ValueError: Unsupported device_type: currently supported platforms are: 
+a10
+accedian
+alcatel_aos
+alcatel_sros
+apresia_aeos
+arista_eos
+aruba_os
+avaya_ers
+avaya_vsp
+brocade_fastiron
+brocade_netiron
+brocade_nos
+brocade_vdx
+brocade_vyos
+calix_b6
+checkpoint_gaia
+ciena_saos
+cisco_asa
+cisco_ios
+cisco_nxos
+cisco_s300
+cisco_tp
+cisco_wlc
+cisco_xe
+cisco_xr
+coriant
+dell_force10
+dell_isilon
+dell_os10
+dell_powerconnect
+eltex
+enterasys
+extreme
+extreme_wing
+f5_ltm
+fortinet
+generic_termserver
+hp_comware
+hp_procurve
+huawei
+huawei_vrpv8
+juniper
+juniper_junos
+linux
+mellanox
+mrv_optiswitch
+netapp_cdot
+netscaler
+ovs_linux
+paloalto_panos
+pluribus
+quanta_mesh
+ruckus_fastiron
+ubiquiti_edge
+ubiquiti_edgeswitch
+vyatta_vyos
+vyos
+
+2018-10-24 01:46:45,657 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 738, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 437, in connect
+    passphrase,
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 749, in _auth
+    raise saved_exception
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 736, in _auth
+    self._transport.auth_password(username, password)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/transport.py", line 1436, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/auth_handler.py", line 250, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 21, in netmiko_send_command
+    net_connect = task.host.get_connection("netmiko")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 292, in get_connection
+    configuration=config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 346, in open_connection
+    else self.nornir.config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/connections/netmiko.py", line 50, in open
+    self.connection = ConnectHandler(**parameters)
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/ssh_dispatcher.py", line 190, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 245, in __init__
+    self.establish_connection()
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 749, in establish_connection
+    raise NetMikoAuthenticationException(msg)
+netmiko.ssh_exception.NetMikoAuthenticationException: Authentication failure: unable to connect cisco_nxos 172.20.22.33:22
+Authentication failed.
+
+2018-10-24 01:46:45,657 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 738, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 437, in connect
+    passphrase,
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 749, in _auth
+    raise saved_exception
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 736, in _auth
+    self._transport.auth_password(username, password)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/transport.py", line 1436, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/auth_handler.py", line 250, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 21, in netmiko_send_command
+    net_connect = task.host.get_connection("netmiko")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 292, in get_connection
+    configuration=config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 346, in open_connection
+    else self.nornir.config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/connections/netmiko.py", line 50, in open
+    self.connection = ConnectHandler(**parameters)
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/ssh_dispatcher.py", line 190, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 245, in __init__
+    self.establish_connection()
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 749, in establish_connection
+    raise NetMikoAuthenticationException(msg)
+netmiko.ssh_exception.NetMikoAuthenticationException: Authentication failure: unable to connect cisco_nxos 172.20.22.33:22
+Authentication failed.
+
+2018-10-24 01:47:20,125 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 01:47:20,125 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 01:47:20,126 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 01:47:20,126 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 01:47:20,129 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 01:47:20,129 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 01:47:20,129 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 01:47:20,129 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 01:47:20,134 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 21, in netmiko_send_command
+    net_connect = task.host.get_connection("netmiko")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 292, in get_connection
+    configuration=config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 346, in open_connection
+    else self.nornir.config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/connections/netmiko.py", line 50, in open
+    self.connection = ConnectHandler(**parameters)
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/ssh_dispatcher.py", line 188, in ConnectHandler
+    'currently supported platforms are: {}'.format(platforms_str))
+ValueError: Unsupported device_type: currently supported platforms are: 
+a10
+accedian
+alcatel_aos
+alcatel_sros
+apresia_aeos
+arista_eos
+aruba_os
+avaya_ers
+avaya_vsp
+brocade_fastiron
+brocade_netiron
+brocade_nos
+brocade_vdx
+brocade_vyos
+calix_b6
+checkpoint_gaia
+ciena_saos
+cisco_asa
+cisco_ios
+cisco_nxos
+cisco_s300
+cisco_tp
+cisco_wlc
+cisco_xe
+cisco_xr
+coriant
+dell_force10
+dell_isilon
+dell_os10
+dell_powerconnect
+eltex
+enterasys
+extreme
+extreme_wing
+f5_ltm
+fortinet
+generic_termserver
+hp_comware
+hp_procurve
+huawei
+huawei_vrpv8
+juniper
+juniper_junos
+linux
+mellanox
+mrv_optiswitch
+netapp_cdot
+netscaler
+ovs_linux
+paloalto_panos
+pluribus
+quanta_mesh
+ruckus_fastiron
+ubiquiti_edge
+ubiquiti_edgeswitch
+vyatta_vyos
+vyos
+
+2018-10-24 01:47:20,134 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 21, in netmiko_send_command
+    net_connect = task.host.get_connection("netmiko")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 292, in get_connection
+    configuration=config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 346, in open_connection
+    else self.nornir.config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/connections/netmiko.py", line 50, in open
+    self.connection = ConnectHandler(**parameters)
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/ssh_dispatcher.py", line 188, in ConnectHandler
+    'currently supported platforms are: {}'.format(platforms_str))
+ValueError: Unsupported device_type: currently supported platforms are: 
+a10
+accedian
+alcatel_aos
+alcatel_sros
+apresia_aeos
+arista_eos
+aruba_os
+avaya_ers
+avaya_vsp
+brocade_fastiron
+brocade_netiron
+brocade_nos
+brocade_vdx
+brocade_vyos
+calix_b6
+checkpoint_gaia
+ciena_saos
+cisco_asa
+cisco_ios
+cisco_nxos
+cisco_s300
+cisco_tp
+cisco_wlc
+cisco_xe
+cisco_xr
+coriant
+dell_force10
+dell_isilon
+dell_os10
+dell_powerconnect
+eltex
+enterasys
+extreme
+extreme_wing
+f5_ltm
+fortinet
+generic_termserver
+hp_comware
+hp_procurve
+huawei
+huawei_vrpv8
+juniper
+juniper_junos
+linux
+mellanox
+mrv_optiswitch
+netapp_cdot
+netscaler
+ovs_linux
+paloalto_panos
+pluribus
+quanta_mesh
+ruckus_fastiron
+ubiquiti_edge
+ubiquiti_edgeswitch
+vyatta_vyos
+vyos
+
+2018-10-24 01:47:20,524 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 738, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 437, in connect
+    passphrase,
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 749, in _auth
+    raise saved_exception
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 736, in _auth
+    self._transport.auth_password(username, password)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/transport.py", line 1436, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/auth_handler.py", line 250, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 21, in netmiko_send_command
+    net_connect = task.host.get_connection("netmiko")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 292, in get_connection
+    configuration=config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 346, in open_connection
+    else self.nornir.config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/connections/netmiko.py", line 50, in open
+    self.connection = ConnectHandler(**parameters)
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/ssh_dispatcher.py", line 190, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 245, in __init__
+    self.establish_connection()
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 749, in establish_connection
+    raise NetMikoAuthenticationException(msg)
+netmiko.ssh_exception.NetMikoAuthenticationException: Authentication failure: unable to connect cisco_nxos 172.20.22.33:22
+Authentication failed.
+
+2018-10-24 01:47:20,524 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 738, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 437, in connect
+    passphrase,
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 749, in _auth
+    raise saved_exception
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 736, in _auth
+    self._transport.auth_password(username, password)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/transport.py", line 1436, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/auth_handler.py", line 250, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 21, in netmiko_send_command
+    net_connect = task.host.get_connection("netmiko")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 292, in get_connection
+    configuration=config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 346, in open_connection
+    else self.nornir.config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/connections/netmiko.py", line 50, in open
+    self.connection = ConnectHandler(**parameters)
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/ssh_dispatcher.py", line 190, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 245, in __init__
+    self.establish_connection()
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 749, in establish_connection
+    raise NetMikoAuthenticationException(msg)
+netmiko.ssh_exception.NetMikoAuthenticationException: Authentication failure: unable to connect cisco_nxos 172.20.22.33:22
+Authentication failed.
+
+2018-10-24 02:01:54,019 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 02:01:54,019 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 02:01:54,021 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 02:01:54,021 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 02:01:54,025 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 02:01:54,025 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 02:01:54,025 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 02:01:54,025 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 02:01:54,029 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 21, in netmiko_send_command
+    net_connect = task.host.get_connection("netmiko")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 292, in get_connection
+    configuration=config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 346, in open_connection
+    else self.nornir.config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/connections/netmiko.py", line 50, in open
+    self.connection = ConnectHandler(**parameters)
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/ssh_dispatcher.py", line 188, in ConnectHandler
+    'currently supported platforms are: {}'.format(platforms_str))
+ValueError: Unsupported device_type: currently supported platforms are: 
+a10
+accedian
+alcatel_aos
+alcatel_sros
+apresia_aeos
+arista_eos
+aruba_os
+avaya_ers
+avaya_vsp
+brocade_fastiron
+brocade_netiron
+brocade_nos
+brocade_vdx
+brocade_vyos
+calix_b6
+checkpoint_gaia
+ciena_saos
+cisco_asa
+cisco_ios
+cisco_nxos
+cisco_s300
+cisco_tp
+cisco_wlc
+cisco_xe
+cisco_xr
+coriant
+dell_force10
+dell_isilon
+dell_os10
+dell_powerconnect
+eltex
+enterasys
+extreme
+extreme_wing
+f5_ltm
+fortinet
+generic_termserver
+hp_comware
+hp_procurve
+huawei
+huawei_vrpv8
+juniper
+juniper_junos
+linux
+mellanox
+mrv_optiswitch
+netapp_cdot
+netscaler
+ovs_linux
+paloalto_panos
+pluribus
+quanta_mesh
+ruckus_fastiron
+ubiquiti_edge
+ubiquiti_edgeswitch
+vyatta_vyos
+vyos
+
+2018-10-24 02:01:54,029 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 21, in netmiko_send_command
+    net_connect = task.host.get_connection("netmiko")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 292, in get_connection
+    configuration=config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 346, in open_connection
+    else self.nornir.config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/connections/netmiko.py", line 50, in open
+    self.connection = ConnectHandler(**parameters)
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/ssh_dispatcher.py", line 188, in ConnectHandler
+    'currently supported platforms are: {}'.format(platforms_str))
+ValueError: Unsupported device_type: currently supported platforms are: 
+a10
+accedian
+alcatel_aos
+alcatel_sros
+apresia_aeos
+arista_eos
+aruba_os
+avaya_ers
+avaya_vsp
+brocade_fastiron
+brocade_netiron
+brocade_nos
+brocade_vdx
+brocade_vyos
+calix_b6
+checkpoint_gaia
+ciena_saos
+cisco_asa
+cisco_ios
+cisco_nxos
+cisco_s300
+cisco_tp
+cisco_wlc
+cisco_xe
+cisco_xr
+coriant
+dell_force10
+dell_isilon
+dell_os10
+dell_powerconnect
+eltex
+enterasys
+extreme
+extreme_wing
+f5_ltm
+fortinet
+generic_termserver
+hp_comware
+hp_procurve
+huawei
+huawei_vrpv8
+juniper
+juniper_junos
+linux
+mellanox
+mrv_optiswitch
+netapp_cdot
+netscaler
+ovs_linux
+paloalto_panos
+pluribus
+quanta_mesh
+ruckus_fastiron
+ubiquiti_edge
+ubiquiti_edgeswitch
+vyatta_vyos
+vyos
+
+2018-10-24 02:01:54,420 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 738, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 437, in connect
+    passphrase,
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 749, in _auth
+    raise saved_exception
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 736, in _auth
+    self._transport.auth_password(username, password)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/transport.py", line 1436, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/auth_handler.py", line 250, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 21, in netmiko_send_command
+    net_connect = task.host.get_connection("netmiko")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 292, in get_connection
+    configuration=config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 346, in open_connection
+    else self.nornir.config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/connections/netmiko.py", line 50, in open
+    self.connection = ConnectHandler(**parameters)
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/ssh_dispatcher.py", line 190, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 245, in __init__
+    self.establish_connection()
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 749, in establish_connection
+    raise NetMikoAuthenticationException(msg)
+netmiko.ssh_exception.NetMikoAuthenticationException: Authentication failure: unable to connect cisco_nxos 172.20.22.33:22
+Authentication failed.
+
+2018-10-24 02:01:54,420 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 738, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 437, in connect
+    passphrase,
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 749, in _auth
+    raise saved_exception
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 736, in _auth
+    self._transport.auth_password(username, password)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/transport.py", line 1436, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/auth_handler.py", line 250, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 21, in netmiko_send_command
+    net_connect = task.host.get_connection("netmiko")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 292, in get_connection
+    configuration=config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 346, in open_connection
+    else self.nornir.config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/connections/netmiko.py", line 50, in open
+    self.connection = ConnectHandler(**parameters)
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/ssh_dispatcher.py", line 190, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 245, in __init__
+    self.establish_connection()
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 749, in establish_connection
+    raise NetMikoAuthenticationException(msg)
+netmiko.ssh_exception.NetMikoAuthenticationException: Authentication failure: unable to connect cisco_nxos 172.20.22.33:22
+Authentication failed.
+
+2018-10-24 02:15:06,412 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 02:15:06,412 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 02:15:06,413 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 02:15:06,413 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 02:15:06,420 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 02:15:06,420 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 02:15:06,421 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 02:15:06,421 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 02:15:06,817 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 738, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 437, in connect
+    passphrase,
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 749, in _auth
+    raise saved_exception
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 736, in _auth
+    self._transport.auth_password(username, password)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/transport.py", line 1436, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/auth_handler.py", line 250, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 21, in netmiko_send_command
+    net_connect = task.host.get_connection("netmiko")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 292, in get_connection
+    configuration=config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 346, in open_connection
+    else self.nornir.config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/connections/netmiko.py", line 50, in open
+    self.connection = ConnectHandler(**parameters)
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/ssh_dispatcher.py", line 190, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 245, in __init__
+    self.establish_connection()
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 749, in establish_connection
+    raise NetMikoAuthenticationException(msg)
+netmiko.ssh_exception.NetMikoAuthenticationException: Authentication failure: unable to connect cisco_nxos 172.20.22.34:22
+Authentication failed.
+
+2018-10-24 02:15:06,817 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 738, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 437, in connect
+    passphrase,
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 749, in _auth
+    raise saved_exception
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 736, in _auth
+    self._transport.auth_password(username, password)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/transport.py", line 1436, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/auth_handler.py", line 250, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 21, in netmiko_send_command
+    net_connect = task.host.get_connection("netmiko")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 292, in get_connection
+    configuration=config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 346, in open_connection
+    else self.nornir.config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/connections/netmiko.py", line 50, in open
+    self.connection = ConnectHandler(**parameters)
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/ssh_dispatcher.py", line 190, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 245, in __init__
+    self.establish_connection()
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 749, in establish_connection
+    raise NetMikoAuthenticationException(msg)
+netmiko.ssh_exception.NetMikoAuthenticationException: Authentication failure: unable to connect cisco_nxos 172.20.22.34:22
+Authentication failed.
+
+2018-10-24 02:15:06,819 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 738, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 437, in connect
+    passphrase,
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 749, in _auth
+    raise saved_exception
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 736, in _auth
+    self._transport.auth_password(username, password)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/transport.py", line 1436, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/auth_handler.py", line 250, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 21, in netmiko_send_command
+    net_connect = task.host.get_connection("netmiko")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 292, in get_connection
+    configuration=config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 346, in open_connection
+    else self.nornir.config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/connections/netmiko.py", line 50, in open
+    self.connection = ConnectHandler(**parameters)
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/ssh_dispatcher.py", line 190, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 245, in __init__
+    self.establish_connection()
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 749, in establish_connection
+    raise NetMikoAuthenticationException(msg)
+netmiko.ssh_exception.NetMikoAuthenticationException: Authentication failure: unable to connect cisco_nxos 172.20.22.33:22
+Authentication failed.
+
+2018-10-24 02:15:06,819 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 738, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 437, in connect
+    passphrase,
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 749, in _auth
+    raise saved_exception
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 736, in _auth
+    self._transport.auth_password(username, password)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/transport.py", line 1436, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/auth_handler.py", line 250, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 21, in netmiko_send_command
+    net_connect = task.host.get_connection("netmiko")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 292, in get_connection
+    configuration=config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 346, in open_connection
+    else self.nornir.config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/connections/netmiko.py", line 50, in open
+    self.connection = ConnectHandler(**parameters)
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/ssh_dispatcher.py", line 190, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 245, in __init__
+    self.establish_connection()
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 749, in establish_connection
+    raise NetMikoAuthenticationException(msg)
+netmiko.ssh_exception.NetMikoAuthenticationException: Authentication failure: unable to connect cisco_nxos 172.20.22.33:22
+Authentication failed.
+
+2018-10-24 02:16:51,670 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 02:16:51,670 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 02:16:51,671 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 02:16:51,671 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 02:16:51,676 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 02:16:51,677 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 02:16:51,677 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 02:16:51,676 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 02:16:52,093 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 738, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 437, in connect
+    passphrase,
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 749, in _auth
+    raise saved_exception
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 736, in _auth
+    self._transport.auth_password(username, password)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/transport.py", line 1436, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/auth_handler.py", line 250, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 21, in netmiko_send_command
+    net_connect = task.host.get_connection("netmiko")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 292, in get_connection
+    configuration=config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 346, in open_connection
+    else self.nornir.config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/connections/netmiko.py", line 50, in open
+    self.connection = ConnectHandler(**parameters)
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/ssh_dispatcher.py", line 190, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 245, in __init__
+    self.establish_connection()
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 749, in establish_connection
+    raise NetMikoAuthenticationException(msg)
+netmiko.ssh_exception.NetMikoAuthenticationException: Authentication failure: unable to connect cisco_nxos 172.20.22.33:22
+Authentication failed.
+
+2018-10-24 02:16:52,093 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 738, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 437, in connect
+    passphrase,
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 749, in _auth
+    raise saved_exception
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 736, in _auth
+    self._transport.auth_password(username, password)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/transport.py", line 1436, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/auth_handler.py", line 250, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 21, in netmiko_send_command
+    net_connect = task.host.get_connection("netmiko")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 292, in get_connection
+    configuration=config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 346, in open_connection
+    else self.nornir.config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/connections/netmiko.py", line 50, in open
+    self.connection = ConnectHandler(**parameters)
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/ssh_dispatcher.py", line 190, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 245, in __init__
+    self.establish_connection()
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 749, in establish_connection
+    raise NetMikoAuthenticationException(msg)
+netmiko.ssh_exception.NetMikoAuthenticationException: Authentication failure: unable to connect cisco_nxos 172.20.22.33:22
+Authentication failed.
+
+2018-10-24 02:16:52,093 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 738, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 437, in connect
+    passphrase,
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 749, in _auth
+    raise saved_exception
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 736, in _auth
+    self._transport.auth_password(username, password)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/transport.py", line 1436, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/auth_handler.py", line 250, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 21, in netmiko_send_command
+    net_connect = task.host.get_connection("netmiko")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 292, in get_connection
+    configuration=config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 346, in open_connection
+    else self.nornir.config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/connections/netmiko.py", line 50, in open
+    self.connection = ConnectHandler(**parameters)
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/ssh_dispatcher.py", line 190, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 245, in __init__
+    self.establish_connection()
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 749, in establish_connection
+    raise NetMikoAuthenticationException(msg)
+netmiko.ssh_exception.NetMikoAuthenticationException: Authentication failure: unable to connect cisco_nxos 172.20.22.34:22
+Authentication failed.
+
+2018-10-24 02:16:52,093 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 738, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 437, in connect
+    passphrase,
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 749, in _auth
+    raise saved_exception
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 736, in _auth
+    self._transport.auth_password(username, password)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/transport.py", line 1436, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/auth_handler.py", line 250, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 21, in netmiko_send_command
+    net_connect = task.host.get_connection("netmiko")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 292, in get_connection
+    configuration=config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 346, in open_connection
+    else self.nornir.config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/connections/netmiko.py", line 50, in open
+    self.connection = ConnectHandler(**parameters)
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/ssh_dispatcher.py", line 190, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 245, in __init__
+    self.establish_connection()
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 749, in establish_connection
+    raise NetMikoAuthenticationException(msg)
+netmiko.ssh_exception.NetMikoAuthenticationException: Authentication failure: unable to connect cisco_nxos 172.20.22.34:22
+Authentication failed.
+
+2018-10-24 02:17:32,133 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 02:17:32,133 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 02:17:32,134 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 02:17:32,134 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 02:17:32,139 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 02:17:32,140 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 02:17:32,140 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 02:17:32,139 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 09:21:05,557 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 09:21:05,557 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 09:21:05,558 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 09:21:05,558 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 09:21:05,565 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 09:21:05,565 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 09:21:05,568 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 09:21:05,568 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 09:24:52,135 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 09:24:52,135 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 09:24:52,136 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 09:24:52,136 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 09:24:52,141 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 09:24:52,141 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 09:24:52,141 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 09:24:52,141 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 09:24:57,471 - django.request -    ERROR - log_response() - Internal Server Error: /dashboard/net_view/fex
+Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/wamer/netops/dashboard/views.py", line 47, in network_views
+    data_list.append(result[r][1])
+IndexError: list index out of range
+2018-10-24 09:25:56,580 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 09:25:56,580 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 09:25:56,581 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 09:25:56,581 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 09:25:56,587 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 09:25:56,587 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 09:25:56,588 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 09:25:56,588 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 09:26:01,963 - django.request -    ERROR - log_response() - Internal Server Error: /dashboard/net_view/fex
+Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'endblock'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/wamer/netops/dashboard/views.py", line 48, in network_views
+    return render(request, 'dashboard/show_result.html', {'result': data_list})
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/defaulttags.py", line 810, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/base.py", line 528, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 33: 'endblock', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+2018-10-24 09:26:30,476 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 09:26:30,476 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 09:26:30,477 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 09:26:30,477 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 09:26:30,486 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 09:26:30,486 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 09:26:30,487 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 09:26:30,487 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 09:26:35,704 - django.request -    ERROR - log_response() - Internal Server Error: /dashboard/net_view/fex
+Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/wamer/netops/dashboard/views.py", line 48, in network_views
+    return render(request, 'dashboard/show_result.html', {'result': data_list})
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/template/defaulttags.py", line 165, in render
+    values = list(values)
+TypeError: 'Result' object is not iterable
+2018-10-24 09:27:20,201 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 09:27:20,201 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 09:27:20,202 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 09:27:20,202 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 09:27:20,210 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 09:27:20,210 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 09:27:20,210 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 09:27:20,210 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 02:29:20,520 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 02:29:20,520 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 02:29:20,521 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 02:29:20,521 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 02:29:20,526 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 02:29:20,526 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 02:29:20,526 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 02:29:20,526 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 02:29:56,533 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 02:29:56,533 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 02:29:56,533 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 02:29:56,533 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 02:29:56,537 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 02:29:56,537 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 02:29:56,537 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 02:29:56,537 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 09:32:35,662 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 09:32:35,662 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 09:32:35,663 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 09:32:35,663 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 09:32:35,669 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 09:32:35,669 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 09:32:35,670 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 09:32:35,670 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 09:32:40,988 - django.request -    ERROR - log_response() - Internal Server Error: /dashboard/net_view/fex
+Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/wamer/netops/dashboard/views.py", line 47, in network_views
+    data_list.append(result[r][0])
+TypeError: list indices must be integers or slices, not list
+2018-10-24 09:33:31,267 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 09:33:31,267 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 09:33:31,267 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 09:33:31,267 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 09:33:31,272 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 09:33:31,272 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 09:33:31,272 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 09:33:31,272 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 09:33:36,560 - django.request -    ERROR - log_response() - Internal Server Error: /dashboard/net_view/fex
+Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/wamer/netops/dashboard/views.py", line 47, in network_views
+    data_list.append(result[r][1])
+TypeError: list indices must be integers or slices, not list
+2018-10-24 09:49:04,004 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 09:49:04,004 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 09:49:04,004 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 09:49:04,004 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 09:49:04,009 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 09:49:04,009 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 09:49:04,009 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 09:49:04,009 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 02:53:05,938 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 02:53:05,938 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 02:53:05,940 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 02:53:05,940 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 02:53:05,944 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 02:53:05,944 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 02:53:05,944 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 02:53:05,944 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 02:53:26,436 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 02:53:26,436 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 02:53:26,437 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 02:53:26,437 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 02:53:26,442 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 02:53:26,442 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 02:53:26,442 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 02:53:26,442 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 02:54:46,093 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 02:54:46,093 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 02:54:46,094 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 02:54:46,094 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 02:54:46,098 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 02:54:46,098 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 02:54:46,098 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 02:54:46,098 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 02:55:19,456 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 02:55:19,456 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 02:55:19,457 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 02:55:19,457 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 02:55:19,461 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 02:55:19,461 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 02:55:19,461 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 02:55:19,461 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 02:57:19,254 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 02:57:19,254 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 02:57:19,255 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 02:57:19,255 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 02:57:19,259 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 02:57:19,259 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 02:57:19,259 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 02:57:19,259 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 02:57:48,761 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 02:57:48,761 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 02:57:48,762 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 02:57:48,762 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 02:57:48,785 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 02:57:48,785 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 02:57:48,788 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 02:57:48,788 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 02:58:33,478 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 02:58:33,478 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 02:58:33,479 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 02:58:33,479 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 02:58:33,487 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 02:58:33,487 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 02:58:33,490 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 02:58:33,490 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 03:51:01,139 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 03:51:01,139 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 03:51:01,139 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 03:51:01,139 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 03:51:01,143 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 03:51:01,143 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 03:51:01,143 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 03:51:01,143 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 03:51:22,597 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 03:51:22,597 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 03:51:22,597 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 03:51:22,597 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 03:51:22,602 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 03:51:22,602 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 03:51:22,602 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 03:51:22,602 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 03:56:00,931 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 03:56:00,931 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 03:56:00,931 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 03:56:00,931 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 03:56:00,935 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 03:56:00,935 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 03:56:00,935 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 03:56:00,935 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 03:56:53,806 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 03:56:53,806 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 03:56:53,806 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 03:56:53,806 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 03:56:53,810 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 03:56:53,810 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 03:56:53,810 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 03:56:53,810 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 04:01:45,429 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 04:01:45,429 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 04:01:45,430 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 04:01:45,430 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 04:01:45,434 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 04:01:45,434 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 04:01:45,434 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 04:01:45,434 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 04:02:17,213 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 04:02:17,213 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 04:02:17,213 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 04:02:17,213 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 04:02:17,217 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 04:02:17,217 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 04:02:17,217 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 04:02:17,217 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 04:03:13,730 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 04:03:13,730 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 04:03:13,731 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 04:03:13,731 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 04:03:13,741 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 04:03:13,741 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 04:03:13,741 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 04:03:13,741 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 04:04:47,004 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 04:04:47,004 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 04:04:47,005 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 04:04:47,005 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 04:04:47,009 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 04:04:47,009 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 04:04:47,009 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 04:04:47,009 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 04:05:28,286 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 04:05:28,286 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 04:05:28,287 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 04:05:28,287 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 04:05:28,295 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 04:05:28,295 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 04:05:28,295 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 04:05:28,295 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 04:07:07,358 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 04:07:07,358 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 04:07:07,360 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 04:07:07,360 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 04:07:07,363 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 04:07:07,363 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 04:07:07,364 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 04:07:07,364 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 11:10:20,802 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 11:10:20,802 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 11:10:20,802 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 11:10:20,802 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 11:10:20,821 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 11:10:20,821 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 11:10:20,822 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 11:10:20,822 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 04:12:07,483 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 04:12:07,483 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 04:12:07,483 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 04:12:07,483 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 04:12:07,487 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 04:12:07,487 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 04:12:07,487 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 04:12:07,487 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 11:13:09,707 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 11:13:09,707 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 11:13:09,707 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 11:13:09,707 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 11:13:09,712 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 11:13:09,712 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 11:13:09,713 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 11:13:09,713 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 04:17:54,136 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 04:17:54,136 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 04:17:54,146 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 04:17:54,146 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 04:17:54,164 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 04:17:54,165 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 04:17:54,165 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 04:17:54,164 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 11:19:05,479 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 11:19:05,479 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 11:19:05,479 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 11:19:05,479 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 11:19:05,487 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 11:19:05,487 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 11:19:05,488 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 11:19:05,488 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 11:20:53,999 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 11:20:53,999 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 11:20:54,000 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 11:20:54,000 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 11:20:54,018 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 11:20:54,018 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 11:20:54,020 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 11:20:54,020 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 11:22:04,482 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 11:22:04,482 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 11:22:04,483 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 11:22:04,483 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 11:22:04,487 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 11:22:04,487 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 11:22:04,487 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 11:22:04,487 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 11:22:52,627 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 11:22:52,627 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 11:22:52,627 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 11:22:52,627 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 11:22:52,631 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 11:22:52,631 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 11:22:52,632 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 11:22:52,632 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 11:25:08,636 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 11:25:08,636 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 11:25:08,636 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 11:25:08,636 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 11:25:08,651 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 11:25:08,651 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 11:25:08,651 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 11:25:08,651 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 11:26:09,969 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 11:26:09,969 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 11:26:09,970 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 11:26:09,970 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 11:26:09,981 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 11:26:09,981 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 11:26:09,981 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 11:26:09,981 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 11:27:04,906 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 11:27:04,906 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 11:27:04,906 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 11:27:04,906 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 11:27:04,912 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 11:27:04,912 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 11:27:04,912 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 11:27:04,912 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 11:30:22,526 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 11:30:22,526 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 11:30:22,530 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 11:30:22,530 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 11:30:22,538 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 11:30:22,538 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 11:30:22,538 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 11:30:22,538 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 11:30:27,839 - django.request -    ERROR - log_response() - Internal Server Error: /dashboard/net_view/fex
+Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/wamer/netops/dashboard/views.py", line 46, in network_views
+    data_list.append(result[r][1])
+IndexError: list index out of range
+2018-10-24 11:32:06,533 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 11:32:06,533 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 11:32:06,533 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 11:32:06,533 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 11:32:06,539 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 11:32:06,539 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 11:32:06,539 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 11:32:06,539 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 04:33:08,839 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-24 04:33:08,839 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-24 04:33:08,840 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f413841d1d0>, 'tenant': 'gbi'}
+2018-10-24 04:33:08,840 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f413841d1d0>, 'tenant': 'gbi'}
+2018-10-24 04:33:08,916 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-24 04:33:08,916 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-24 04:33:08,918 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-24 04:33:08,918 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-24 04:33:09,224 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-24 04:33:09,224 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-24 04:33:09,254 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-24 04:33:09,254 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-24 04:35:08,503 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-24 04:35:08,503 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-24 04:35:08,504 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f0d8f2191d0>, 'tenant': 'gbi'}
+2018-10-24 04:35:08,504 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f0d8f2191d0>, 'tenant': 'gbi'}
+2018-10-24 04:35:08,555 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-24 04:35:08,556 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-24 04:35:08,556 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-24 04:35:08,555 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-24 04:35:08,830 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-24 04:35:08,830 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-24 04:35:08,842 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-24 04:35:08,842 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-24 04:35:37,592 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-24 04:35:37,592 -       nornir -     INFO -        run() - Running task 'dc_access_template' with num_workers: 100
+2018-10-24 04:35:37,592 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f0a3172c1d0>, 'tenant': 'gbi'}
+2018-10-24 04:35:37,592 -       nornir -    DEBUG -        run() - {'inventory': <nornir.core.inventory.Inventory object at 0x7f0a3172c1d0>, 'tenant': 'gbi'}
+2018-10-24 04:35:37,627 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-24 04:35:37,628 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-24 04:35:37,627 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: dc_access_template: running task
+2018-10-24 04:35:37,628 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: dc_access_template: running task
+2018-10-24 04:35:37,917 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-24 04:35:37,917 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
+2018-10-24 04:35:37,935 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-24 04:35:37,935 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-24 04:38:05,759 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 04:38:05,759 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 04:38:05,760 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 04:38:05,760 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 04:38:05,764 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 04:38:05,764 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 04:38:05,764 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 04:38:05,764 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 11:41:05,083 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 11:41:05,083 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 11:41:05,083 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 11:41:05,083 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 11:41:05,089 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 11:41:05,090 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 11:41:05,090 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 11:41:05,089 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 12:03:41,730 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 12:03:41,730 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 12:03:41,731 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 12:03:41,731 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 12:03:41,734 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 12:03:41,734 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 12:03:41,736 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 12:03:41,736 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 12:05:07,419 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 12:05:07,419 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 12:05:07,420 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 12:05:07,420 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 12:05:07,428 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 12:05:07,428 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 12:05:07,429 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 12:05:07,429 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 12:05:07,429 -       nornir -     INFO -      start() - MV1_N7K_SVC_PE_01: netmiko_send_command: running task
+2018-10-24 12:05:07,429 -       nornir -     INFO -      start() - MV1_N7K_SVC_PE_01: netmiko_send_command: running task
+2018-10-24 12:05:07,432 -       nornir -     INFO -      start() - MV3_N7K_SVC_PE_02: netmiko_send_command: running task
+2018-10-24 12:05:07,432 -       nornir -     INFO -      start() - MV3_N7K_SVC_PE_02: netmiko_send_command: running task
+2018-10-24 12:05:07,435 -       nornir -    ERROR -      start() - MV1_N7K_SVC_PE_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 21, in netmiko_send_command
+    net_connect = task.host.get_connection("netmiko")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 292, in get_connection
+    configuration=config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 346, in open_connection
+    else self.nornir.config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/connections/netmiko.py", line 50, in open
+    self.connection = ConnectHandler(**parameters)
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/ssh_dispatcher.py", line 188, in ConnectHandler
+    'currently supported platforms are: {}'.format(platforms_str))
+ValueError: Unsupported device_type: currently supported platforms are: 
+a10
+accedian
+alcatel_aos
+alcatel_sros
+apresia_aeos
+arista_eos
+aruba_os
+avaya_ers
+avaya_vsp
+brocade_fastiron
+brocade_netiron
+brocade_nos
+brocade_vdx
+brocade_vyos
+calix_b6
+checkpoint_gaia
+ciena_saos
+cisco_asa
+cisco_ios
+cisco_nxos
+cisco_s300
+cisco_tp
+cisco_wlc
+cisco_xe
+cisco_xr
+coriant
+dell_force10
+dell_isilon
+dell_os10
+dell_powerconnect
+eltex
+enterasys
+extreme
+extreme_wing
+f5_ltm
+fortinet
+generic_termserver
+hp_comware
+hp_procurve
+huawei
+huawei_vrpv8
+juniper
+juniper_junos
+linux
+mellanox
+mrv_optiswitch
+netapp_cdot
+netscaler
+ovs_linux
+paloalto_panos
+pluribus
+quanta_mesh
+ruckus_fastiron
+ubiquiti_edge
+ubiquiti_edgeswitch
+vyatta_vyos
+vyos
+
+2018-10-24 12:05:07,435 -       nornir -    ERROR -      start() - MV1_N7K_SVC_PE_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 21, in netmiko_send_command
+    net_connect = task.host.get_connection("netmiko")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 292, in get_connection
+    configuration=config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 346, in open_connection
+    else self.nornir.config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/connections/netmiko.py", line 50, in open
+    self.connection = ConnectHandler(**parameters)
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/ssh_dispatcher.py", line 188, in ConnectHandler
+    'currently supported platforms are: {}'.format(platforms_str))
+ValueError: Unsupported device_type: currently supported platforms are: 
+a10
+accedian
+alcatel_aos
+alcatel_sros
+apresia_aeos
+arista_eos
+aruba_os
+avaya_ers
+avaya_vsp
+brocade_fastiron
+brocade_netiron
+brocade_nos
+brocade_vdx
+brocade_vyos
+calix_b6
+checkpoint_gaia
+ciena_saos
+cisco_asa
+cisco_ios
+cisco_nxos
+cisco_s300
+cisco_tp
+cisco_wlc
+cisco_xe
+cisco_xr
+coriant
+dell_force10
+dell_isilon
+dell_os10
+dell_powerconnect
+eltex
+enterasys
+extreme
+extreme_wing
+f5_ltm
+fortinet
+generic_termserver
+hp_comware
+hp_procurve
+huawei
+huawei_vrpv8
+juniper
+juniper_junos
+linux
+mellanox
+mrv_optiswitch
+netapp_cdot
+netscaler
+ovs_linux
+paloalto_panos
+pluribus
+quanta_mesh
+ruckus_fastiron
+ubiquiti_edge
+ubiquiti_edgeswitch
+vyatta_vyos
+vyos
+
+2018-10-24 12:05:07,436 -       nornir -    ERROR -      start() - MV3_N7K_SVC_PE_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 21, in netmiko_send_command
+    net_connect = task.host.get_connection("netmiko")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 292, in get_connection
+    configuration=config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 346, in open_connection
+    else self.nornir.config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/connections/netmiko.py", line 50, in open
+    self.connection = ConnectHandler(**parameters)
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/ssh_dispatcher.py", line 188, in ConnectHandler
+    'currently supported platforms are: {}'.format(platforms_str))
+ValueError: Unsupported device_type: currently supported platforms are: 
+a10
+accedian
+alcatel_aos
+alcatel_sros
+apresia_aeos
+arista_eos
+aruba_os
+avaya_ers
+avaya_vsp
+brocade_fastiron
+brocade_netiron
+brocade_nos
+brocade_vdx
+brocade_vyos
+calix_b6
+checkpoint_gaia
+ciena_saos
+cisco_asa
+cisco_ios
+cisco_nxos
+cisco_s300
+cisco_tp
+cisco_wlc
+cisco_xe
+cisco_xr
+coriant
+dell_force10
+dell_isilon
+dell_os10
+dell_powerconnect
+eltex
+enterasys
+extreme
+extreme_wing
+f5_ltm
+fortinet
+generic_termserver
+hp_comware
+hp_procurve
+huawei
+huawei_vrpv8
+juniper
+juniper_junos
+linux
+mellanox
+mrv_optiswitch
+netapp_cdot
+netscaler
+ovs_linux
+paloalto_panos
+pluribus
+quanta_mesh
+ruckus_fastiron
+ubiquiti_edge
+ubiquiti_edgeswitch
+vyatta_vyos
+vyos
+
+2018-10-24 12:05:07,436 -       nornir -    ERROR -      start() - MV3_N7K_SVC_PE_02: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 21, in netmiko_send_command
+    net_connect = task.host.get_connection("netmiko")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 292, in get_connection
+    configuration=config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 346, in open_connection
+    else self.nornir.config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/connections/netmiko.py", line 50, in open
+    self.connection = ConnectHandler(**parameters)
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/ssh_dispatcher.py", line 188, in ConnectHandler
+    'currently supported platforms are: {}'.format(platforms_str))
+ValueError: Unsupported device_type: currently supported platforms are: 
+a10
+accedian
+alcatel_aos
+alcatel_sros
+apresia_aeos
+arista_eos
+aruba_os
+avaya_ers
+avaya_vsp
+brocade_fastiron
+brocade_netiron
+brocade_nos
+brocade_vdx
+brocade_vyos
+calix_b6
+checkpoint_gaia
+ciena_saos
+cisco_asa
+cisco_ios
+cisco_nxos
+cisco_s300
+cisco_tp
+cisco_wlc
+cisco_xe
+cisco_xr
+coriant
+dell_force10
+dell_isilon
+dell_os10
+dell_powerconnect
+eltex
+enterasys
+extreme
+extreme_wing
+f5_ltm
+fortinet
+generic_termserver
+hp_comware
+hp_procurve
+huawei
+huawei_vrpv8
+juniper
+juniper_junos
+linux
+mellanox
+mrv_optiswitch
+netapp_cdot
+netscaler
+ovs_linux
+paloalto_panos
+pluribus
+quanta_mesh
+ruckus_fastiron
+ubiquiti_edge
+ubiquiti_edgeswitch
+vyatta_vyos
+vyos
+
+2018-10-24 12:06:22,327 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 12:06:22,327 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 12:06:22,327 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 12:06:22,327 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 12:06:22,330 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 12:06:22,330 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 12:06:22,330 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 12:06:22,330 -       nornir -     INFO -      start() - MV1_N7K_SVC_PE_01: netmiko_send_command: running task
+2018-10-24 12:06:22,330 -       nornir -     INFO -      start() - MV3_N7K_SVC_PE_02: netmiko_send_command: running task
+2018-10-24 12:06:22,330 -       nornir -     INFO -      start() - MV3_N7K_SVC_PE_02: netmiko_send_command: running task
+2018-10-24 12:06:22,330 -       nornir -     INFO -      start() - MV1_N7K_SVC_PE_01: netmiko_send_command: running task
+2018-10-24 12:06:22,330 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 12:16:27,239 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 12:16:27,239 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 12:16:27,241 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 12:16:27,241 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 12:16:27,245 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 12:16:27,245 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 12:16:27,245 -       nornir -     INFO -      start() - MV1_N7K_SVC_PE_01: netmiko_send_command: running task
+2018-10-24 12:16:27,245 -       nornir -     INFO -      start() - MV1_N7K_SVC_PE_01: netmiko_send_command: running task
+2018-10-24 12:16:27,245 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 12:16:27,245 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 12:16:27,245 -       nornir -     INFO -      start() - MV3_N7K_SVC_PE_02: netmiko_send_command: running task
+2018-10-24 12:16:27,245 -       nornir -     INFO -      start() - MV3_N7K_SVC_PE_02: netmiko_send_command: running task
+2018-10-24 12:22:37,710 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 12:22:37,710 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 12:22:37,710 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 12:22:37,710 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 12:22:37,722 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 12:22:37,722 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 12:22:37,722 -       nornir -     INFO -      start() - MV1_N7K_SVC_PE_01: netmiko_send_command: running task
+2018-10-24 12:22:37,722 -       nornir -     INFO -      start() - MV1_N7K_SVC_PE_01: netmiko_send_command: running task
+2018-10-24 12:22:37,722 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 12:22:37,722 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 12:22:37,722 -       nornir -     INFO -      start() - MV3_N7K_SVC_PE_02: netmiko_send_command: running task
+2018-10-24 12:22:37,722 -       nornir -     INFO -      start() - MV3_N7K_SVC_PE_02: netmiko_send_command: running task
+2018-10-24 12:48:44,769 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 12:48:44,769 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 4
+2018-10-24 12:48:44,770 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 12:48:44,770 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-24 12:48:44,774 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-24 12:48:44,774 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 12:48:44,774 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-24 12:48:44,774 -       nornir -     INFO -      start() - MV1_N7K_SVC_PE_01: netmiko_send_command: running task
+2018-10-24 12:48:44,774 -       nornir -     INFO -      start() - MV1_N7K_SVC_PE_01: netmiko_send_command: running task
+2018-10-24 12:48:44,775 -       nornir -     INFO -      start() - MV3_N7K_SVC_PE_02: netmiko_send_command: running task
+2018-10-24 12:48:44,775 -       nornir -     INFO -      start() - MV3_N7K_SVC_PE_02: netmiko_send_command: running task
+2018-10-24 12:48:44,774 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task

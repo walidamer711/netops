@@ -2,20 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4df17b7-2258-407e-96dd-f37f5b21fe1c" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/dashboard/.env" afterPath="$PROJECT_DIR$/dashboard/.env" />
       <change beforePath="$PROJECT_DIR$/dashboard/config_generator.py" afterPath="$PROJECT_DIR$/dashboard/config_generator.py" />
-      <change beforePath="$PROJECT_DIR$/dashboard/forms.py" afterPath="$PROJECT_DIR$/dashboard/forms.py" />
       <change beforePath="$PROJECT_DIR$/dashboard/inventory/groups.yaml" afterPath="$PROJECT_DIR$/dashboard/inventory/groups.yaml" />
-      <change beforePath="$PROJECT_DIR$/dashboard/inventory/hosts.yaml" afterPath="$PROJECT_DIR$/dashboard/inventory/hosts.yaml" />
       <change beforePath="$PROJECT_DIR$/dashboard/netbox_query.py" afterPath="$PROJECT_DIR$/dashboard/netbox_query.py" />
       <change beforePath="$PROJECT_DIR$/dashboard/nornir.log" afterPath="$PROJECT_DIR$/dashboard/nornir.log" />
       <change beforePath="$PROJECT_DIR$/dashboard/nornir_exec.py" afterPath="$PROJECT_DIR$/dashboard/nornir_exec.py" />
-      <change beforePath="$PROJECT_DIR$/dashboard/templates/cisco/agg.j2" afterPath="$PROJECT_DIR$/dashboard/templates/cisco/agg.j2" />
       <change beforePath="$PROJECT_DIR$/dashboard/urls.py" afterPath="$PROJECT_DIR$/dashboard/urls.py" />
       <change beforePath="$PROJECT_DIR$/dashboard/views.py" afterPath="$PROJECT_DIR$/dashboard/views.py" />
-      <change beforePath="$PROJECT_DIR$/nornir.log" afterPath="$PROJECT_DIR$/nornir.log" />
-      <change beforePath="$PROJECT_DIR$/templates/cisco/agg.j2" afterPath="$PROJECT_DIR$/templates/cisco/agg.j2" />
-      <change beforePath="$PROJECT_DIR$/templates/dashboard/dashboard.html" afterPath="$PROJECT_DIR$/templates/dashboard/dashboard.html" />
       <change beforePath="$PROJECT_DIR$/templates/dashboard/show_result.html" afterPath="$PROJECT_DIR$/templates/dashboard/show_result.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,8 +28,8 @@
     <SUITE FILE_PATH="coverage/netops$forms.coverage" NAME="forms Coverage Results" MODIFIED="1539246186532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dashboard" />
     <SUITE FILE_PATH="coverage/netops$dict_to_yaml.coverage" NAME="dict_to_yaml Coverage Results" MODIFIED="1538995261413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/netops$config_generator.coverage" NAME="config_generator Coverage Results" MODIFIED="1539256019705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
-    <SUITE FILE_PATH="coverage/netops$nornir_exec.coverage" NAME="nornir_exec Coverage Results" MODIFIED="1540299824766" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dashboard" />
-    <SUITE FILE_PATH="coverage/netops$config_generator__1_.coverage" NAME="config_generator (1) Coverage Results" MODIFIED="1540362611094" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dashboard" />
+    <SUITE FILE_PATH="coverage/netops$nornir_exec.coverage" NAME="nornir_exec Coverage Results" MODIFIED="1540381080055" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dashboard" />
+    <SUITE FILE_PATH="coverage/netops$config_generator__1_.coverage" NAME="config_generator (1) Coverage Results" MODIFIED="1540380936332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dashboard" />
     <SUITE FILE_PATH="coverage/netops$test_netmiko_asa.coverage" NAME="test_netmiko_asa Coverage Results" MODIFIED="1539085138128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
@@ -41,12 +37,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dashboard/forms.py">
+      <file leaf-file-name="nornir_exec.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dashboard/nornir_exec.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="216">
+              <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#34#0" expanded="true" />
+                <element signature="e#403#688#0" expanded="false" />
+                <element signature="e#721#1094#0" expanded="false" />
+                <element signature="e#1901#2697#0" expanded="false" />
+                <element signature="e#2986#3328#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -54,8 +56,8 @@
       <file leaf-file-name="config_generator.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dashboard/config_generator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="828">
-              <caret line="76" column="65" lean-forward="true" selection-start-line="74" selection-start-column="9" selection-end-line="77" selection-end-column="89" />
+            <state relative-caret-position="90">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
                 <element signature="e#570#1267#0" expanded="false" />
@@ -64,43 +66,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="netbox_query.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dashboard/netbox_query.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="725">
-              <caret line="111" column="30" lean-forward="false" selection-start-line="111" selection-start-column="30" selection-end-line="111" selection-end-column="30" />
-              <folding>
-                <element signature="e#468#1669#0" expanded="false" />
-                <element signature="e#1722#2230#0" expanded="false" />
-                <element signature="e#3430#5928#0" expanded="false" />
-                <element signature="e#5953#6317#0" expanded="false" />
-                <element signature="e#6346#6697#0" expanded="false" />
-                <element signature="e#6733#7087#0" expanded="false" />
-                <element signature="e#7123#7468#0" expanded="false" />
-                <element signature="e#7495#7780#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dashboard/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="49" column="27" lean-forward="true" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
+            <state relative-caret-position="221">
+              <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
               <folding>
-                <element signature="e#0#49#0" expanded="true" />
+                <element signature="e#0#35#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dashboard.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/dashboard/dashboard.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -108,18 +81,8 @@
       <file leaf-file-name="show_result.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/dashboard/show_result.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dc_access_template.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/dashboard/dc_access_template.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="14" />
+            <state relative-caret-position="108">
+              <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -148,8 +111,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/netops/urls.py" />
-        <option value="$PROJECT_DIR$/store/urls.py" />
         <option value="$PROJECT_DIR$/templates/store/store_update_form.html" />
         <option value="$PROJECT_DIR$/store/views.py" />
         <option value="$PROJECT_DIR$/templates/store/store_list.html" />
@@ -184,21 +145,23 @@
         <option value="$PROJECT_DIR$/templates/home.html" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/dashboard/config.yaml" />
-        <option value="$PROJECT_DIR$/dashboard/inventory/groups.yaml" />
         <option value="$PROJECT_DIR$/dashboard/simple.yaml" />
         <option value="$PROJECT_DIR$/dashboard/inventory/hosts.yaml" />
         <option value="$PROJECT_DIR$/dashboard/vlan_list" />
         <option value="$PROJECT_DIR$/templates/cisco/agg.j2" />
-        <option value="$PROJECT_DIR$/dashboard/netbox_query.py" />
         <option value="$PROJECT_DIR$/dashboard/templates/cisco/agg.j2" />
         <option value="$PROJECT_DIR$/dashboard/templates/cisco/agg2.j2" />
-        <option value="$PROJECT_DIR$/dashboard/nornir_exec.py" />
-        <option value="$PROJECT_DIR$/templates/dashboard/show_result.html" />
         <option value="$PROJECT_DIR$/templates/dashboard/dashboard.html" />
-        <option value="$PROJECT_DIR$/dashboard/urls.py" />
-        <option value="$PROJECT_DIR$/dashboard/config_generator.py" />
         <option value="$PROJECT_DIR$/dashboard/forms.py" />
+        <option value="$PROJECT_DIR$/dashboard/urls.py" />
+        <option value="$PROJECT_DIR$/dashboard/netbox_query.py" />
         <option value="$PROJECT_DIR$/dashboard/views.py" />
+        <option value="$PROJECT_DIR$/dashboard/config_generator.py" />
+        <option value="$PROJECT_DIR$/templates/dashboard/show_result.html" />
+        <option value="$PROJECT_DIR$/dashboard/inventory/groups.yaml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/dashboard/nornir_exec.py" />
+        <option value="$PROJECT_DIR$/dashboard/.env" />
       </list>
     </option>
   </component>
@@ -246,52 +209,6 @@
               <item name="netops" type="462c0819:PsiDirectoryNode" />
               <item name="dashboard" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="netops" type="b2602c69:ProjectViewProjectNode" />
-              <item name="netops" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="inventory" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="netops" type="b2602c69:ProjectViewProjectNode" />
-              <item name="netops" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="netops" type="b2602c69:ProjectViewProjectNode" />
-              <item name="netops" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="cisco" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="netops" type="b2602c69:ProjectViewProjectNode" />
-              <item name="netops" type="462c0819:PsiDirectoryNode" />
-              <item name="netops" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="netops" type="b2602c69:ProjectViewProjectNode" />
-              <item name="netops" type="462c0819:PsiDirectoryNode" />
-              <item name="projects" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="netops" type="b2602c69:ProjectViewProjectNode" />
-              <item name="netops" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="netops" type="b2602c69:ProjectViewProjectNode" />
-              <item name="netops" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="netops" type="b2602c69:ProjectViewProjectNode" />
-              <item name="netops" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="projects" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -328,7 +245,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.config_generator (1)">
+  <component name="RunManager" selected="Python.nornir_exec">
     <configuration name="config_generator (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -456,8 +373,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.config_generator (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Python.nornir_exec" />
+        <item index="0" class="java.lang.String" itemvalue="Python.nornir_exec" />
+        <item index="1" class="java.lang.String" itemvalue="Python.config_generator (1)" />
         <item index="2" class="java.lang.String" itemvalue="Python.netbox_query" />
         <item index="3" class="java.lang.String" itemvalue="Python.config_generator" />
         <item index="4" class="java.lang.String" itemvalue="Python.forms" />
@@ -514,13 +431,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scripts/templates/cisco/base.j2" />
-    <entry file="file://$PROJECT_DIR$/scripts/data.yaml" />
     <entry file="file://$PROJECT_DIR$/scripts/templates/cisco/access.j2" />
     <entry file="file://$PROJECT_DIR$/scripts/templates/cisco/agg.j2" />
     <entry file="file://$PROJECT_DIR$/scripts/requirements.txt" />
@@ -606,14 +521,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/inventory/groups.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dashboard/templates/cisco/access.j2">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -638,14 +545,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/inventory/hosts.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/netops/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
@@ -658,14 +557,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-9626">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/simple.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -694,14 +585,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/dashboard/services_config_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/projects/tasks_list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -726,14 +609,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/dashboard/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -741,40 +616,6 @@
           <folding>
             <element signature="e#0#28#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/dashboard/dc_access_template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/nornir_exec.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="61" column="31" lean-forward="true" selection-start-line="61" selection-start-column="31" selection-end-line="61" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/dashboard/show_result.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -786,34 +627,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/config_generator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="76" column="65" lean-forward="true" selection-start-line="74" selection-start-column="9" selection-end-line="77" selection-end-column="89" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-            <element signature="e#570#1267#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/netbox_query.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="111" column="30" lean-forward="false" selection-start-line="111" selection-start-column="30" selection-end-line="111" selection-end-column="30" />
-          <folding>
-            <element signature="e#468#1669#0" expanded="false" />
-            <element signature="e#1722#2230#0" expanded="false" />
-            <element signature="e#3430#5928#0" expanded="false" />
-            <element signature="e#5953#6317#0" expanded="false" />
-            <element signature="e#6346#6697#0" expanded="false" />
-            <element signature="e#6733#7087#0" expanded="false" />
-            <element signature="e#7123#7468#0" expanded="false" />
-            <element signature="e#7495#7780#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dashboard/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
@@ -822,12 +635,135 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/netbox_query.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#465#750#0" expanded="false" />
+            <element signature="e#1170#2371#0" expanded="false" />
+            <element signature="e#2424#2932#0" expanded="false" />
+            <element signature="e#2972#4094#0" expanded="false" />
+            <element signature="e#4132#6630#0" expanded="false" />
+            <element signature="e#6656#7020#0" expanded="false" />
+            <element signature="e#7049#7400#0" expanded="false" />
+            <element signature="e#7437#7791#0" expanded="false" />
+            <element signature="e#7827#8172#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/simple.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/inventory/hosts.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/dashboard/dc_access_template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="7" column="28" lean-forward="false" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/dashboard/services_config_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/dashboard/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dashboard/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="49" column="27" lean-forward="true" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
+        <state relative-caret-position="221">
+          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding>
-            <element signature="e#0#49#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/config_generator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+            <element signature="e#570#1267#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/dashboard/show_result.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/inventory/groups.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="17" lean-forward="true" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/nornir_exec.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+            <element signature="e#403#688#0" expanded="false" />
+            <element signature="e#721#1094#0" expanded="false" />
+            <element signature="e#1901#2697#0" expanded="false" />
+            <element signature="e#2986#3328#0" expanded="false" />
           </folding>
         </state>
       </provider>
