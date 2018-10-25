@@ -4,8 +4,9 @@ from nornir.core import InitNornir
 from nornir.plugins.tasks import networking, text
 from .forms import ShowForm, DCAccessForm
 from .netbox_query import get_device_ip
-from .nornir_exec import show_result, net_view_result
+from .nornir_exec import show_result
 from .config_generator import dc_access_template, dc_agg_template
+from .netview import net_view_result
 from nornir.plugins.functions.text import print_result
 
 

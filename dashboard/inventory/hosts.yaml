@@ -1,68 +1,44 @@
 MV1_N5K_DC_ACC_01:
   asset_tag: null
+  groups:
+  - nxos_group
   hostname: 172.20.22.33
   model: n5k-c5548up
   platform: nxos
   role: dc-access
   serial: ''
   site: mv1
-  trunks:
-  - Ethernet1/7
-  - Ethernet1/27
   vendor: Cisco
 MV1_N5K_DC_ACC_02:
   asset_tag: null
+  groups:
+  - nxos_group
   hostname: 172.20.22.34
   model: n5k-c5548up
   platform: nxos
   role: dc-access
   serial: ''
   site: mv1
-  trunks:
-  - Ethernet1/7
-  - Ethernet1/27
-  vendor: Cisco
-MV1_N7K_AGG_PE_01:
-  asset_tag: null
-  hostname: 172.20.22.17
-  model: n7k-c7010
-  platform: nxos
-  role: dc-aggregation
-  serial: ''
-  site: mv1
-  trunks:
-  - port-channel11
-  vendor: Cisco
-MV3_N7K_AGG_PE_02:
-  asset_tag: null
-  hostname: 172.20.22.18
-  model: n7k-c7010
-  platform: nxos
-  role: dc-aggregation
-  serial: ''
-  site: mv1
-  trunks:
-  - port-channel11
   vendor: Cisco
 MV1_N7K_SVC_PE_01:
   asset_tag: null
+  groups:
+  - nxos_group
   hostname: 172.20.22.19
   model: n7k-c7010
   platform: nxos
-  role: dc-aggregation
+  role: mgmt-svc
   serial: ''
   site: mv1
-  trunks:
-  - port-channel11
   vendor: Cisco
 MV3_N7K_SVC_PE_02:
   asset_tag: null
+  groups:
+  - nxos_group
   hostname: 172.20.22.20
   model: n7k-c7010
   platform: nxos
-  role: dc-aggregation
+  role: mgmt-svc
   serial: ''
-  site: mv1
-  trunks:
-  - port-channel11
+  site: mv3
   vendor: Cisco

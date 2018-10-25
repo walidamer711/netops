@@ -117,7 +117,7 @@ def main():
     print(net_view_result("show fex"))
 
 
-def test_netmike(task):
+def test_netmiko(task):
     task.run(task=networking.netmiko_send_command, command_string="show version", use_textfsm=True)
 
 

@@ -3,6 +3,8 @@ __pycache__/
 .env
 venv/
 *.log
+.gitignore
+sandbox.py
 
 # SQLite database files
 

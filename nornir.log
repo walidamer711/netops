@@ -2669,3 +2669,126 @@ nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
 2018-10-24 06:33:02,682 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: Base Configuration: running task
 2018-10-24 06:33:02,709 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
 2018-10-24 06:33:02,709 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: Base Configuration: running task
+2018-10-25 07:48:06,645 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 10
+2018-10-25 07:48:06,645 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 10
+2018-10-25 07:48:06,646 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-25 07:48:06,646 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-25 07:48:06,665 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-25 07:48:06,665 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-25 07:48:06,666 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-25 07:48:06,666 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-25 07:48:06,666 -       nornir -     INFO -      start() - MV1_N7K_SVC_PE_01: netmiko_send_command: running task
+2018-10-25 07:48:06,666 -       nornir -     INFO -      start() - MV1_N7K_SVC_PE_01: netmiko_send_command: running task
+2018-10-25 07:48:06,667 -       nornir -     INFO -      start() - MV3_N7K_SVC_PE_02: netmiko_send_command: running task
+2018-10-25 07:48:06,667 -       nornir -     INFO -      start() - MV3_N7K_SVC_PE_02: netmiko_send_command: running task
+2018-10-25 07:48:41,306 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 10
+2018-10-25 07:48:41,306 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 10
+2018-10-25 07:48:41,307 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-25 07:48:41,307 -       nornir -    DEBUG -        run() - {'command_string': 'show fex', 'use_textfsm': True}
+2018-10-25 07:48:41,310 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-25 07:48:41,310 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-25 07:48:41,311 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-25 07:48:41,312 -       nornir -     INFO -      start() - MV1_N7K_SVC_PE_01: netmiko_send_command: running task
+2018-10-25 07:48:41,312 -       nornir -     INFO -      start() - MV1_N7K_SVC_PE_01: netmiko_send_command: running task
+2018-10-25 07:48:41,312 -       nornir -     INFO -      start() - MV3_N7K_SVC_PE_02: netmiko_send_command: running task
+2018-10-25 07:48:41,312 -       nornir -     INFO -      start() - MV3_N7K_SVC_PE_02: netmiko_send_command: running task
+2018-10-25 07:48:41,311 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_02: netmiko_send_command: running task
+2018-10-25 07:50:33,481 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 10
+2018-10-25 07:50:33,481 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 10
+2018-10-25 07:50:33,482 -       nornir -    DEBUG -        run() - {'command_string': 'show version', 'use_textfsm': True}
+2018-10-25 07:50:33,482 -       nornir -    DEBUG -        run() - {'command_string': 'show version', 'use_textfsm': True}
+2018-10-25 07:50:33,500 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-25 07:50:33,500 -       nornir -     INFO -      start() - MV1_N5K_DC_ACC_01: netmiko_send_command: running task
+2018-10-25 07:50:33,855 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 738, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 437, in connect
+    passphrase,
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 749, in _auth
+    raise saved_exception
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 736, in _auth
+    self._transport.auth_password(username, password)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/transport.py", line 1436, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/auth_handler.py", line 250, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 21, in netmiko_send_command
+    net_connect = task.host.get_connection("netmiko")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 292, in get_connection
+    configuration=config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 346, in open_connection
+    else self.nornir.config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/connections/netmiko.py", line 50, in open
+    self.connection = ConnectHandler(**parameters)
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/ssh_dispatcher.py", line 190, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 245, in __init__
+    self.establish_connection()
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 749, in establish_connection
+    raise NetMikoAuthenticationException(msg)
+netmiko.ssh_exception.NetMikoAuthenticationException: Authentication failure: unable to connect cisco_nxos 172.20.22.33:22
+Authentication failed.
+
+2018-10-25 07:50:33,855 -       nornir -    ERROR -      start() - MV1_N5K_DC_ACC_01: Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 738, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 437, in connect
+    passphrase,
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 749, in _auth
+    raise saved_exception
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/client.py", line 736, in _auth
+    self._transport.auth_password(username, password)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/transport.py", line 1436, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/home/wamer/.local/lib/python3.6/site-packages/paramiko/auth_handler.py", line 250, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/task.py", line 63, in start
+    r = self.task(self, **self.params)
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 21, in netmiko_send_command
+    net_connect = task.host.get_connection("netmiko")
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 292, in get_connection
+    configuration=config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 346, in open_connection
+    else self.nornir.config,
+  File "/home/wamer/.local/lib/python3.6/site-packages/nornir/plugins/connections/netmiko.py", line 50, in open
+    self.connection = ConnectHandler(**parameters)
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/ssh_dispatcher.py", line 190, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 245, in __init__
+    self.establish_connection()
+  File "/home/wamer/.local/lib/python3.6/site-packages/netmiko/base_connection.py", line 749, in establish_connection
+    raise NetMikoAuthenticationException(msg)
+netmiko.ssh_exception.NetMikoAuthenticationException: Authentication failure: unable to connect cisco_nxos 172.20.22.33:22
+Authentication failed.
+
+2018-10-25 07:50:43,435 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 10
+2018-10-25 07:50:43,435 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 10
+2018-10-25 07:50:43,436 -       nornir -    DEBUG -        run() - {'command_string': 'show version', 'use_textfsm': True}
+2018-10-25 07:50:43,436 -       nornir -    DEBUG -        run() - {'command_string': 'show version', 'use_textfsm': True}
+2018-10-25 07:50:43,684 - django.request -    ERROR - log_response() - Internal Server Error: /dashboard/show
+Traceback (most recent call last):
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wamer/.local/lib/python3.6/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/wamer/netops/dashboard/views.py", line 32, in show
+    result = show_result(device, command)
+  File "/home/wamer/netops/dashboard/nornir_exec.py", line 38, in show_result
+    return result[device][0].result
+KeyError: 'MV1_N7K_AGG_PE_01'

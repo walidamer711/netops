@@ -1,3 +1,9 @@
 defaults:
   username:
   password:
+
+nxos_group:
+  napalm_options:
+    platform: nxos_ssh
+  netmiko_options:
+    platform: cisco_nxos
