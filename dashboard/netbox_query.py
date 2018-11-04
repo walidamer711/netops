@@ -25,17 +25,6 @@ def form_headers():
     return headers
 
 
-def get_fex_parents():
-    headers = form_headers()
-    query_params = {"tenant": "mza-infra", "tag": "fex"}
-    r = requests.get(NETBOX_API_ROOT + NETBOX_DEVICES_ENDPOINT,
-                     params=query_params, headers=headers)
-    nb_devices = r.json()
-    parent_switches = []
-    for d in nb_devices["results"]:
-        parent_switches.append(d["name"])
-    return parent_switches
-
 
 def get_hosts(tenant):
     headers = form_headers()
@@ -160,10 +149,10 @@ def get_prefixes(tenant, tag):
             int["descr"] = "{} {}".format(tenant, prefix["role"]["slug"])
             int["vlan_id"] = prefix["vlan"]["vid"]
             int["vrf"] = prefix["vrf"]["name"]
-            if tag == "agg1":
+            if "agg1" in tag:
                 int["ip"] = "{}/{}".format(str(ipaddress.ip_network(prefix["prefix"])[2]),
                                            ipaddress.ip_network(prefix["prefix"]).prefixlen)
-            elif tag == "agg2":
+            elif "agg2" in tag:
                 int["ip"] = "{}/{}".format(str(ipaddress.ip_network(prefix["prefix"])[3]),
                                            ipaddress.ip_network(prefix["prefix"]).prefixlen)
             int["vip"] = str(ipaddress.ip_network(prefix["prefix"])[1])
@@ -172,9 +161,9 @@ def get_prefixes(tenant, tag):
             v["name"] = prefix["vrf"]["name"]
             v["rt"] = prefix["vrf"]["rd"]
             v["role"] = prefix["role"]["slug"]
-            if tag == "agg1":
+            if "agg1" in tag:
                 v["rd"] = prefix["vrf"]["rd"].replace("000", "009")
-            elif tag == "agg2":
+            elif"agg2" in tag:
                 v["rd"] = prefix["vrf"]["rd"].replace("000", "010")
             v["descr"] = get_vrf(prefix["vrf"]["name"])["descr"]
             nexthop = str(ipaddress.ip_network(prefix["prefix"])[4])

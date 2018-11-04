@@ -2,11 +2,12 @@ from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 from nornir.core import InitNornir
 from nornir.plugins.tasks import networking, text
-from .forms import ShowForm, DCAccessForm
+from .forms import ShowForm, DCAccessForm, VLANCheck
 from .netbox_query import get_device_ip
 from .nornir_exec import show_result
 from .config_generator import dc_access_template, dc_agg_template
 from .netview import net_view_result
+from .checkview import check_dc_vlan
 from nornir.plugins.functions.text import print_result
 
 
@@ -38,6 +39,25 @@ def show(request):
 
 
 @login_required
+def checks_view(request, check):
+    data_list = []
+    if check == 'vlan':
+        if request.method == 'POST':
+            form = VLANCheck(request.POST)
+            if form.is_valid():
+                tenant = request.POST.get('tenant')
+                result = check_dc_vlan(tenant)
+                for r in result:
+                    data_list.append(result[r][0])
+                return render(request, 'dashboard/check_vlan_view.html', {'data': data_list})
+        else:
+            form = VLANCheck()
+
+    return render(request, 'dashboard/check_vlan_view.html', {'form': form})
+
+
+
+@login_required
 def network_views(request, view):
     data_list = []
     if view == 'fex':
@@ -56,8 +76,9 @@ def services(request):
         if form.is_valid():
             group = request.POST.get('domain')
             tenant = request.POST.get('tenant')
-            inventory = nr.inventory.filter(role=group, site="mv1")
-            hosts = nr.filter(role=group, site="mv1")
+            site = request.POST.get('site')
+            inventory = nr.inventory.filter(role=group, site=site)
+            hosts = nr.filter(role=group, site=site)
             data_list = []
             if group == "dc-access":
                 result = hosts.run(task=dc_access_template, inventory=inventory, tenant=tenant)

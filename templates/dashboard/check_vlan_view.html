@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block breadcrumb %}
+    <ol class="breadcrumb my-4">
+    <li class="breadcrumb-item"><a href="{% url 'dashboard' %}">Dashboard</a></li>
+</ol>
+{% endblock %}
+{% block content %}
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-success">Post</button>
+  </form>
+
+
+
+    {% for d in data %}
+<form>
+<div class="form-group">
+    <label for="exampleFormControlTextarea1">{{ d.host }}</label>
+    <textarea class="form-control" id="config_template" rows="10">{{ d.result }}</textarea>
+  </div>
+</form>
+
+{% endfor %}
+
+
+{% endblock %}

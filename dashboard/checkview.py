@@ -9,6 +9,7 @@ from decouple import config
 
 NETBOX_API_ROOT = "http://172.20.22.99/api"
 NETBOX_DEVICES_ENDPOINT = "/dcim/devices/"
+NETBOX_VLANS_ENDPOINT = "/ipam/vlans/"
 
 ACCOUNT = {"username": config('username'), "password": config('password')}
 
@@ -29,7 +30,31 @@ def add_account(inventory):
         inventory.hosts[h].data.update(ACCOUNT)
 
 
-def net_view_result(command):
+def get_dc_vlans(tenant):
+    headers = form_headers()
+    query_params = {"tenant": tenant, "status": 2}
+
+    vlans_netbox_dict = requests.get(
+        NETBOX_API_ROOT + NETBOX_VLANS_ENDPOINT,
+        params=query_params, headers=headers
+    ).json()
+    l1 = []
+    vlans = []
+    for v in vlans_netbox_dict["results"]:
+        # Create temporary dict
+        temp = {}
+        temp["name"] = v["name"]
+        temp["id"] = v["vid"]
+        l1.append(str(v["vid"]))
+        temp["role"] = v["role"]["slug"]
+        vlans.append(temp)
+    x = (',').join(l1)
+    return x
+
+
+def check_dc_vlan(tenant):
+    vlan_list = get_dc_vlans(tenant)
+    command = "show vlan id {}".format(vlan_list)
     nr = InitNornir(config_file="/home/wamer/netops/dashboard/config.yaml")
     inv = nr.inventory.filter(F(has_fex=True) & F(site="mv1") | F(has_fex=True) & F(site="mv3"))
     add_account(inv)
@@ -37,11 +62,10 @@ def net_view_result(command):
     result = hosts.run(task=networking.netmiko_send_command, command_string=command, use_textfsm=True)
     return result
 
+
+
 def main():
-   #print_result(net_view_result('show fex'))
-   result = net_view_result('show fex')
-   for r in result:
-        print(result[r])
+    print_result(check_dc_vlan("ipam"))
 
 if __name__ == '__main__':
     main()

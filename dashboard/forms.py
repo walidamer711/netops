@@ -62,9 +62,20 @@ class DCAccessForm(forms.Form):
         ("dc-access", "DC Access"),
         ("dc-aggregation", "DC Aggregation")
     ]
+    DATA_CENTER = [
+        ("mv1", "MV1-MV3"),
+        ("mv2", "MV2")
+    ]
     domain = forms.CharField(label='Select Domain Config', widget=forms.Select(choices=DOMAIN_LIST))
     tenant = forms.CharField(label='Select Customer')
+    site = forms.CharField(label='Select Data Center', widget=forms.Select(choices=DATA_CENTER))
     #tenant = forms.ChoiceField(choices=...)
     def __init__(self, *args, **kwargs):
         super(DCAccessForm, self).__init__(*args, **kwargs)
+        self.fields['tenant'].widget = forms.Select(choices=get_tenants())
+
+class VLANCheck(forms.Form):
+    tenant = forms.CharField(label='Select Customer')
+    def __init__(self, *args, **kwargs):
+        super(VLANCheck, self).__init__(*args, **kwargs)
         self.fields['tenant'].widget = forms.Select(choices=get_tenants())

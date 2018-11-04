@@ -2,7 +2,7 @@ from nornir.core import InitNornir
 from nornir.plugins.functions.text import print_result, print_title
 from nornir.plugins.tasks import networking, text
 from napalm import get_network_driver
-from .netbox_query import get_device_trunks, get_dc_vlans, get_prefixes
+from netbox_query import get_device_trunks, get_dc_vlans, get_prefixes
 
 
 def netbox_inventory():
@@ -76,17 +76,18 @@ def main():
                     inventory="nornir.plugins.inventory.netbox.NBInventory",
                     NBInventory={"nb_url": "http://172.20.22.99",
                                  "nb_token": "49d66235f10e0d388f18e179e756d1d276b898bb"})
-    inventory = nr.inventory.filter(role="dc-access", site="mv1")
-    dc_access_hosts = nr.filter(role="dc-access", site="mv1")
-    result = dc_access_hosts.run(task=dc_access_template, inventory=inventory, tenant="gbi")
+    #inventory = nr.inventory.filter(role="dc-access", site="mv1")
+    #dc_access_hosts = nr.filter(role="dc-access", site="mv1")
+    #result = dc_access_hosts.run(task=dc_access_template, inventory=inventory, tenant="gbi")
     inventory = nr.inventory.filter(role="dc-aggregation", site="mv1")
-    #dc_agg_hosts = nr.filter(role="dc-aggregation", site="mv1")
-    #result = dc_agg_hosts.run(task=dc_agg_template, inventory=inventory, tenant="ipam")
+    dc_agg_hosts = nr.filter(role="dc-aggregation", site="mv1")
+    result = dc_agg_hosts.run(task=dc_agg_template, inventory=inventory, tenant="ipam")
     #print_result(result)
-    print(dc_access_hosts.inventory.hosts["MV1_N5K_DC_ACC_02"].data)
-    for r in result:
-        print(r)
-        print(result[r])
+    print(dc_agg_hosts.inventory.hosts["MV1_N7K_AGG_PE_01"].data)
+    #print(dc_access_hosts.inventory.hosts["MV1_N5K_DC_ACC_02"].data)
+    #for r in result:
+    #    print(r)
+    #    print(result[r])
 
 def test_netmike(task):
     task.run(task=networking.netmiko_send_command, command_string="show version", use_textfsm=True)
