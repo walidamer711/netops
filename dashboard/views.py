@@ -2,11 +2,11 @@ from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 from nornir.core import InitNornir
 from nornir.plugins.tasks import networking, text
-from .forms import ShowForm, DCAccessForm, VLANCheck
+from .forms import ShowForm, DCAccessForm, VLANCheck, FEXForm
 from .netbox_query import get_device_ip
 from .nornir_exec import show_result
 from .config_generator import dc_access_template, dc_agg_template
-from .netview import net_view_result
+from .netview import fex_view_result
 from .checkview import check_dc_vlan
 from nornir.plugins.functions.text import print_result
 
@@ -46,7 +46,8 @@ def checks_view(request, check):
             form = VLANCheck(request.POST)
             if form.is_valid():
                 tenant = request.POST.get('tenant')
-                result = check_dc_vlan(tenant)
+                site = request.POST.get('site')
+                result = check_dc_vlan(tenant, site)
                 for r in result:
                     data_list.append(result[r][0])
                 return render(request, 'dashboard/check_vlan_view.html', {'data': data_list})
@@ -61,11 +62,19 @@ def checks_view(request, check):
 def network_views(request, view):
     data_list = []
     if view == 'fex':
-        command = "show fex"
-        result = net_view_result(command)
-        for r in result:
-            data_list.append(result[r][0])
-    return render(request, 'dashboard/show_result.html', {'data': data_list})
+        if request.method == 'POST':
+            form = FEXForm(request.POST)
+            if form.is_valid():
+                site = request.POST.get('site')
+                command = "show fex"
+                result = fex_view_result(command, site)
+                for r in result:
+                    data_list.append(result[r][0])
+                return render(request, 'dashboard/show_result.html', {'data': data_list})
+        else:
+            form = FEXForm()
+
+    return render(request, 'dashboard/show_result.html', {'form': form})
 
 
 @login_required

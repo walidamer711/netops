@@ -1,5 +1,20 @@
 {% extends 'base.html' %}
+
+{% block breadcrumb %}
+    <ol class="breadcrumb my-4">
+    <li class="breadcrumb-item"><a href="{% url 'dashboard' %}">Dashboard</a></li>
+</ol>
+{% endblock %}
 {% block content %}
+
+     {% if form %}
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-success">Post</button>
+  </form>
+{% endif %}
+
 
 {% for d in data %}
 <div class="mb-4">

@@ -52,20 +52,26 @@ def get_dc_vlans(tenant):
     return x
 
 
-def check_dc_vlan(tenant):
+def check_dc_vlan(tenant, site):
+    if site == "mv1":
+        site1 = "mv1"
+        site2 = "mv3"
+    else:
+        site1 = "mv2"
+        site2 = "mv2"
     vlan_list = get_dc_vlans(tenant)
     command = "show vlan id {}".format(vlan_list)
     nr = InitNornir(config_file="/home/wamer/netops/dashboard/config.yaml")
-    inv = nr.inventory.filter(F(has_fex=True) & F(site="mv1") | F(has_fex=True) & F(site="mv3"))
+    inv = nr.inventory.filter(F(dc_vlan_domain=True) & F(site=site1) | F(dc_vlan_domain=True) & F(site=site2))
     add_account(inv)
-    hosts = nr.filter(F(has_fex=True) & F(site="mv1") | F(has_fex=True) & F(site="mv3"))
+    hosts = nr.filter(F(dc_vlan_domain=True) & F(site=site1) | F(dc_vlan_domain=True) & F(site=site2))
     result = hosts.run(task=networking.netmiko_send_command, command_string=command, use_textfsm=True)
     return result
 
 
 
 def main():
-    print_result(check_dc_vlan("ipam"))
+    print_result(check_dc_vlan("ipam", "mv2"))
 
 if __name__ == '__main__':
     main()

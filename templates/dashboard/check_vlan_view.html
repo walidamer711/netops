@@ -5,12 +5,13 @@
 </ol>
 {% endblock %}
 {% block content %}
+    {% if form %}
 <form method="post">
     {% csrf_token %}
     {{ form.as_p }}
     <button type="submit" class="btn btn-success">Post</button>
   </form>
-
+{% endif %}
 
 
     {% for d in data %}

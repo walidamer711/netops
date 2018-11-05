@@ -5,6 +5,7 @@ venv/
 *.log
 .gitignore
 sandbox.py
+sandbox/
 
 # SQLite database files
 

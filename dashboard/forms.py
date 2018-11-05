@@ -74,8 +74,21 @@ class DCAccessForm(forms.Form):
         super(DCAccessForm, self).__init__(*args, **kwargs)
         self.fields['tenant'].widget = forms.Select(choices=get_tenants())
 
+
 class VLANCheck(forms.Form):
+    DATA_CENTER = [
+        ("mv1", "MV1-MV3"),
+        ("mv2", "MV2")
+    ]
+    site = forms.CharField(label='Select Data Center', widget=forms.Select(choices=DATA_CENTER))
     tenant = forms.CharField(label='Select Customer')
     def __init__(self, *args, **kwargs):
         super(VLANCheck, self).__init__(*args, **kwargs)
         self.fields['tenant'].widget = forms.Select(choices=get_tenants())
+
+class FEXForm(forms.Form):
+    DATA_CENTER = [
+        ("mv1", "MV1-MV3"),
+        ("mv2", "MV2")
+    ]
+    site = forms.CharField(label='Select Data Center', widget=forms.Select(choices=DATA_CENTER))
