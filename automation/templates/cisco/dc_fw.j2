@@ -1,0 +1,21 @@
+{% for int in interfaces %}
+interface {{ trunk }}.{{ int.vlan_id }}
+ vlan {{ int.vlan_id  }}
+ nameif {{ int.role }}
+ {% if int.role == "outside" %}
+ security-level 0
+ {% elif int.role== "dmz" %}
+ security-level 50
+ {% else %}
+ security-level 100
+ {% endif %}
+ ip address {{ int.ip }} {{ int.mask }}
+!
+{% endfor %}
+{% for int in interfaces %}
+icmp permit any {{ int.role }}
+!
+{% if int.role == "outside" %}
+route outside 0.0.0.0 0.0.0.0 {{ int.vip }}
+{% endif %}
+{% endfor %}

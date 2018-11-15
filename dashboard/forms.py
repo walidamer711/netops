@@ -1,5 +1,5 @@
 from django import forms
-import requests, os, json
+import requests
 
 NETBOX_API_ROOT = "http://172.20.22.99/api"
 NETBOX_DEVICES_ENDPOINT = "/dcim/devices/"
@@ -53,8 +53,7 @@ class ShowForm(forms.Form):
     ]
     device = forms.CharField(label='Device', widget=forms.Select(choices=get_devices_list("mza-infra")))
     show_command = forms.CharField(label='Command', widget=forms.Select(choices=SHOW_COMMANDS))
-    # forms.CharField(label='Device', widget=forms.Select(choices=OPTIONS))
-    # forms.MultipleChoiceField(choices=OPTIONS, initial='0', required=True, label='Device')
+
 
 
 class DCAccessForm(forms.Form):
@@ -69,7 +68,7 @@ class DCAccessForm(forms.Form):
     domain = forms.CharField(label='Select Domain Config', widget=forms.Select(choices=DOMAIN_LIST))
     tenant = forms.CharField(label='Select Customer')
     site = forms.CharField(label='Select Data Center', widget=forms.Select(choices=DATA_CENTER))
-    #tenant = forms.ChoiceField(choices=...)
+
     def __init__(self, *args, **kwargs):
         super(DCAccessForm, self).__init__(*args, **kwargs)
         self.fields['tenant'].widget = forms.Select(choices=get_tenants())
@@ -77,8 +76,8 @@ class DCAccessForm(forms.Form):
 
 class VLANCheck(forms.Form):
     DATA_CENTER = [
-        ("mv1", "MV1-MV3"),
-        ("mv2", "MV2")
+        ("mv1_dc", "MV1-MV3"),
+        ("mv2_dc", "MV2")
     ]
     site = forms.CharField(label='Select Data Center', widget=forms.Select(choices=DATA_CENTER))
     tenant = forms.CharField(label='Select Customer')

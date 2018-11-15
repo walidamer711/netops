@@ -1,4 +1,4 @@
-from nornir.core import InitNornir
+from nornir import InitNornir
 from nornir.plugins.functions.text import print_result, print_title
 from nornir.plugins.tasks import networking, text
 import json, csv
@@ -22,7 +22,7 @@ def form_headers():
 
 
 def show_result(device, command):
-    nr = InitNornir(config_file="/home/wamer/netops/dashboard/simple.yaml", dry_run=True)
+    nr = InitNornir(config_file="/home/wamer/netops/automation/simple.yaml", dry_run=True)
     host = nr.filter(name=device)
     result = host.run(task=networking.netmiko_send_command, command_string=command, use_textfsm=True)
     return result[device][0].result

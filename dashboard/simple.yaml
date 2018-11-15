@@ -1,7 +1,0 @@
----
-num_workers: 100
-logging_file: "/home/wamer/netops/dashboard/nornir.log"
-inventory: nornir.plugins.inventory.simple.SimpleInventory
-SimpleInventory:
-    host_file: "/home/wamer/netops/dashboard/inventory/hosts.yaml"
-    group_file: "/home/wamer/netops/dashboard/inventory/groups.yaml"

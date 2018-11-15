@@ -1,14 +1,15 @@
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
-from nornir.core import InitNornir
-from nornir.plugins.tasks import networking, text
+from nornir import InitNornir
 from .forms import ShowForm, DCAccessForm, VLANCheck, FEXForm
-from .netbox_query import get_device_ip
-from .nornir_exec import show_result
-from .config_generator import dc_access_template, dc_agg_template
-from .netview import fex_view_result
-from .checkview import check_dc_vlan
-from nornir.plugins.functions.text import print_result
+from automation.netbox_query import get_device_ip
+from automation.nornir_exec import show_result
+from automation.config_generator import dc_agg_template
+from automation.dc_access_config import dc_access_template
+from automation.netview import fex_view_result
+from automation.checkview import check_dc_vlan
+from nornir.plugins.functions.text import print_result, print_title
+from automation.helper import add_account
 
 
 # Create your views here.
@@ -80,24 +81,22 @@ def network_views(request, view):
 @login_required
 def services(request):
     if request.method == 'POST':
-        nr = InitNornir(config_file="/home/wamer/netops/dashboard/config.yaml")
+        nr = InitNornir(config_file="/home/wamer/netops/automation/config.yaml")
         form = DCAccessForm(request.POST)
         if form.is_valid():
             group = request.POST.get('domain')
             tenant = request.POST.get('tenant')
             site = request.POST.get('site')
-            inventory = nr.inventory.filter(role=group, site=site)
             hosts = nr.filter(role=group, site=site)
             data_list = []
             if group == "dc-access":
-                result = hosts.run(task=dc_access_template, inventory=inventory, tenant=tenant)
+                result = hosts.run(task=dc_access_template, tenant=tenant)
                 for r in result:
                     data_list.append(result[r][1])
             elif group == "dc-aggregation":
-                result = hosts.run(task=dc_agg_template, inventory=inventory, tenant=tenant)
+                result = hosts.run(task=dc_agg_template, tenant=tenant)
                 for r in result:
                     data_list.append(result[r][1])
-
             return render(request, 'dashboard/dc_access_template.html', {'data': data_list})
     else:
         form = DCAccessForm()
