@@ -6,6 +6,8 @@ venv/
 .gitignore
 sandbox.py
 sandbox/
+automation/files/
+automation/backup/
 
 # SQLite database files
 

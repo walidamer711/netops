@@ -2,22 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4df17b7-2258-407e-96dd-f37f5b21fe1c" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/dashboard/checkview.py" afterPath="$PROJECT_DIR$/automation/checkview.py" />
-      <change beforePath="$PROJECT_DIR$/dashboard/config.yaml" afterPath="$PROJECT_DIR$/automation/config.yaml" />
-      <change beforePath="$PROJECT_DIR$/dashboard/config_generator.py" afterPath="$PROJECT_DIR$/automation/config_generator.py" />
-      <change beforePath="$PROJECT_DIR$/dashboard/forms.py" afterPath="$PROJECT_DIR$/dashboard/forms.py" />
-      <change beforePath="$PROJECT_DIR$/dashboard/inventory/groups.yaml" afterPath="$PROJECT_DIR$/automation/inventory/groups.yaml" />
-      <change beforePath="$PROJECT_DIR$/dashboard/inventory/hosts.yaml" afterPath="$PROJECT_DIR$/automation/inventory/hosts.yaml" />
-      <change beforePath="$PROJECT_DIR$/dashboard/netbox_query.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dashboard/netview.py" afterPath="$PROJECT_DIR$/automation/netview.py" />
-      <change beforePath="$PROJECT_DIR$/dashboard/nornir_exec.py" afterPath="$PROJECT_DIR$/automation/nornir_exec.py" />
-      <change beforePath="$PROJECT_DIR$/dashboard/simple.yaml" afterPath="$PROJECT_DIR$/automation/simple.yaml" />
-      <change beforePath="$PROJECT_DIR$/dashboard/templates/cisco/access.j2" afterPath="$PROJECT_DIR$/automation/templates/cisco/access.j2" />
-      <change beforePath="$PROJECT_DIR$/dashboard/templates/cisco/agg.j2" afterPath="$PROJECT_DIR$/automation/templates/cisco/agg.j2" />
-      <change beforePath="$PROJECT_DIR$/dashboard/templates/cisco/agg2.j2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dashboard/tests.py" afterPath="$PROJECT_DIR$/automation/tests.py" />
+      <change beforePath="$PROJECT_DIR$/automation/checkview.py" afterPath="$PROJECT_DIR$/automation/checkview.py" />
+      <change beforePath="$PROJECT_DIR$/automation/config_generator.py" afterPath="$PROJECT_DIR$/automation/config_generator.py" />
+      <change beforePath="$PROJECT_DIR$/automation/dc_access_config.py" afterPath="$PROJECT_DIR$/automation/dc_access_config.py" />
+      <change beforePath="$PROJECT_DIR$/automation/dc_agg_config.py" afterPath="$PROJECT_DIR$/automation/dc_agg_config.py" />
+      <change beforePath="$PROJECT_DIR$/automation/dc_fw_config.py" afterPath="$PROJECT_DIR$/automation/dc_fw_config.py" />
+      <change beforePath="$PROJECT_DIR$/automation/helper.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/automation/netbox_query.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/automation/nornir_exec.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/automation/templates/cisco/access.j2" afterPath="$PROJECT_DIR$/automation/templates/cisco/dc_access.j2" />
+      <change beforePath="$PROJECT_DIR$/automation/templates/cisco/dc_agg.j2" afterPath="$PROJECT_DIR$/automation/templates/cisco/dc_agg.j2" />
+      <change beforePath="$PROJECT_DIR$/automation/templates/cisco/dc_fw.j2" afterPath="$PROJECT_DIR$/automation/templates/cisco/dc_fw.j2" />
       <change beforePath="$PROJECT_DIR$/dashboard/views.py" afterPath="$PROJECT_DIR$/dashboard/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,17 +26,26 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/netops$configparser.coverage" NAME="configparser Coverage Results" MODIFIED="1544342275813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sandbox" />
+    <SUITE FILE_PATH="coverage/netops$dc_agg_config.coverage" NAME="dc_agg_config Coverage Results" MODIFIED="1544098084360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/automation" />
     <SUITE FILE_PATH="coverage/netops$forms.coverage" NAME="forms Coverage Results" MODIFIED="1539246186532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dashboard" />
-    <SUITE FILE_PATH="coverage/netops$dc_access_config.coverage" NAME="dc_access_config Coverage Results" MODIFIED="1542284453172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dashboard" />
+    <SUITE FILE_PATH="coverage/netops$dc_access_config.coverage" NAME="dc_access_config Coverage Results" MODIFIED="1544003235382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dashboard" />
     <SUITE FILE_PATH="coverage/netops$dict_to_yaml.coverage" NAME="dict_to_yaml Coverage Results" MODIFIED="1538995261413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/netops$azure.coverage" NAME="azure Coverage Results" MODIFIED="1542780752269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/automation" />
     <SUITE FILE_PATH="coverage/netops$config_generator__1_.coverage" NAME="config_generator (1) Coverage Results" MODIFIED="1542201538957" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dashboard" />
-    <SUITE FILE_PATH="coverage/netops$dc_fw_config.coverage" NAME="dc_fw_config Coverage Results" MODIFIED="1542276898254" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dashboard" />
+    <SUITE FILE_PATH="coverage/netops$dc_fw_config.coverage" NAME="dc_fw_config Coverage Results" MODIFIED="1544012130147" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dashboard" />
     <SUITE FILE_PATH="coverage/netops$checkview.coverage" NAME="checkview Coverage Results" MODIFIED="1542264224249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dashboard" />
+    <SUITE FILE_PATH="coverage/netops$configparser__1_.coverage" NAME="configparser (1) Coverage Results" MODIFIED="1544598007707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/automation" />
     <SUITE FILE_PATH="coverage/netops$netbox_api.coverage" NAME="netbox-api Coverage Results" MODIFIED="1538654020727" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/netops$netbox_query.coverage" NAME="netbox_query Coverage Results" MODIFIED="1539861119346" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dashboard" />
     <SUITE FILE_PATH="coverage/netops$sandbox.coverage" NAME="sandbox Coverage Results" MODIFIED="1540449363056" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dashboard" />
+    <SUITE FILE_PATH="coverage/netops$dc_rollback.coverage" NAME="dc_rollback Coverage Results" MODIFIED="1542529345664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/automation" />
     <SUITE FILE_PATH="coverage/netops$netview.coverage" NAME="netview Coverage Results" MODIFIED="1541404859309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dashboard" />
+    <SUITE FILE_PATH="coverage/netops$ipam_calls.coverage" NAME="ipam_calls Coverage Results" MODIFIED="1544090665658" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/automation" />
+    <SUITE FILE_PATH="coverage/netops$config_file.coverage" NAME="config_file Coverage Results" MODIFIED="1544090726403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/automation" />
     <SUITE FILE_PATH="coverage/netops$config_generator.coverage" NAME="config_generator Coverage Results" MODIFIED="1539256019705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/netops$dc_debug.coverage" NAME="dc_debug Coverage Results" MODIFIED="1543485139760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/automation" />
+    <SUITE FILE_PATH="coverage/netops$vlan_list.coverage" NAME="vlan_list Coverage Results" MODIFIED="1544696187577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/automation" />
     <SUITE FILE_PATH="coverage/netops$nornir_exec.coverage" NAME="nornir_exec Coverage Results" MODIFIED="1540381080055" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dashboard" />
     <SUITE FILE_PATH="coverage/netops$test_netmiko_asa.coverage" NAME="test_netmiko_asa Coverage Results" MODIFIED="1539085138128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
   </component>
@@ -47,23 +54,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="netview.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/automation/netview.py">
+      <file leaf-file-name="config_parser.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/automation/config_parser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="28" column="10" lean-forward="true" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+            <state relative-caret-position="-727">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="27" selection-end-column="18" />
               <folding>
-                <element signature="e#0#29#0" expanded="true" />
+                <element signature="e#0#41#0" expanded="true" />
+                <element signature="e#2005#2730#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="checkview.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/automation/checkview.py">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="24" column="10" lean-forward="true" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+            <state relative-caret-position="216">
+              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vlan_list.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/automation/vlan_list.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="605">
+              <caret line="70" column="37" lean-forward="true" selection-start-line="70" selection-start-column="37" selection-end-line="70" selection-end-column="37" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -86,6 +104,9 @@
       <find>.navbar-nav</find>
       <find>li{p</find>
       <find>print</find>
+      <find>vrf context VR22</find>
+      <find>2165</find>
+      <find>meeza-sp</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -94,40 +115,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/templates/dashboard/dc_access.html" />
-        <option value="$PROJECT_DIR$/dashboard/__init__.py" />
-        <option value="$PROJECT_DIR$/templates/cisco/access.j2" />
-        <option value="$PROJECT_DIR$/templates/dashboard/dc_access_template.html" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
-        <option value="$PROJECT_DIR$/templates/dashboard/services_config_list.html" />
-        <option value="$PROJECT_DIR$/scripts/sandbox.py" />
-        <option value="$PROJECT_DIR$/templates/home.html" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/dashboard/vlan_list" />
-        <option value="$PROJECT_DIR$/templates/cisco/agg.j2" />
-        <option value="$PROJECT_DIR$/dashboard/templates/cisco/agg.j2" />
-        <option value="$PROJECT_DIR$/dashboard/templates/cisco/agg2.j2" />
-        <option value="$PROJECT_DIR$/dashboard/.env" />
-        <option value="$PROJECT_DIR$/dashboard/inventory/hosts.yaml" />
-        <option value="$PROJECT_DIR$/dashboard/inventory/groups.yaml" />
-        <option value="$PROJECT_DIR$/dashboard/simple.yaml" />
-        <option value="$PROJECT_DIR$/dashboard/config.yaml" />
-        <option value="$PROJECT_DIR$/templates/dashboard/dashboard.html" />
-        <option value="$PROJECT_DIR$/dashboard/urls.py" />
-        <option value="$PROJECT_DIR$/dashboard/nornir_exec.py" />
-        <option value="$PROJECT_DIR$/dashboard/netbox_query.py" />
-        <option value="$PROJECT_DIR$/dashboard/sandbox.py" />
-        <option value="$PROJECT_DIR$/dashboard/checkview.py" />
-        <option value="$PROJECT_DIR$/templates/dashboard/check_vlan_view.html" />
-        <option value="$PROJECT_DIR$/templates/dashboard/show_result.html" />
         <option value="$PROJECT_DIR$/dashboard/netview.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/dashboard/dc_access_config.py" />
         <option value="$PROJECT_DIR$/dashboard/templates/cisco/dc_fw.j2" />
         <option value="$PROJECT_DIR$/dashboard/dc_fw_config.py" />
         <option value="$PROJECT_DIR$/dashboard/automation/init.py" />
         <option value="$PROJECT_DIR$/dashboard/config_generator.py" />
-        <option value="$PROJECT_DIR$/automation/__init__.py" />
         <option value="$PROJECT_DIR$/automation/nornir_exec.py" />
         <option value="$PROJECT_DIR$/automation/sandbox.py" />
         <option value="$PROJECT_DIR$/automation/simple.yaml" />
@@ -135,16 +128,44 @@
         <option value="$PROJECT_DIR$/automation/config_generator.py" />
         <option value="$PROJECT_DIR$/automation/templates/cisco/access.j2" />
         <option value="$PROJECT_DIR$/automation/netbox_query.py" />
-        <option value="$PROJECT_DIR$/automation/templates/cisco/dc_fw.j2" />
-        <option value="$PROJECT_DIR$/automation/dc_agg_config.py" />
         <option value="$PROJECT_DIR$/dashboard/forms.py" />
         <option value="$PROJECT_DIR$/dashboard/views.py" />
-        <option value="$PROJECT_DIR$/automation/dc_access_config.py" />
-        <option value="$PROJECT_DIR$/automation/dc_fw_config.py" />
-        <option value="$PROJECT_DIR$/automation/checkview.py" />
         <option value="$PROJECT_DIR$/automation/templates/cisco/agg2.j2" />
-        <option value="$PROJECT_DIR$/automation/helper.py" />
         <option value="$PROJECT_DIR$/automation/netview.py" />
+        <option value="$PROJECT_DIR$/automation/templates/rollback/dc_access.j2" />
+        <option value="$PROJECT_DIR$/automation/templates/rollback/dc_agg.j2" />
+        <option value="$PROJECT_DIR$/automation/helper/__init__.py" />
+        <option value="$PROJECT_DIR$/automation/azure.py" />
+        <option value="$PROJECT_DIR$/automation/templates/rollback/int_agg.j2" />
+        <option value="$PROJECT_DIR$/automation/inventory/lab.yaml" />
+        <option value="$PROJECT_DIR$/automation/.env" />
+        <option value="$PROJECT_DIR$/automation/__init__.py" />
+        <option value="$PROJECT_DIR$/sandbox/nornir_exec.py" />
+        <option value="$PROJECT_DIR$/automation/checkview.py" />
+        <option value="$PROJECT_DIR$/automation/templates/cisco/int_agg.j2" />
+        <option value="$PROJECT_DIR$/automation/dc_rollback.py" />
+        <option value="$PROJECT_DIR$/automation/templates/cisco/sys_fw.j2" />
+        <option value="$PROJECT_DIR$/automation/templates/cisco/dc_agg.j2" />
+        <option value="$PROJECT_DIR$/automation/dc_access_config.py" />
+        <option value="$PROJECT_DIR$/automation/templates/cisco/dc_svc.j2" />
+        <option value="$PROJECT_DIR$/automation/config_file.py" />
+        <option value="$PROJECT_DIR$/automation/dc_debug.py" />
+        <option value="$PROJECT_DIR$/automation/templates/cisco/dc_fw.j2" />
+        <option value="$PROJECT_DIR$/automation/templates/rollback/dc_fw.j2" />
+        <option value="$PROJECT_DIR$/automation/dc_fw_config.py" />
+        <option value="$PROJECT_DIR$/automation/wan_config.py" />
+        <option value="$PROJECT_DIR$/automation/ipam_calls.py" />
+        <option value="$PROJECT_DIR$/automation/dc_agg_config.py" />
+        <option value="$PROJECT_DIR$/automation/helper.py" />
+        <option value="$PROJECT_DIR$/sandbox/configparser.py" />
+        <option value="$PROJECT_DIR$/automation/vrf_list" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/automation/backup/MV1_5585_DC_ASA_01.txt" />
+        <option value="$PROJECT_DIR$/automation/backup/cntx/cntx-cust-cra-motc-01.txt" />
+        <option value="$PROJECT_DIR$/automation/configparser.py" />
+        <option value="$PROJECT_DIR$/automation/backup/prefix_from_cntx.txt" />
+        <option value="$PROJECT_DIR$/automation/vlan_list.py" />
+        <option value="$PROJECT_DIR$/automation/config_parser.py" />
       </list>
     </option>
   </component>
@@ -155,10 +176,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-239" />
-    <option name="y" value="208" />
-    <option name="width" value="1400" />
-    <option name="height" value="958" />
+    <option name="x" value="45" />
+    <option name="y" value="86" />
+    <option name="width" value="1398" />
+    <option name="height" value="950" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -178,6 +199,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -185,43 +208,33 @@
               <item name="netops" type="b2602c69:ProjectViewProjectNode" />
               <item name="netops" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="netops" type="b2602c69:ProjectViewProjectNode" />
-              <item name="netops" type="462c0819:PsiDirectoryNode" />
-              <item name="automation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="netops" type="b2602c69:ProjectViewProjectNode" />
-              <item name="netops" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
     <property name="last_opened_file_path" value="/usr/bin" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/automation" />
+      <recent name="$PROJECT_DIR$/sandbox" />
+      <recent name="$PROJECT_DIR$/automation/templates/rollback" />
+      <recent name="$PROJECT_DIR$/dashboard/automation" />
+      <recent name="$PROJECT_DIR$/dashboard/templates/cisco" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/automation/files" />
+      <recent name="$PROJECT_DIR$/sandbox" />
       <recent name="$PROJECT_DIR$/automation" />
       <recent name="$PROJECT_DIR$/automation/helper" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/templates/dashboard" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/dashboard/automation" />
-      <recent name="$PROJECT_DIR$/dashboard/templates/cisco" />
-      <recent name="$PROJECT_DIR$/templates/cisco" />
-      <recent name="$PROJECT_DIR$/dashboard" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -236,79 +249,97 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.dc_access_config">
-    <configuration name="dc_fw.j2" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/netops/automation/templates/cisco/dc_fw.j2" />
-    <configuration name="checkview" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.vlan_list">
+    <configuration name="config_file" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dashboard" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/automation" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="netops" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/automation/checkview.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/automation/config_file.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="config_generator (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="configparser (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dashboard" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/automation" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="netops" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/automation/config_generator.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/automation/config_parser.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="dc_access_config" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="configparser" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dashboard" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sandbox" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="netops" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/automation/dc_access_config.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sandbox/configparser.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="dc_fw_config" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="dc_agg_config" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dashboard" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/automation" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="netops" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/automation/dc_fw_config.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/automation/dc_agg_config.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="vlan_list" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/automation" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="netops" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/automation/vlan_list.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -338,19 +369,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Django server.netops" />
-      <item index="1" class="java.lang.String" itemvalue="Python.config_generator (1)" />
-      <item index="2" class="java.lang.String" itemvalue="Python.checkview" />
-      <item index="3" class="java.lang.String" itemvalue="Python.dc_access_config" />
-      <item index="4" class="java.lang.String" itemvalue="Python.dc_fw_config" />
-      <item index="5" class="java.lang.String" itemvalue="JavaScript Debug.dc_fw.j2" />
+      <item index="1" class="java.lang.String" itemvalue="Python.dc_agg_config" />
+      <item index="2" class="java.lang.String" itemvalue="Python.config_file" />
+      <item index="3" class="java.lang.String" itemvalue="Python.configparser" />
+      <item index="4" class="java.lang.String" itemvalue="Python.configparser (1)" />
+      <item index="5" class="java.lang.String" itemvalue="Python.vlan_list" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.dc_access_config" />
-        <item index="1" class="java.lang.String" itemvalue="Python.dc_fw_config" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.dc_fw.j2" />
-        <item index="3" class="java.lang.String" itemvalue="Python.checkview" />
-        <item index="4" class="java.lang.String" itemvalue="Python.config_generator (1)" />
+        <item index="0" class="java.lang.String" itemvalue="Python.vlan_list" />
+        <item index="1" class="java.lang.String" itemvalue="Python.configparser (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Python.configparser" />
+        <item index="3" class="java.lang.String" itemvalue="Python.dc_agg_config" />
+        <item index="4" class="java.lang.String" itemvalue="Python.config_file" />
       </list>
     </recent_temporary>
   </component>
@@ -371,7 +402,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-239" y="208" width="1617" height="1062" extended-state="7" />
+    <frame x="45" y="86" width="1617" height="1062" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -383,16 +414,16 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18328173" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39978904" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -404,240 +435,114 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <option name="time" value="18" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scripts/netbox_api.py" />
-    <entry file="file://$PROJECT_DIR$/templates/dashboard/dc_access.html" />
-    <entry file="file://$PROJECT_DIR$/dashboard/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/cisco/access.j2">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="7" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/sandbox.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="3" lean-forward="false" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netops/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <element signature="e#630#662#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="49" column="10" lean-forward="false" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/vlan_list.txt" />
-    <entry file="file://$PROJECT_DIR$/dashboard/vlan_list" />
-    <entry file="file://$PROJECT_DIR$/netops/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="27" column="18" lean-forward="false" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/nornir.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9626">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/cisco/agg.j2">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/projects/tasks_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="10" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="6" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="5" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#28#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/automation/.env">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/automation/inventory/groups.yaml">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
-          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="10" />
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/automation/inventory/hosts.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.local/lib/python3.6/site-packages/nornir/core/filter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="26" column="8" lean-forward="false" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/dashboard/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="31" column="14" lean-forward="true" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/dashboard/show.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="14" lean-forward="true" selection-start-line="2" selection-start-column="5" selection-end-line="6" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/dashboard/services_config_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="5" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/dashboard/dc_access_template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="18" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/dashboard/show_result.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="14" lean-forward="false" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/automation/templates/cisco/sys_fw.j2">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/dashboard/check_vlan_view.html">
+    <entry file="file://$PROJECT_DIR$/automation/templates/cisco/int_agg.j2">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="14" />
-          <folding />
+        <state relative-caret-position="72">
+          <caret line="4" column="52" lean-forward="true" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/netbox_query.py" />
-    <entry file="file://$PROJECT_DIR$/automation/__init__.py">
+    <entry file="file://$PROJECT_DIR$/automation/templates/cisco/wan_pe.j2">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/automation/templates/cisco/dc_svc.j2">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/automation/files/commvault.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
+    <entry file="file://$PROJECT_DIR$/automation/templates/rollback/dc_fw.j2">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="16" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-          <folding />
+        <state relative-caret-position="108">
+          <caret line="6" column="24" lean-forward="false" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/automation/nornir_exec.py">
+    <entry file="file://$PROJECT_DIR$/automation/templates/cisco/dc_fw.j2">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="42" lean-forward="false" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#29#0" expanded="false" />
-            <element signature="e#1121#1917#0" expanded="false" />
-            <element signature="e#2206#2548#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="383">
+          <caret line="35" column="11" lean-forward="true" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/automation/sandbox.py">
+    <entry file="file://$PROJECT_DIR$/automation/dc_access_config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#29#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="1080">
+          <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/automation/simple.yaml">
+    <entry file="file://$PROJECT_DIR$/automation/wan_config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="270">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="27" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/automation/dc_debug.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-252">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/automation/config_file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/automation/backup/AGG1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1134">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sandbox/azure.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sandbox/agg1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1080">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -645,61 +550,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/automation/templates/cisco/agg.j2">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-409">
-          <caret line="14" column="37" lean-forward="false" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/automation/templates/cisco/dc_fw.j2">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/automation/config.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="79" column="25" lean-forward="true" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/automation/templates/cisco/access.j2">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="87" column="47" lean-forward="true" selection-start-line="87" selection-start-column="47" selection-end-line="87" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/automation/templates/cisco/dc_agg.j2">
+    <entry file="file://$PROJECT_DIR$/automation/simple.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -707,7 +561,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/automation/templates/cisco/agg2.j2">
+    <entry file="file://$PROJECT_DIR$/sandbox/inventory/hosts.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -715,94 +569,213 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/automation/netbox_query.py">
+    <entry file="file://$PROJECT_DIR$/sandbox/configparser.py" />
+    <entry file="file://$PROJECT_DIR$/sandbox/vlan_list.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="e#781#1982#0" expanded="false" />
-            <element signature="e#2035#2543#0" expanded="false" />
-            <element signature="e#2583#3705#0" expanded="false" />
-            <element signature="e#3743#6240#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="342">
+          <caret line="55" column="7" lean-forward="true" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/automation/dc_fw_config.py">
+    <entry file="file://$PROJECT_DIR$/automation/backup/MV1_N7K_AGG_PE_01.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-            <element signature="e#1462#1592#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="191">
+          <caret line="4524" column="16" lean-forward="false" selection-start-line="4524" selection-start-column="0" selection-end-line="4524" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/automation/dc_access_config.py">
+    <entry file="file://$PROJECT_DIR$/automation/files/vrf_list">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="33" column="41" lean-forward="false" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="36">
+          <caret line="2" column="9" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="75" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/automation/dc_agg_config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="18">
+          <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/automation/files/ipam.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1218">
+          <caret line="86" column="8" lean-forward="true" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/automation/templates/cisco/dc_agg.j2">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="36" column="12" lean-forward="true" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/automation/sandbox.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="32" column="31" lean-forward="true" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/automation/config.txt" />
+    <entry file="file://$PROJECT_DIR$/automation/vrf_list" />
+    <entry file="file://$PROJECT_DIR$/automation/helper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="23" column="34" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/automation/dc_fw_config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="34" column="109" lean-forward="false" selection-start-line="32" selection-start-column="12" selection-end-line="34" selection-end-column="109" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/automation/config_generator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-            <element signature="e#595#1292#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/automation/helper.py">
+    <entry file="file://$PROJECT_DIR$/automation/backup/cntx-cust-Debbas-01.txt" />
+    <entry file="file://$PROJECT_DIR$/automation/backup/cntx/cntx-cust-dohaland.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1566">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/automation/backup/cntx/cntx-cust-amy-01.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/automation/backup/cntx/cntx-cust-ANAS-01.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/automation/backup/cntx/cntx-cust-amf-01.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/automation/backup/cntx/cntx-cust-acta-01.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/automation/backup/cntx/admin.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/automation/backup/cntx/cntx-cust-gbi-01.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/automation/backup/cntx/cntx-cust-Fuego-01.txt" />
+    <entry file="file://$PROJECT_DIR$/automation/backup/cntx/cntx-cust-cra-motc-01.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/automation/backup/cntx/cntx-cust-Debbas-01.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/automation/ipam_calls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="29" column="15" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="32" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/automation/backup/prefix_from_cntx.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/automation/backup/cntx/cntx-cust-meeza-01.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-864">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/automation/backup/MV1_5585_DC_ASA_01.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="311" column="45" lean-forward="true" selection-start-line="311" selection-start-column="45" selection-end-line="311" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/lib/python3.6/site-packages/decouple.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-            <element signature="e#595#744#0" expanded="false" />
-            <element signature="e#779#920#0" expanded="false" />
-            <element signature="e#947#1232#0" expanded="false" />
-            <element signature="e#1274#1936#0" expanded="false" />
-            <element signature="e#1971#2462#0" expanded="false" />
-            <element signature="e#2496#2841#0" expanded="false" />
-            <element signature="e#2890#3396#0" expanded="false" />
-            <element signature="e#3431#4245#0" expanded="false" />
-          </folding>
+          <caret line="14" column="7" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="61" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/automation/checkview.py">
+    <entry file="file://$PROJECT_DIR$/automation/vlan_list_mv2">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" column="10" lean-forward="true" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+        <state relative-caret-position="72">
+          <caret line="4" column="23" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="160" selection-end-column="11813" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/automation/vlan_list.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="605">
+          <caret line="70" column="37" lean-forward="true" selection-start-line="70" selection-start-column="37" selection-end-line="70" selection-end-column="37" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/automation/netview.py">
+    <entry file="file://$PROJECT_DIR$/automation/config_parser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="28" column="10" lean-forward="true" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+        <state relative-caret-position="-727">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="27" selection-end-column="18" />
           <folding>
-            <element signature="e#0#29#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#2005#2730#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

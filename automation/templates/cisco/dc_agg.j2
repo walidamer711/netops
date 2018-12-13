@@ -1,0 +1,37 @@
+{% for vlan in vlans %}
+vlan {{ vlan.id }}
+ name {{ vlan.name }}
+ mode fabricpath
+{% endfor %}
+{% set allowed_vlans = vlans|map(attribute='id')|list|join(',') %}
+{% for t in trunks %}
+interface {{ t }}
+ switchport trunk allowed vlan add {{ allowed_vlans }}
+{% endfor %}
+!
+{% for vrf in vrfs %}
+vrf context {{ vrf.name }}
+ description {{ vrf.descr }}
+ {% for route in vrf.routes %}
+ ip route {{ route }} {{ vrf.nexthop }}
+ {% endfor %}
+ rd {{ vrf.rd }}
+  address-family ipv4 unicast
+  route-target import {{ vrf.rt }}
+  route-target export {{ vrf.rt }}
+{% endfor %}
+{% for int in interfaces %}
+interface Vlan{{ int.vlan_id }}
+ description {{ int.descr }}
+ no shutdown
+ vrf member {{ int.vrf }}
+ no ip redirects
+ ip address {{ int.ip }}
+ hsrp version 2
+ hsrp {{ int.vlan_id }}
+  {% if "agg1" in int.tag %}
+  preempt
+    priority 110
+  {% endif %}
+  ip {{ int.vip }}
+{% endfor %}

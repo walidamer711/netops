@@ -1,8 +1,8 @@
 from nornir import InitNornir
 from nornir.plugins.tasks import networking, text
-from nornir.plugins.functions.text import print_result, print_title
+from nornir.plugins.functions.text import print_result
 from napalm import get_network_driver
-from automation.netbox_query import get_device_trunks, get_dc_vlans, get_prefixes
+from sandbox.netbox_query import get_device_trunks, get_dc_vlans, get_prefixes
 
 
 def netbox_inventory():

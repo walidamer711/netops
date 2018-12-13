@@ -2,7 +2,8 @@ from nornir import InitNornir
 from nornir.plugins.functions.text import print_result, print_title
 from nornir.plugins.tasks import networking, text
 from nornir.core.filter import F
-from automation.helper import add_account, dc_join_vlans
+from automation.helper import add_account
+from automation.ipam_calls import dc_join_vlans
 
 
 def check_dc_vlan(tenant, site):

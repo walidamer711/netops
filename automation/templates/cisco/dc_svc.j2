@@ -1,0 +1,17 @@
+{% for key,value in vlans|dictsort %}
+vlan {{ value.id }}
+ name {{ value.name }}
+{% endfor %}
+{% for key,value in trunks|dictsort %}
+{% if key == inventory_hostname %}
+spanning-tree vlan {{ allowed_vlans }} priority {{ value.priority }}
+{% for x in value.ports %}
+int {{ x }}
+{% if x == "po12" %}
+ switchport trunk allowed vlan add {{ vlans['mgmt'].id }}
+{% else %}
+ switchport trunk allowed vlan add {{ allowed_vlans }}
+{% endif %}
+{% endfor %}
+{% endif %}
+{% endfor %}

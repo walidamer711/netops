@@ -1,0 +1,9 @@
+Server1:
+  hostname: 10.1.217.61
+  platform: ios
+RR1:
+  hostname: 10.1.217.61
+  platform: ios
+Internet:
+  hostname: 10.1.217.61
+  platform: ios

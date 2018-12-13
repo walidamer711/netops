@@ -2,14 +2,12 @@ from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 from nornir import InitNornir
 from .forms import ShowForm, DCAccessForm, VLANCheck, FEXForm
-from automation.netbox_query import get_device_ip
-from automation.nornir_exec import show_result
+from sandbox.netbox_query import get_device_ip
+from sandbox.vlan_list import show_result
 from automation.config_generator import dc_agg_template
 from automation.dc_access_config import dc_access_template
 from automation.netview import fex_view_result
 from automation.checkview import check_dc_vlan
-from nornir.plugins.functions.text import print_result, print_title
-from automation.helper import add_account
 
 
 # Create your views here.

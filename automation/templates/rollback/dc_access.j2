@@ -1,0 +1,9 @@
+{% for vlan in vlans %}
+no vlan {{ vlan.id }}
+{% endfor %}
+{% set allowed_vlans = vlans|map(attribute='id')|list|join(',') %}
+no spanning-tree vlan {{ allowed_vlans }} priority 4096
+{% for t in trunks %}
+interface {{ t }}
+ switchport trunk allowed vlan remove {{ allowed_vlans }}
+{% endfor %}

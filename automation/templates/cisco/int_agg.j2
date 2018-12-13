@@ -1,0 +1,20 @@
+{% for prefix in vrf.public %}
+ip prefix-list {{ cust }}-TO-INTERNET permit {{ prefix }}
+ip prefix-list {{ vrf.name }}-STATIC-LIST permit {{ prefix}}
+{% endfor %}
+route-map {{ cust }}-expmap-{{ vrf.role }} permit 10
+  match ip add prefix-list {{ cust }}-TO-INTERNET
+  set extcommunity rt 47901:1000
+route-map {{ cust }}-impmap-{{ vrf.role }} permit 10
+  match ip add prefix-list defprefix
+route-map {{ vrf.name }}-STATIC-MAP permit 10
+  match ip address prefix-list {{ vrf.name }}-STATIC-LIST
+router bgp 47901
+  vrf {{ vrf.name }}
+    address-family ipv4 unicast
+      redistribute static route-map {{ vrf.name }}-STATIC-MAP
+vrf context {{ vrf.name }}
+   address-family ipv4 unicast
+     route-target import 47901:1000
+       export map {{ cust }}-expmap-{{ vrf.role }}
+       import map {{ cust }}-impmap-{{ vrf.role }}

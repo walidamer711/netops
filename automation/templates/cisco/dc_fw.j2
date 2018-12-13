@@ -1,3 +1,6 @@
+{% if site != "gns3" %}
+changeto context cntx-cust-{{cust}}-01
+{% endif %}
 {% for int in interfaces %}
 interface {{ trunk }}.{{ int.vlan_id }}
  vlan {{ int.vlan_id  }}
@@ -5,6 +8,8 @@ interface {{ trunk }}.{{ int.vlan_id }}
  {% if int.role == "outside" %}
  security-level 0
  {% elif int.role== "dmz" %}
+ security-level 50
+ {% elif int.role== "wan" %}
  security-level 50
  {% else %}
  security-level 100
@@ -15,7 +20,22 @@ interface {{ trunk }}.{{ int.vlan_id }}
 {% for int in interfaces %}
 icmp permit any {{ int.role }}
 !
-{% if int.role == "outside" %}
+{% if int.role == "outside" and site != "gns3" %}
 route outside 0.0.0.0 0.0.0.0 {{ int.vip }}
+{% elif  int.role == "outside" %}
+route outside 8.8.8.8 255.255.255.255 {{ int.vip }}
 {% endif %}
 {% endfor %}
+object network pat_ip
+ host {{ pat_ip }}
+{% for int in interfaces %}
+{% if int.role == "inside" %}
+object network inside
+ subnet {{ int.network }} {{ int.mask }}
+ nat (inside,outside) dynamic pat_ip
+{% endif %}
+{% endfor %}
+access-list outsidein extended permit icmp any any
+access-list insidein extended permit icmp any any
+access-group outsidein in interface outside
+access-group insidein in interface inside

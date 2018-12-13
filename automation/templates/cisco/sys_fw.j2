@@ -1,0 +1,13 @@
+changeto system
+{% for int in interfaces %}
+interface Port-channel11.{{int.vlan_id}}
+ description ***{{cust}}-{{int.role}}***
+ vlan {{int.vlan_id}}
+!
+{% endfor %}
+context cntx-cust-{{cust}}-01
+{% for int in interfaces %}
+ allocate-interface interface Port-channel11.{{int.vlan_id}}
+{% endfor %}
+ config-url disk0:/cntx-cust-{{cust}}-01.cfg
+!

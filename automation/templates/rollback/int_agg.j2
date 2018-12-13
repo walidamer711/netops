@@ -1,0 +1,16 @@
+vrf context {{ vrf.name }}
+   address-family ipv4 unicast
+     no route-target import 47901:1000
+     no export map {{ cust }}-expmap-{{ vrf.role }}
+     no import map {{ cust }}-impmap-{{ vrf.role }}
+
+router bgp 47901
+  vrf {{ vrf.name }}
+    address-family ipv4 unicast
+      no redistribute static route-map {{ vrf.name }}-STATIC-MAP
+
+no route-map {{ cust }}-expmap-{{ vrf.role }}
+no route-map {{ cust }}-impmap-{{ vrf.role }}
+no route-map {{ vrf.name }}-STATIC-MAP
+no ip prefix-list {{ cust }}-TO-INTERNET
+no ip prefix-list {{ vrf.name }}-STATIC-LIST
