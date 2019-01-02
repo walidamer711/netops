@@ -2,7 +2,7 @@ from nornir import InitNornir
 from nornir.plugins.functions.text import print_result, print_title
 from nornir.plugins.tasks import networking
 from nornir.core.filter import F
-from automation.helper import start_nornir
+from helper import start_nornir
 
 
 def show_result(device, command):
@@ -46,9 +46,9 @@ def fex_view_result(command, site):
 def main():
    #print_result(net_view_result('show fex'))
     result = fex_view_result('show fex', 'mv2')
-    print(result)
+    print_result(result)
     for r in result:
-        print(dir(result[r][0]))
+        print(result[r][0])
 
 
 
