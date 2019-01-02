@@ -12,10 +12,10 @@ def add_account_lab(inventory):
         inventory.hosts[h].password = LAB_ACCOUNT['password']
 
 
-#def add_account(inventory):
-#    for h in inventory.hosts:
-#        inventory.hosts[h].username = ACCOUNT['username']
-#        inventory.hosts[h].password = ACCOUNT['password']
+def add_account(inventory):
+    for h in inventory.hosts:
+        inventory.hosts[h].username = ACCOUNT['username']
+        inventory.hosts[h].password = ACCOUNT['password']
 
 
 def start_nornir(tenant):
