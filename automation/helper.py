@@ -3,7 +3,7 @@ from nornir import InitNornir
 from nornir.core.inventory import ConnectionOptions
 
 LAB_ACCOUNT = {"username": 'admin', "password": 'admin', "secret": "admin"}
-ACCOUNT = {"username": config('username'), "password": config('password')}
+#ACCOUNT = {"username": config('username'), "password": config('password')}
 
 
 def add_account_lab(inventory):
@@ -12,10 +12,10 @@ def add_account_lab(inventory):
         inventory.hosts[h].password = LAB_ACCOUNT['password']
 
 
-def add_account(inventory):
-    for h in inventory.hosts:
-        inventory.hosts[h].username = ACCOUNT['username']
-        inventory.hosts[h].password = ACCOUNT['password']
+#def add_account(inventory):
+#    for h in inventory.hosts:
+#        inventory.hosts[h].username = ACCOUNT['username']
+#        inventory.hosts[h].password = ACCOUNT['password']
 
 
 def start_nornir(tenant):
