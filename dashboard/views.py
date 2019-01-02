@@ -2,13 +2,15 @@ from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 from nornir import InitNornir
 from .forms import ShowForm, DCAccessForm, VLANCheck, FEXForm
-from sandbox.netbox_query import get_device_ip
-from sandbox.vlan_list import show_result
-from automation.config_generator import dc_agg_template
-from automation.dc_access_config import dc_access_template
+from automation.dc_debug import dc_agg_template, dc_access_template
 from automation.netview import fex_view_result
 from automation.checkview import check_dc_vlan
+from django.template.defaulttags import register
 
+
+@register.filter
+def get_item(dictionary, key):
+    return dictionary.get(key)
 
 # Create your views here.
 
@@ -22,18 +24,8 @@ def home(request):
 
 @login_required
 def show(request):
-    if request.method == 'POST':
-        form = ShowForm(request.POST)
-        if form.is_valid():
-            device = request.POST.get('device')
-            command = request.POST.get('show_command')
-            host_ip = get_device_ip(device)
 
-            result = show_result(device, command)
-            return render(request, 'dashboard/show_result.html', {'result': result, "device": device, "command": command})
-    else:
-        form = ShowForm()
-
+    form = ShowForm()
     return render(request, 'dashboard/show.html', {'form': form})
 
 
@@ -60,6 +52,7 @@ def checks_view(request, check):
 @login_required
 def network_views(request, view):
     data_list = []
+    free_ports = {'MV2_N5K_DC_ACC_01': {'101': 35}}
     if view == 'fex':
         if request.method == 'POST':
             form = FEXForm(request.POST)
@@ -68,7 +61,7 @@ def network_views(request, view):
                 command = "show fex"
                 result = fex_view_result(command, site)
                 for r in result:
-                    data_list.append(result[r][0])
+                    data_list.append(result[r][0].result)
                 return render(request, 'dashboard/show_result.html', {'data': data_list})
         else:
             form = FEXForm()
@@ -95,6 +88,7 @@ def services(request):
                 result = hosts.run(task=dc_agg_template, tenant=tenant)
                 for r in result:
                     data_list.append(result[r][1])
+                    data_list.append(result[r][2])
             return render(request, 'dashboard/dc_access_template.html', {'data': data_list})
     else:
         form = DCAccessForm()

@@ -2,8 +2,8 @@ from nornir import InitNornir
 from nornir.plugins.functions.text import print_result, print_title
 from nornir.plugins.tasks import networking, text
 from nornir.plugins.functions.text import print_result
-from helper import start_nornir
-from ipam_calls import (dc_access_vlans, device_trunks,
+from .helper import start_nornir
+from .ipam_calls import (dc_access_vlans, device_trunks,
                         dc_vlans, get_outside_vrf,
                         dc_fw_prefixes, get_prefixes, get_pat_ip)
 

@@ -45,8 +45,8 @@ def dc_fw_params(task, tenant):
 
 def main():
     #infra = 'mza-infra'
-    #tenant = 'commvault'
-    #site = 'mv1'
+    #tenant = 'qlc'
+    #site = 'mv2'
     infra = 'lab'
     tenant = 'ipam'
     site = 'gns3'

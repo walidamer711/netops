@@ -86,9 +86,18 @@ def vlan_diff(h1, h2):
 
 
 def main():
-    print(dc_vlan_list('MV2_N7K_AGG_PE_01', "MV2_N7K_SVC_PE_01"))
+    #print(dc_vlan_list('MV2_N7K_AGG_PE_01', "MV2_N7K_SVC_PE_01"))
     #print(vlan_diff('MV2_N7K_SVC_PE_01','MV2_N7K_AGG_PE_01'))
-
+    fexs = show_result('MV2_N7K_SVC_PE_01', "show fex")
+    for fex in fexs:
+        fex_num = fex['number']
+        command = "show int status fex {}".format(fex_num)
+        intfs = show_result('MV2_N7K_SVC_PE_01', command)
+        down_list = []
+        for intf in intfs:
+            if intf['status'] == 'disabled':
+                down_list.append(intf)
+        print(len(down_list))
 
 def test_netmiko(task):
     task.run(task=networking.netmiko_send_command, command_string="show version", use_textfsm=True)

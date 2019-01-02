@@ -200,7 +200,7 @@ def get_outside_vrf(tenant):
 
     VRFs_netbox_dict = requests.get(
         NETBOX_API_ROOT + NETBOX_VRFS_ENDPOINT,
-        headers=headers
+        params=query_params, headers=headers
     ).json()
 
     prefixes_netbox_dict = requests.get(
@@ -215,7 +215,6 @@ def get_outside_vrf(tenant):
 
     v = {}
     public = []
-
 
     for vrf in VRFs_netbox_dict['results']:
         if vrf['custom_fields']['vrfrole'] and vrf['custom_fields']['vrfrole']['label'] == 'outside':
@@ -331,8 +330,8 @@ def get_vrfs(tenant):
 
 
 def main():
-    print(get_prefixes("ipam", "agg1"))
-    #print(get_outside_vrf("ipam"))
+    #print(get_prefixes("ipam", "agg1"))
+    print(get_outside_vrf("ipam"))
     #print(get_vrfs("ipam"))
 
 if __name__ == '__main__':

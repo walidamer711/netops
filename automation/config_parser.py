@@ -31,7 +31,7 @@ def form_headers():
 def get_tenant_from_vm(vm):
     headers = form_headers()
     query_params = {"name": vm}
-
+    #vm here is the context name
     vms_netbox_dict = requests.get(
         NETBOX_API_ROOT + NETBOX_VM_ENDPOINT,
         params=query_params, headers=headers
