@@ -2,7 +2,7 @@ from nornir import InitNornir
 from nornir.plugins.functions.text import print_result, print_title
 from nornir.plugins.tasks import networking
 from nornir.core.filter import F
-from helper import start_nornir
+from .helper import start_nornir
 
 
 def show_result(device, command):
