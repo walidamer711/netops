@@ -3,30 +3,33 @@
 
 {% block content %}
 
-<div class="mb-lg-5 mt-4">
-<h2>Provisioning Services</h2>
-<b1>Please select the required provisioning service form the below list</b1>
+    <div class="mb-lg-5 mt-4">
+        <h2>Provisioning Services</h2>
+        <b1>Please select the required provisioning service form the below list</b1>
 
-<ul>
-    <li class=""><a href="{% url 'services' %}">Data Center Services</a></li>
-</ul>
-</div>
-
-    <div class="mb-4">
-    <h2>Network Views</h2>
-    <b1>Please select the view form the below list</b1>
-
-<ul>
-    <li class=""><a href="{% url 'net_view' 'fex' %}">FEX View</a></li>
-</ul>
+        <ul>
+            <li class=""><a href="{% url 'services' %}">Data Center Services</a></li>
+        </ul>
     </div>
 
- <div class="mb-4">
-    <h2>Checks Views</h2>
-    <b1>Please select the check view</b1>
+    <div class="mb-4">
+        <h2>Network Views</h2>
+        <b1>Please select the view form the below list</b1>
 
-<ul>
-    <li class=""><a href="{% url 'check_view' 'vlan' %}">Check VLAN View</a></li>
-</ul>
+        <ul>
+            <li class=""><a href="{% url 'net_view' 'fex' %}">FEX View</a></li>
+        </ul>
+        <ul>
+            <li class=""><a href="{% url 'net_view' 'qos' %}">Customer Internet QoS View</a></li>
+        </ul>
+    </div>
+
+    <div class="mb-4">
+        <h2>Checks Views</h2>
+        <b1>Please select the check view</b1>
+
+        <ul>
+            <li class=""><a href="{% url 'check_view' 'vlan' %}">Check VLAN View</a></li>
+        </ul>
     </div>
 {% endblock %}

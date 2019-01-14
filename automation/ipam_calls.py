@@ -70,7 +70,7 @@ def dc_vlans(tenant, site):
 
 def dc_join_vlans(tenant):
     headers = form_headers()
-    query_params = {"tenant": tenant, "status": 2}
+    query_params = {"tenant": tenant}
 
     vlans_netbox_dict = requests.get(
         NETBOX_API_ROOT + NETBOX_VLANS_ENDPOINT,
@@ -175,21 +175,21 @@ def get_wan_vrf(tenant, tag):
     headers = form_headers()
     query_params = {"tenant": tenant}
 
-    prefixes_netbox_dict = requests.get(
-        NETBOX_API_ROOT + NETBOX_PREFIXES_ENDPOINT,
+    VRFs_netbox_dict = requests.get(
+        NETBOX_API_ROOT + NETBOX_VRFS_ENDPOINT,
         params=query_params, headers=headers
     ).json()
     v = {}
-    for prefix in prefixes_netbox_dict["results"]:
-        if prefix["role"]["slug"] == "wan":
-            v["name"] = prefix["vrf"]["name"]
-            v["rt"] = prefix["vrf"]["rd"]
-            v["role"] = prefix["role"]["slug"]
-            v["descr"] = get_vrf(prefix["vrf"]["name"])["descr"]
+    for vrf in VRFs_netbox_dict['results']:
+        if vrf['custom_fields']['vrfrole'] and vrf['custom_fields']['vrfrole']['label'] == 'wan':
+            v["name"] = vrf["name"]
+            v["rt"] = vrf["rd"]
+            v["role"] = "wan"
+            v["descr"] = vrf["description"]
             if "wan1" in tag:
-                v["rd"] = "{}005".format(prefix["vrf"]["rd"][:-3])
+                v["rd"] = "{}005".format(vrf["rd"][:-3])
             elif"wan2" in tag:
-                v["rd"] = "{}006".format(prefix["vrf"]["rd"][:-3])
+                v["rd"] = "{}006".format(vrf["rd"][:-3])
 
     return v
 
@@ -332,6 +332,7 @@ def get_vrfs(tenant):
 def main():
     #print(get_prefixes("ipam", "agg1"))
     print(get_outside_vrf("ipam"))
+    print(get_wan_vrf("ipam", "wan1"))
     #print(get_vrfs("ipam"))
 
 if __name__ == '__main__':

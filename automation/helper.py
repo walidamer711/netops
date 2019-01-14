@@ -12,13 +12,22 @@ def add_account_lab(inventory):
 
 
 def start_nornir(tenant):
-    nr = InitNornir(core={"num_workers": 100},
-                    logging={"file": "/home/wamer/netops/automation/nornir.log"},
-                    inventory={"plugin": "nornir.plugins.inventory.netbox.NBInventory",
-                               "options": {"nb_url": "http://172.20.22.99",
-                                           "nb_token": "49d66235f10e0d388f18e179e756d1d276b898bb",
-                                           "filter_parameters": {"tenant": tenant}},
-                               "transform_function": add_conn_options})
+    if tenant == "lab":
+        nr = InitNornir(core={"num_workers": 100},
+                        logging={"file": "/home/wamer/netops/automation/nornir.log"},
+                        inventory={"plugin": "nornir.plugins.inventory.netbox.NBInventory",
+                                   "options": {"nb_url": "http://172.20.22.99",
+                                               "nb_token": "49d66235f10e0d388f18e179e756d1d276b898bb",
+                                               "filter_parameters": {"tenant": tenant}},
+                                   "transform_function": add_lab_options})
+    else:
+        nr = InitNornir(core={"num_workers": 100},
+                        logging={"file": "/home/wamer/netops/automation/nornir.log"},
+                        inventory={"plugin": "nornir.plugins.inventory.netbox.NBInventory",
+                                   "options": {"nb_url": "http://172.20.22.99",
+                                               "nb_token": "49d66235f10e0d388f18e179e756d1d276b898bb",
+                                               "filter_parameters": {"tenant": tenant}},
+                                   "transform_function": add_conn_options})
     return nr
 
 
@@ -27,3 +36,8 @@ def add_conn_options(host):
     host.password = config('password')
     host.connection_options["netmiko"] = ConnectionOptions(extras={'secret': config('secret')})
 
+
+def add_lab_options(host):
+    host.username = 'admin'
+    host.password = 'admin'
+    host.connection_options["netmiko"] = ConnectionOptions(extras={'secret': 'admin'})

@@ -1,0 +1,5 @@
+ip vrf {{ vrf.name }}
+ description {{ vrf.descr }}
+ rd {{ vrf.rd }}
+ route-target import {{ vrf.rt }}
+ route-target export {{ vrf.rt }}

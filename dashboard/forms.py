@@ -91,3 +91,10 @@ class FEXForm(forms.Form):
         ("mv2", "MV2")
     ]
     site = forms.CharField(label='Select Data Center', widget=forms.Select(choices=DATA_CENTER))
+
+class QOSForm(forms.Form):
+    DATA_CENTER = [
+        ("mv1", "MV1-MV3"),
+        ("mv2", "MV2")
+    ]
+    site = forms.CharField(label='Select Data Center', widget=forms.Select(choices=DATA_CENTER))

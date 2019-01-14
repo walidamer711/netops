@@ -1,10 +1,11 @@
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 from nornir import InitNornir
-from .forms import ShowForm, DCAccessForm, VLANCheck, FEXForm
+from .forms import ShowForm, DCAccessForm, VLANCheck, FEXForm, QOSForm
 from automation.dc_debug import dc_agg_template, dc_access_template
 from automation.netview import fex_view_result
 from automation.checkview import check_dc_vlan
+from automation.int_qos import qos_view_result
 from django.template.defaulttags import register
 
 
@@ -65,6 +66,18 @@ def network_views(request, view):
                 return render(request, 'dashboard/show_result.html', {'data': data_list})
         else:
             form = FEXForm()
+    elif view == 'qos':
+        if request.method == 'POST':
+            form = QOSForm(request.POST)
+            if form.is_valid():
+                site = request.POST.get('site')
+                result = qos_view_result(site)
+                for r in result:
+                    data_list.append(result[r][0].result)
+                print(data_list)
+                return render(request, 'dashboard/show_result.html', {'data': data_list})
+        else:
+            form = QOSForm()
 
     return render(request, 'dashboard/show_result.html', {'form': form})
 
