@@ -60,9 +60,9 @@ def main():
     #infra = 'mza-infra'
     #tenant = 'commvault'
     #site = 'mv1'
-    infra = 'lab'
+    infra = 'mza-infra'
     tenant = 'ipam'
-    site = 'gns3'
+    site = 'mv1'
     nr = start_nornir(infra)
     h1 = nr.filter(role="dc-access", site=site)
     result = h1.run(task=dc_access_template, tenant=tenant)

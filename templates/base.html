@@ -10,8 +10,8 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
 
         <a class="navbar-brand" href="{% url 'home' %}">Network Portal</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu"
@@ -38,16 +38,21 @@
 
             {% if user.is_authenticated %}
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">{{ user.username }}</li>
-                </ul>
-                <ul><a href="{% url 'logout' %}" class="btn btn-outline-secondary">Log out</a>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" href="#" id="userMenu" \
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded\
+                                   ="false">{{ user.username }}</a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userMenu">
+                            <a class="dropdown-item" href="{% url 'logout' %}">Log Out</a>
+                        </div>
+                    </li>
                 </ul>
             {% else %}
                 <a href="{% url 'login' %}" class="btn btn-outline-secondary">Log in</a>
             {% endif %}
 
         </div>
-    </div>
+
 </nav>
 
 

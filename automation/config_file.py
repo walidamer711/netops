@@ -1,5 +1,5 @@
 from nornir.plugins.functions.text import print_result
-from automation.helper import start_nornir, TenantNode
+from automation.helper import start_nornir
 from automation.ipam_calls import (dc_access_vlans, device_trunks,
                                    dc_vlans, get_outside_vrf,
                                    dc_fw_prefixes, get_prefixes, get_pat_ip)
@@ -47,9 +47,12 @@ def main():
     #infra = 'mza-infra'
     #tenant = 'qlc'
     #site = 'mv2'
-    infra = 'lab'
-    tenant = 'ipam'
-    site = 'gns3'
+    infra = 'mza-infra'
+    tenant = 'commvault'
+    site = 'mv1'
+    #infra = 'lab'
+    #tenant = 'ipam'
+    #site = 'gns3'
     nr = start_nornir(infra)
     h1 = nr.filter(role="dc-access", site=site)
     h1.run(task=dc_access_params, tenant=tenant)

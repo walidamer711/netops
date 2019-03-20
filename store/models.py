@@ -30,3 +30,5 @@ class Store(models.Model):
 
     def __str__(self):
         return "{} {} {} {}".format(self.item_type, self.item_model, self.item_quantity, self.item_status)
+
+

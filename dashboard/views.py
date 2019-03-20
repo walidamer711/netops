@@ -6,6 +6,7 @@ from automation.dc_debug import dc_agg_template, dc_access_template
 from automation.netview import fex_view_result
 from automation.checkview import check_dc_vlan
 from automation.int_qos import qos_view_result
+from automation.helper import start_nornir
 from django.template.defaulttags import register
 
 
@@ -85,7 +86,7 @@ def network_views(request, view):
 @login_required
 def services(request):
     if request.method == 'POST':
-        nr = InitNornir(config_file="/home/wamer/netops/automation/config.yaml")
+        nr = start_nornir('mza-infra')
         form = DCAccessForm(request.POST)
         if form.is_valid():
             group = request.POST.get('domain')
