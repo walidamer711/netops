@@ -5,6 +5,7 @@ from django.db import models
 class Store(models.Model):
 
     ROUTER = 'RTR'
+    FIREWALL = 'FW'
     SWITCH = 'SW'
     TRANSCEIVER = 'SFP'
     CABLE = 'CABLE'
@@ -13,6 +14,7 @@ class Store(models.Model):
 
     ITEM_TYPE_CHOICES = (
         (ROUTER, 'Router'),
+        (FIREWALL, 'Firewall'),
         (SWITCH, 'Switch'),
         (TRANSCEIVER, 'SFP'),
         (CABLE, 'Cable'),
@@ -27,8 +29,9 @@ class Store(models.Model):
     item_model = models.CharField(max_length=1000)
     item_quantity = models.IntegerField()
     item_status = models.CharField(max_length=1000, choices=ITEM_STATUS_CHOICES, default=STOCK)
+    comment = models.CharField(max_length=1000, blank=True, default='')
 
     def __str__(self):
-        return "{} {} {} {}".format(self.item_type, self.item_model, self.item_quantity, self.item_status)
+        return "{} {} {} {}".format(self.item_type, self.item_model, self.item_quantity, self.item_status, self.comment)
 
 

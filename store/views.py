@@ -22,7 +22,7 @@ class StoreList(ListView):
 @method_decorator(login_required, name='dispatch')
 class ItemCreate(CreateView):
     model = Store
-    fields = ['item_type', 'item_model', 'item_quantity', 'item_status']
+    fields = ['item_type', 'item_model', 'item_quantity', 'item_status', 'comment']
 
     def get_success_url(self):
         return reverse('store', args=[self.kwargs['item_type']])
@@ -36,7 +36,7 @@ class ItemCreate(CreateView):
 @method_decorator(login_required, name='dispatch')
 class ItemUpdate(UpdateView):
     model = Store
-    fields = ['item_type', 'item_model', 'item_quantity', 'item_status']
+    fields = ['item_type', 'item_model', 'item_quantity', 'item_status', 'comment']
     template_name = 'store/store_update_form.html'
     pk_url_kwarg = 'item_id'
     context_object_name = 'item'
