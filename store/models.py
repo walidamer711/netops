@@ -32,6 +32,6 @@ class Store(models.Model):
     comment = models.CharField(max_length=1000, blank=True, default='')
 
     def __str__(self):
-        return "{} {} {} {}".format(self.item_type, self.item_model, self.item_quantity, self.item_status, self.comment)
+        return "{} {} {} {} {}".format(self.item_type, self.item_model, self.item_quantity, self.item_status, self.comment)
 
 

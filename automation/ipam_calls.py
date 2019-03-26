@@ -272,10 +272,7 @@ def get_prefixes(tenant, tag):
         if prefix["role"]["slug"] == "outside" or prefix["role"]["slug"] == "wan":
             int["descr"] = "{} {}".format(tenant, prefix["role"]["slug"])
             int["vlan_id"] = prefix["vlan"]["vid"]
-            if prefix["role"]["slug"] == "outside":
-                int["vrf"] = "outside"
-            elif prefix["role"]["slug"] == "wan":
-                int["vrf"] = "wan"
+            int["vrf"] = vrfs_query[prefix["role"]["slug"]]['name']
             if "agg1" in tag:
                 int["ip"] = "{}/{}".format(str(ipaddress.ip_network(prefix["prefix"])[2]),
                                            ipaddress.ip_network(prefix["prefix"]).prefixlen)
@@ -328,11 +325,30 @@ def get_vrfs(tenant):
 
     return vrfs
 
+def get_vlans(tenant, site):
+    headers = form_headers()
+    query_params = {"tenant": tenant, "site": site, "status": 2}
+    vlans_netbox_dict = requests.get(
+        NETBOX_API_ROOT + NETBOX_VLANS_ENDPOINT,
+        params=query_params, headers=headers
+    ).json()
+    l1 = []
+    vlans = []
+    for v in vlans_netbox_dict["results"]:
+        # Create temporary dict
+        temp = {}
+        temp["name"] = v["name"]
+        temp["id"] = v["vid"]
+        l1.append(str(v["vid"]))
+        temp["role"] = v["role"]["slug"]
+        vlans.append(v["name"])
+    return vlans
 
 def main():
+    print(get_vlans('ipam', 'mv1'))
     #print(get_prefixes("ipam", "agg1"))
-    print(get_outside_vrf("ipam"))
-    print(get_wan_vrf("ipam", "wan1"))
+    #print(get_outside_vrf("ipam"))
+    #print(get_wan_vrf("ipam", "wan1"))
     #print(get_vrfs("ipam"))
 
 if __name__ == '__main__':
