@@ -6,7 +6,7 @@ ipaddress==1.0.22
 ipython==7.0.1
 json2html==1.2.1
 Jinja2==2.10
-PyYAML==3.13
+PyYAML==5.1
 napalm==2.3.2
 nornir==2.0.0b2
 netmiko==2.2.2
