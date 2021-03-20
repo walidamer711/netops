@@ -5,7 +5,7 @@ gunicorn==19.7.1
 ipaddress==1.0.22
 ipython==7.0.1
 json2html==1.2.1
-Jinja2==2.10
+Jinja2==2.11.3
 PyYAML==5.1
 napalm==2.3.2
 nornir==2.0.0b2
